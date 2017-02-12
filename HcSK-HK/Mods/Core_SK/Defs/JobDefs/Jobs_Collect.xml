@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+	
+	<JobDef>
+		<defName>CollectSand</defName>
+		<driverClass>SK.JobDriver_CollectSand</driverClass>
+		<reportString>Collecting sand.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>CollectPeat</defName>
+		<driverClass>SK.JobDriver_CollectPeat</driverClass>
+		<reportString>Collecting peat.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>CollectCrushedstone</defName>
+		<driverClass>SK.JobDriver_CollectCrushedstone</driverClass>
+		<reportString>Collecting rubble.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>CollectSnow</defName>
+		<driverClass>SK.JobDriver_CollectSnow</driverClass>
+		<reportString>Making snow block.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>CollectClay</defName>
+		<driverClass>SK.JobDriver_CollectClay</driverClass>
+		<reportString>Collecting soft clay.</reportString>
+	</JobDef>
+
+</JobDefs>

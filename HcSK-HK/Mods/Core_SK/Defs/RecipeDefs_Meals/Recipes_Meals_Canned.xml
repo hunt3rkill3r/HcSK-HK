@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+<RecipeDef>
+	<defName>MakeBasicCannedFood</defName>
+	<label>make basic canned food</label>
+	<description>Preserve plant ingredients in cans to prevent spoiling. Produces 75.</description>
+	<jobString>Canning plant ingredients.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1800</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	<li>
+		<filter>
+		<categories>
+			<li>BasicPlantFoodRaw</li>
+		</categories>
+		</filter>
+		<count>75</count>
+	</li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>MetalCan</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>BasicPlantFoodRaw</li>
+	  </categories>
+	  <thingDefs>
+	        <li>MetalCan</li>
+	  </thingDefs>
+			<exceptedThingDefs>
+				<li>BasicCannedFood</li>
+				<li>ExtraCannedFood</li>
+				<li>MetalCannedMeat</li>
+			</exceptedThingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <BasicCannedFood>75</BasicCannedFood>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>MakeExtraCannedFood</defName>
+	<label>make extra canned food</label>
+	<description>Preserve plant ingredients in cans to prevent spoiling. Produces 75.</description>
+	<jobString>Canning extra plant ingriedents.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1800</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	<li>
+		<filter>
+		<categories>
+			<li>ExtraPlantFoodRaw</li>
+		</categories>
+		</filter>
+		<count>75</count>
+	</li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>MetalCan</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>ExtraPlantFoodRaw</li>
+	  </categories>
+	  <thingDefs>
+	      <li>MetalCan</li>
+	  </thingDefs>
+			<exceptedThingDefs>
+				<li>BasicCannedFood</li>
+				<li>ExtraCannedFood</li>
+				<li>MetalCannedMeat</li>
+			</exceptedThingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <ExtraCannedFood>75</ExtraCannedFood>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>MakeMetalCannedMeat</defName>
+	<label>make canned meat</label>
+	<description>Preserve meat in cans to prevent spoiling. Produces 75.</description>
+	<jobString>Canning meat.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1800</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	<li>
+		<filter>
+		<categories>
+			<li>MeatRaw</li>
+			<li>AnimalProductRaw</li>
+		</categories>
+		</filter>
+		<count>75</count>
+	</li>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>MetalCan</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>MeatRaw</li>
+		<li>AnimalProductRaw</li>
+	  </categories>
+	  <thingDefs>
+	      <li>MetalCan</li>
+	  </thingDefs>
+			<exceptedThingDefs>
+				<li>BasicCannedFood</li>
+				<li>ExtraCannedFood</li>
+				<li>MetalCannedMeat</li>
+				<li>Megaspider_Meat</li>
+				<li>Human_Meat</li>
+			</exceptedThingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <MetalCannedMeat>75</MetalCannedMeat>
+	</products>
+	<workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>PickleVegetable</defName>
+	<label>pickle vegetable</label>
+	<description>Preserve vegetables in a salty brine to prevent spoiling.</description>
+	<jobString>Pickling food.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+            <li>RawCorn</li>
+            <li>Raweggplant</li>
+            <li>Rawpumpkin</li>
+            <li>Rawbean</li>
+            <li>RawTomatoes</li>
+            <li>RawCarrots</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+	<li>
+	  <filter>
+		<thingDefs>
+			<li>ChunkSalt</li>
+		</thingDefs>
+	  </filter>
+		<count>0.03</count>
+	</li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+            <li>RawPotatoes</li>
+            <li>RawCorn</li>
+            <li>Raweggplant</li>
+            <li>Rawpumpkin</li>
+            <li>Rawbean</li>
+            <li>RawTomatoes</li>
+            <li>RawCarrots</li>
+			<li>ChunkSalt</li>
+	  </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowNonSmeltableWeapons</li>
+	   <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<products>
+	  <PickledVeg>10</PickledVeg>
+	</products>
+    <defaultIngredientFilter>
+      <thingDefs>
+            <li>RawPotatoes</li>
+            <li>RawCorn</li>
+            <li>Raweggplant</li>
+            <li>Rawpumpkin</li>
+            <li>Rawbean</li>
+            <li>RawTomatoes</li>
+            <li>RawCarrots</li>
+    		<li>ChunkSalt</li>
+       </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+    </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>Canningstove</li>
+			<li>TableButcherNeolithic</li>
+			<li>TableButcher</li>
+     </recipeUsers>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>SaltMeat</defName>
+	<label>salt meat</label>
+	<description>Preserve meats in salt to prevent spoiling.</description>
+	<jobString>Salting meat.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+	<li>
+	  <filter>
+		<thingDefs>
+			<li>ChunkSalt</li>
+		</thingDefs>
+	  </filter>
+		<count>5</count>
+	</li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>MeatRaw</li>
+	  </categories>
+     	  <thingDefs>
+		<li>ChunkSalt</li>
+	  </thingDefs>
+	  <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+        <li>AllowNonSmeltableWeapons</li>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<products>
+	  <SaltedMeat>10</SaltedMeat>
+	</products>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+	 <thingDefs>
+		<li>ChunkSalt</li>
+	 </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+        <li>SaltedMeat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>Canningstove</li>
+			<li>TableButcherNeolithic</li>
+			<li>TableButcher</li>
+    </recipeUsers>
+</RecipeDef>
+
+</RecipeDefs>

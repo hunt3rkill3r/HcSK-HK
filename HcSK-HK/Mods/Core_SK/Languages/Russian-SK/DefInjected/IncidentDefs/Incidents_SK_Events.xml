@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+	<OrassanBombardmentIncident.label>Орбитальная бомбардировка</OrassanBombardmentIncident.label>
+	<Swarm.label>Рой насекомых</Swarm.label>
+	<ZeonIncoming.label>Вторжение зеона</ZeonIncoming.label>
+	
+	<Accident.label>Несчастный случай</Accident.label>
+
+	<FeenixPasses.label>феникс</FeenixPasses.label> 
+	<IcicatPasses.label>кирин</IcicatPasses.label>
+
+	<RaptorPasses.label>рапторы</RaptorPasses.label> 
+	<TribeMigration.label>кочующее племя</TribeMigration.label>
+	<BoulderHit.label>падение метеорита</BoulderHit.label>
+	<BoulderMassHit.label>метеоритный дождь</BoulderMassHit.label>
+	<RazorRain.label>стальной дождь</RazorRain.label>
+	<HungryLocusts.label>саранча</HungryLocusts.label>
+	<MalariaRaid.label>москиты</MalariaRaid.label>
+	<FleaRaid.label>блохи</FleaRaid.label>
+	<Plunderers.label>расхитители</Plunderers.label>
+	<Earthquake.label>землетрясение</Earthquake.label>
+	<Flood.label>наводнение</Flood.label>
+	<AnimalGenocide.label>геноцид животных</AnimalGenocide.label>
+	<PrisonRiot.label>буйство заключённых</PrisonRiot.label>
+	<PrisonerRampage.label>ярость заключённых</PrisonerRampage.label>
+	<PrisonSuicide.label>самоубийство пленника</PrisonSuicide.label>
+	<NuclearIncident.label>ядерная авария</NuclearIncident.label>
+	<NuclearFallout.label>радиоактивные осадки</NuclearFallout.label>
+	<CosmicRadiation.label>космическая радиация</CosmicRadiation.label>
+	<AnimalMigration.label>миграция животных</AnimalMigration.label>
+	<Stroke.label>удар</Stroke.label>
+	<AccidentalExplosion.label>взрыв</AccidentalExplosion.label>
+	<SickNausea.label>тошнота</SickNausea.label>
+	<ColonistStash.label>заначка поселенца</ColonistStash.label>
+	<EclipseFeral.label>затмение</EclipseFeral.label>
+	<EclipseMeteorImpact.label>метеоритное затмение</EclipseMeteorImpact.label>
+	<MysteriousTransmission.label>странный сигнал</MysteriousTransmission.label>
+	<Darkness.label>тьма</Darkness.label>
+	<PermanentDarkness.label>перманентная тьма</PermanentDarkness.label>
+	<MajorRescue.label>спасение</MajorRescue.label>
+	<UnexpectedGuest.label>нежданный гость</UnexpectedGuest.label>
+	<HiddenResources.label>спрятанные ресурсы</HiddenResources.label>
+	<OrassianFound.label>нашли фелидэ</OrassianFound.label>
+</LanguageData>

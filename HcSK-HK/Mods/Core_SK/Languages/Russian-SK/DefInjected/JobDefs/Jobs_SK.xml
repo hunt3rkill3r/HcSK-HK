@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<WatchGlassTelevision.reportString>смотрит фильмы.</WatchGlassTelevision.reportString>
+	<LockerBasic.reportString>идет к запирающемуся шкафчику.</LockerBasic.reportString>
+	<ColorChanger.reportString>наряжается.</ColorChanger.reportString>
+	<HSC.reportString>наводит марафет.</HSC.reportString>
+	<BeatFireWithTool.reportString>тушит пожар.</BeatFireWithTool.reportString>
+	<RepairItem.reportString>ремонтирует TargetB.</RepairItem.reportString>
+	<Abuse.reportString>оскорбляет TargetA.</Abuse.reportString>
+	
+</LanguageData>

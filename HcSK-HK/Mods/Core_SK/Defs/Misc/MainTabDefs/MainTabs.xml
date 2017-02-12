@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <MainTabDef>
+        <defName>Research</defName>
+        <label>research</label>
+        <description>Examine and decide on research projects.</description>
+        <windowClass>SK.MainTabWindow_Research</windowClass>
+        <order>90</order>
+		<showTabButton>false</showTabButton>
+    </MainTabDef>
+
+</Defs>

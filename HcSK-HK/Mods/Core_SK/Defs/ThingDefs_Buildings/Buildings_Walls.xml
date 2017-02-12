@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+	<!--========================= Walls =============================-->
+
+	<ThingDef ParentName="BuildingBase" Name="WallBase" Abstract ="True">
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<linkType>CornerFiller</linkType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>550</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<blockWind>true</blockWind>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="WallBase">
+		<defName>WWall</defName>
+		<label>palisade</label>
+		<description>A palisade wall. Cheaper and easier to build than thick log wall, can't hold roof and more fragile.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/Palisade/Palisade_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkFlags>
+				<li>Custom1</li>
+			</linkFlags>
+			<linkType>Basic</linkType>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/Palisade/Palisade_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<designationHotKey>Misc1</designationHotKey>
+	</ThingDef>
+	
+	<ThingDef ParentName="WallBase">
+		<defName>WallLog</defName>
+		<label>wall</label>
+		<description>A wall made of logs stacked together. Strong and very fast to build, but it is flammable and does not transmit power.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/WallLog_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Walls/WallLog_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>7</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="WallBase">
+		<defName>Wall</defName>
+		<label>stone wall</label>
+		<description>An impassable wall. It is capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/AdobeWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Walls/AdobeWall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Walls/AdobeWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>380</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="WallBase">
+		<defName>MWall</defName>
+		<label>metallic wall</label>
+		<description>An impassable wall. It is capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/Wall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>8</costStuffCount>
+		<designationHotKey>Misc1</designationHotKey>
+		<researchPrerequisites><li>SK_ConstructionI</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="WallBase">
+		<defName>RWall</defName>
+		<label>reinforced wall</label>
+		<description>An impassable wall. It is capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/CWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Walls/CWall_ico</uiIconPath>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<ReinforcedConcrete>7</ReinforcedConcrete>
+		</costList>
+		<researchPrerequisites><li>SK_ConstructionII</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="WallBase">
+		<defName>GWall</defName>
+		<label>wall</label>
+		<description>An impassable glass wall. It is capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/GlassWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>0.2</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Glass</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<Component>2</Component>
+		</costList>
+		<blockLight>false</blockLight>
+		<filthLeaving>BrokenGlass</filthLeaving>
+		<researchPrerequisites><li>SK_GlassworkingII</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="WallBase">
+		<defName>Snowywall</defName>
+		<label>snow wall</label>
+		<description>A wall made from packed snow. Weak and very fast to build, but does not transmit power. It can melt if the temperature is not freezing or below.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/Wall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<CostList>
+			<Snow>6</Snow>
+		</CostList>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li>
+				<compClass>CompMelter</compClass>
+			</li>
+		</comps>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<building>
+			<repairable>false</repairable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="WallBase">
+		<defName>Fence</defName>
+		<label>fence</label>
+		<description>A fence adds a distinctive touch to outdoor settings, partitioning segments of land and acting as less imposing barrier than a large wall. While it won't stop any pesky critters, it will help beautify the area and encourage people to walk around, within reason.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/Fence_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom4</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/Fence_MenuIcon</uiIconPath>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Walls/Fence_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>4</costStuffCount>
+		<pathCost>150</pathCost>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.2</fillPercent>
+		<coversFloor>false</coversFloor>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>0.30</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<blockWind>false</blockWind>
+		<researchPrerequisites><li>SK_Agriculture</li></researchPrerequisites>
+	</ThingDef>
+
+
+	<ThingDef ParentName="WallBase">
+		<defName>WallLighted</defName>
+		<label>motion sensor lit wall</label>
+		<description>A lit wall with a built in power conduit and a motion sensor! The lights on this wall will only turn on when something moves nearby, like a colonist. If no movement is detected, the lights will turn off.</description>
+		<graphicData>
+			<texPath>Things/Building/Walls/WallLights_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/WallLights_MenuIcon</uiIconPath>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>950</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<CostList>
+			<Glass>2</Glass>
+			<ElectronicComponents>1</ElectronicComponents>
+			<Component>1</Component>
+			<Wire>1</Wire>
+		</CostList>
+		<Comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+				<basePowerConsumption>25</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+			<li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<idlePowerFactor>0.1</idlePowerFactor>
+				<operationalMode>WhenNear</operationalMode>
+			</li>
+		</Comps>
+		<building>
+			<ignoreNeedsPower>false</ignoreNeedsPower>
+		</building>
+		<researchPrerequisites><li>SK_ConstructionII</li></researchPrerequisites>
+	</ThingDef>
+
+
+	<ThingDef ParentName="WallBase">
+		<defName>ClutterSilverWall</defName>
+		<label>panel reinforced wall</label>
+		<description>A reinforced wall with thick panels attached to strengthen it further.</description>
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Building/Walls/SilverWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Walls/SilverWallIco</uiIconPath>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<tickerType>Never</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Component>2</Component>
+			<ReinforcedConcrete>5</ReinforcedConcrete>
+		</costList>
+		<researchPrerequisites><li>SK_ConstructionIII</li></researchPrerequisites>
+	</ThingDef>
+
+
+	<ThingDef ParentName="WallBase">
+		<defName>ClutterUWallLight</defName>
+		<label>utility wall with lights</label>
+		<Description>Upgraded version of basic walls, with the ability to easily attach things, like centuries old dust! This version comes with lights to show off your beautiful dust collection.</Description>
+		<graphicData>
+			<texPath>Things/Building/Walls/UWallYellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Walls/UWallIco</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>12</costStuffCount>
+		<costList>
+			<Wire>3</Wire>
+			<Glass>5</Glass>
+			<ElectronicComponents>1</ElectronicComponents>
+		</costList>
+		<building>
+			<ignoreNeedsPower>false</ignoreNeedsPower>
+		</building>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<compClass>CompGlower</compClass>
+				<glowRadius>5</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+				<basePowerConsumption>25</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites><li>SK_ConstructionIII</li></researchPrerequisites>
+	</ThingDef>
+
+	<!--========================= Roof Support ============================= -->
+
+	<ThingDef ParentName="BuildingBase" Name="RoofSupport">
+		<defName>RoofSupport</defName>
+		<label>roof support</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>A structural column capable of holding up a roof. It does not impede movement or provide cover.</description>
+		<graphicData>
+			<texPath>Things/Building/RoofSupport</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Flammability>0.2</Flammability>
+			<Beauty>6</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0</fillPercent>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<blockLight>false</blockLight>
+		<specialDisplayRadius>5.9</specialDisplayRadius>
+		<researchPrerequisites><li>SK_ConstructionI</li></researchPrerequisites>
+	</ThingDef>
+
+</Buildings>

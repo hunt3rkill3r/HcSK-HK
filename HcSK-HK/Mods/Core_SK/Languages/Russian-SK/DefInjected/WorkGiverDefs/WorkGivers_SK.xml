@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<!-- 
+	label - отображается названием в расширенных приоритетах. 
+	verb - отображается при наведении в расширенных приоритетах.
+	gerund - отображается при прямом приказе (клике правой кнопкой). С заглавной буквы.
+-->
+	<DoBillsTableElectronics.label>делать электронику</DoBillsTableElectronics.label>
+	<DoBillsTableElectronics.verb>делает электронику, используя</DoBillsTableElectronics.verb>
+	<DoBillsTableElectronics.gerund>Сделать электронику, используя</DoBillsTableElectronics.gerund>
+
+	<DoBillsTableLoom.label>прясть ткани</DoBillsTableLoom.label>
+	<DoBillsTableLoom.verb>прясть ткань</DoBillsTableLoom.verb>
+	<DoBillsTableLoom.gerund>Прясть ткань, используя</DoBillsTableLoom.gerund>
+
+	<DoBillsTableComposter.label>работать с компостерами</DoBillsTableComposter.label>
+	<DoBillsTableComposter.verb>делает удобрения, используя</DoBillsTableComposter.verb>
+	<DoBillsTableComposter.gerund>сделать удобрение, используя</DoBillsTableComposter.gerund>
+
+	<DoBillsTableChemlab.label>работать в лаборатории</DoBillsTableChemlab.label>
+	<DoBillsTableChemlab.verb>работать в лаборатории</DoBillsTableChemlab.verb>
+	<DoBillsTableChemlab.gerund>работает</DoBillsTableChemlab.gerund>
+
+	<DoBillsTableOrganvat.label>использовать биочаны</DoBillsTableOrganvat.label>
+	<DoBillsTableOrganvat.verb>извлечь</DoBillsTableOrganvat.verb>
+	<DoBillsTableOrganvat.gerund>Извлечь, используя</DoBillsTableOrganvat.gerund>
+
+	<DoBillsSmeltMetal_Hand.label>плавить металлы</DoBillsSmeltMetal_Hand.label>
+	<DoBillsSmeltMetal_Hand.verb>плавить металл, используя</DoBillsSmeltMetal_Hand.verb>
+	<DoBillsSmeltMetal_Hand.gerund>Плавить металл, используя</DoBillsSmeltMetal_Hand.gerund>
+
+	<DoBillsMakeGlass.label>производить стёкла</DoBillsMakeGlass.label>
+	<DoBillsMakeGlass.verb>производит стекло, используя</DoBillsMakeGlass.verb>
+	<DoBillsMakeGlass.gerund>Производить стекло, используя</DoBillsMakeGlass.gerund>
+
+	<RepairItem.label>чинить</RepairItem.label>
+	<RepairItem.verb>чинить</RepairItem.verb>
+	<RepairItem.gerund>Чинить</RepairItem.gerund>
+
+	<DoBillsTableGrill.label>готовить на гриле</DoBillsTableGrill.label>
+	<DoBillsTableGrill.verb>готовить</DoBillsTableGrill.verb>
+	<DoBillsTableGrill.gerund>Готовить, используя</DoBillsTableGrill.gerund>
+
+	<DoBillsMakeWoodPlanks.label>работать с деревом</DoBillsMakeWoodPlanks.label>
+	<DoBillsMakeWoodPlanks.verb>работать</DoBillsMakeWoodPlanks.verb>
+	<DoBillsMakeWoodPlanks.gerund>Работать, используя</DoBillsMakeWoodPlanks.gerund>
+
+	<DoBillsKiln.label>работать с горном</DoBillsKiln.label>
+	<DoBillsKiln.verb>работать</DoBillsKiln.verb>
+	<DoBillsKiln.gerund>Работать, используя</DoBillsKiln.gerund>
+
+	<DoBillsRobassem.label>работать на роботизированном станке</DoBillsRobassem.label>
+	<DoBillsRobassem.verb>работать</DoBillsRobassem.verb>
+	<DoBillsRobassem.gerund>Работать</DoBillsRobassem.gerund>
+
+	<DoBillsMatterfab.label>работать с фабрикатором</DoBillsMatterfab.label>
+	<DoBillsMatterfab.verb>работать</DoBillsMatterfab.verb>
+	<DoBillsMatterfab.gerund>Работать</DoBillsMatterfab.gerund>
+
+	<DoBillsConvert.label>конвертировать материю</DoBillsConvert.label>
+	<DoBillsConvert.verb>конвертировать</DoBillsConvert.verb>
+	<DoBillsConvert.gerund>Конвертировать материю, используя</DoBillsConvert.gerund>
+
+	<DoBillsMediTable.label>работать с медицинским столом</DoBillsMediTable.label>
+	<DoBillsMediTable.verb>работать</DoBillsMediTable.verb>
+	<DoBillsMediTable.gerund>Работать, используя</DoBillsMediTable.gerund>
+
+	<CollectSand.label>собирать песок</CollectSand.label>
+	<CollectSand.verb>собирать</CollectSand.verb>
+	<CollectSand.gerund>Собрать песок</CollectSand.gerund>
+
+	<CollectClay.label>собирать глину</CollectClay.label>
+	<CollectClay.verb>собирать</CollectClay.verb>
+	<CollectClay.gerund>Собрать глину</CollectClay.gerund>
+
+	<CollectPeat.label>собирать торф</CollectPeat.label>
+	<CollectPeat.verb>собирать</CollectPeat.verb>
+	<CollectPeat.gerund>Собирать торф</CollectPeat.gerund>
+
+	<CollectCrushedstone.label>собирать щебень</CollectCrushedstone.label>
+	<CollectCrushedstone.verb>собирать</CollectCrushedstone.verb>
+	<CollectCrushedstone.gerund>Собрать щебень</CollectCrushedstone.gerund>
+
+	<CollectSnow.label>собирать снег</CollectSnow.label>
+	<CollectSnow.verb>Собирать</CollectSnow.verb>
+	<CollectSnow.gerund>Собрать снег</CollectSnow.gerund>
+
+	<DoBillsCookPro.label>готовить на профессиональной плите</DoBillsCookPro.label>
+	<DoBillsCookPro.verb>готовить</DoBillsCookPro.verb>
+	<DoBillsCookPro.gerund>Готовить, используя</DoBillsCookPro.gerund>
+
+	<DoBillsBake.label>печь на верстаке</DoBillsBake.label>
+	<DoBillsBake.verb>печь</DoBillsBake.verb>
+	<DoBillsBake.gerund>Печь, используя</DoBillsBake.gerund>
+
+	<DoBillsTableOven.label>готовить в духовке</DoBillsTableOven.label>
+	<DoBillsTableOven.verb>готовить</DoBillsTableOven.verb>
+	<DoBillsTableOven.gerund>Готовить, используя</DoBillsTableOven.gerund>
+
+	<DoBillsBioRefinery.label>работать с биопереработчиком</DoBillsBioRefinery.label>
+	<DoBillsBioRefinery.verb>извлекать</DoBillsBioRefinery.verb>
+	<DoBillsBioRefinery.gerund>Извлекать, используя</DoBillsBioRefinery.gerund>
+
+	<MineQuarry.label>работать в карьере</MineQuarry.label>
+	<MineQuarry.verb>добывать</MineQuarry.verb>
+	<MineQuarry.gerund>Добывать</MineQuarry.gerund>
+
+	<RefuelBurner.label>заправлять топливом</RefuelBurner.label>
+	<RefuelBurner.verb>заправить топливом</RefuelBurner.verb>
+	<RefuelBurner.gerund>Заправить топливом</RefuelBurner.gerund>
+
+	<HaulPriorityHighPriorityOverride.label>переносить высокий приоритет переноски</HaulPriorityHighPriorityOverride.label>
+	<HaulPriorityHighPriorityOverride.verb>переносить</HaulPriorityHighPriorityOverride.verb>
+	<HaulPriorityHighPriorityOverride.gerund>Перенести</HaulPriorityHighPriorityOverride.gerund>
+
+	<HaulPriorityMisc.label>переносить приоритетную переноску</HaulPriorityMisc.label>
+	<HaulPriorityMisc.verb>переносить</HaulPriorityMisc.verb>
+	<HaulPriorityMisc.gerund>Перенести</HaulPriorityMisc.gerund>
+
+	<DoBillsRecycle.label>перерабатывать одежду</DoBillsRecycle.label>
+	<DoBillsRecycle.verb>перерабатывать</DoBillsRecycle.verb>
+	<DoBillsRecycle.gerund>Переработать</DoBillsRecycle.gerund>
+
+	<DoBillsTableSurrogates.label>производить протезы</DoBillsTableSurrogates.label>
+	<DoBillsTableSurrogates.verb>работать</DoBillsTableSurrogates.verb>
+	<DoBillsTableSurrogates.gerund>Работать, используя</DoBillsTableSurrogates.gerund>
+
+	<DoBillsMixconcrete.label>замешивать бетон</DoBillsMixconcrete.label>
+	<DoBillsMixconcrete.verb>смешивать</DoBillsMixconcrete.verb>
+	<DoBillsMixconcrete.gerund>Смешивать бетон, используя</DoBillsMixconcrete.gerund>
+
+	<DoBillChemicalLab.label>работать на хим. станции</DoBillChemicalLab.label>
+	<DoBillChemicalLab.verb>работать</DoBillChemicalLab.verb>
+	<DoBillChemicalLab.gerund>Работать, используя</DoBillChemicalLab.gerund>
+
+	<DoBillsWeaponCraftingWorkTable.label>изготавливать оружие</DoBillsWeaponCraftingWorkTable.label>
+	<DoBillsWeaponCraftingWorkTable.verb>Собирать</DoBillsWeaponCraftingWorkTable.verb>
+	<DoBillsWeaponCraftingWorkTable.gerund>Собрать оружие</DoBillsWeaponCraftingWorkTable.gerund>
+
+	<DoBillsSoylent.label>преобразовывать в сойлент</DoBillsSoylent.label>
+	<DoBillsSoylent.verb>делать</DoBillsSoylent.verb>
+	<DoBillsSoylent.gerund>Делать сойлент, используя</DoBillsSoylent.gerund>
+
+	<DoBillsMakePainting.label>рисовать на холсте</DoBillsMakePainting.label>
+	<DoBillsMakePainting.verb>рисовать</DoBillsMakePainting.verb>
+	<DoBillsMakePainting.gerund>Рисовать, используя</DoBillsMakePainting.gerund>
+
+	<DoBillsCanningstove.label>делать консервы</DoBillsCanningstove.label>
+	<DoBillsCanningstove.verb>делать</DoBillsCanningstove.verb>
+	<DoBillsCanningstove.gerund>Делать консервы, используя</DoBillsCanningstove.gerund>
+
+	<DoBillsCoffee.label>готовить кофе</DoBillsCoffee.label>
+	<DoBillsCoffee.verb>готовить</DoBillsCoffee.verb>
+	<DoBillsCoffee.gerund>Приготовить кофе, используя</DoBillsCoffee.gerund>
+	
+</LanguageData>

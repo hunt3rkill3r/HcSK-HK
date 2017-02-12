@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Oilfield -->
+  <GenStepDef>
+    <defName>Oilfield</defName>
+    <mapGenerator>BasicMapGenerator</mapGenerator>
+    <order>502</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>Oilfield</thingDef>
+			<allowOnWater>false</allowOnWater>
+			<minSpacing>25</minSpacing>
+      <extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+      <countPer10kCellsRange>
+        <min>0.5</min>
+        <max>0.7</max>
+      </countPer10kCellsRange>
+      <clearSpaceSize>30</clearSpaceSize>
+      <neededTerrainAffordance>Heavy</neededTerrainAffordance>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>4</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_NoNonNaturalEdifices">
+          <radius>4</radius>
+        </li>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+  <!-- Mineral deposits -->
+  <GenStepDef>
+    <defName>MineralDeposits</defName>
+    <mapGenerator>BasicMapGenerator</mapGenerator>
+    <order>503</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>MineralDeposits</thingDef>
+			<allowOnWater>false</allowOnWater>
+			<minSpacing>25</minSpacing>
+      <extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+      <countPer10kCellsRange>
+        <min>1.5</min>
+        <max>2.5</max>
+      </countPer10kCellsRange>
+      <clearSpaceSize>30</clearSpaceSize>
+      <neededTerrainAffordance>Heavy</neededTerrainAffordance>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>4</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_NoNonNaturalEdifices">
+          <radius>4</radius>
+        </li>
+      </validators>
+    </genStep>
+  </GenStepDef>
+  
+  <!-- Rare mineral deposits -->
+  <GenStepDef>
+    <defName>RareMineralDeposits</defName>
+    <mapGenerator>BasicMapGenerator</mapGenerator>
+    <order>504</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>RareMineralDeposits</thingDef>
+			<allowOnWater>false</allowOnWater>
+			<minSpacing>25</minSpacing>
+      <extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+      <countPer10kCellsRange>
+        <min>0.4</min>
+        <max>0.6</max>
+      </countPer10kCellsRange>
+      <clearSpaceSize>30</clearSpaceSize>
+      <neededTerrainAffordance>Heavy</neededTerrainAffordance>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>4</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_NoNonNaturalEdifices">
+          <radius>4</radius>
+        </li>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

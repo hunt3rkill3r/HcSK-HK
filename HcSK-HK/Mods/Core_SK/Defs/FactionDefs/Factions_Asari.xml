@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+
+	<FactionDef>
+	<defName>UnitedAsariFleet</defName>
+	<label>United Asari Republic</label>
+    <description>A fleet of asari ships.\n\nAfter finding themselves in this galaxy without any memorie from where they came from, the asaris are searching the galaxy for who they are and where they came from. Traveling like nomads, they usually dont settle down on planets. They are untrusting of humans, since their technology seems to be far superior.</description>
+    <pawnsPlural>asaris</pawnsPlural>
+    <factionBaseSelectionWeight>1</factionBaseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>80</raidCommonality>
+    <canSiege>false</canSiege>
+    <autoFlee>true</autoFlee>
+    <hidden>true</hidden>
+    <canStageAttacks>true</canStageAttacks>
+    <pawnNameMaker>NamerPersonAsari</pawnNameMaker>
+    <leaderTitle>Ancient</leaderTitle>
+	<earliestRaidDays>260</earliestRaidDays>
+    <expandingIconTexture>UI/Icons/Factions/Asari</expandingIconTexture>
+    <colorSpectrum>
+      <li>(0.45, 0.03, 0.02)</li>
+      <li>(0.8, 0.08, 0.18)</li>
+      <li>(0.92, 0.62, 0.06)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-50</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+		<factionNameMaker>NamerFactionPirate</factionNameMaker>
+    <factionBaseNameMaker>NamerFactionBasePirate</factionBaseNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategory>Asaris</backstoryCategory>
+	<hairTags>
+		<li>AsariHair</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-50</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <factionBaseTraderKinds>
+      <li>FactionBase_Outlander_Standard</li>
+    </factionBaseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-60</min>
+      <max>50</max>
+    </allowedArrivalTemperatureRange>
+    <apparelStuffFilter>
+	<categories>
+		<li>Leathers</li>
+	</categories>
+    <thingDefs>
+        <li>DevilstrandCloth</li>
+		<li>Kevlar</li>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+		<li>FerrosiliconAlloy</li>
+        <li>CupronickelAlloy</li>
+        <li>Plasteel</li>
+        <li>AlnicoAlloy</li>
+		<li>NichromeAlloy</li>
+        <li>StelliteAlloy</li>
+    </thingDefs>
+    </apparelStuffFilter>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <commonality>100</commonality>
+		<disallowedStrategies>
+          <li>StageThenAttack</li>
+          <li>ImmediateAttackSappers</li>
+          <li>Siege</li>		  
+        </disallowedStrategies>
+        <options>
+          <AsariCrewMember>100</AsariCrewMember>
+          <AsariSupremeAdmiral>20</AsariSupremeAdmiral>
+          <AsariCommando>15</AsariCommando>
+          <AsariInfiltrator>45</AsariInfiltrator>
+        </options>
+      </li>
+      <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <AsariCrewMember>100</AsariCrewMember>
+          <AsariSupremeAdmiral>20</AsariSupremeAdmiral>
+          <AsariCommando>15</AsariCommando>
+          <AsariInfiltrator>45</AsariInfiltrator>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+  </FactionDef>
+
+</FactionDefs>

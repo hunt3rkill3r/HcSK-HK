@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+ <ThingDef Name="EventBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<menuHidden>true</menuHidden>
+	<graphicData>
+	  <texPath>Inv</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+	</graphicData>
+	<altitudeLayer>Filth</altitudeLayer>
+	<passability>Standable</passability>
+	<selectable>false</selectable>
+	<useHitPoints>false</useHitPoints>
+	<tickerType>Normal</tickerType>
+	<label>unspecified filth</label>
+	<description>Ticker</description>
+	<size>(1,1)</size>
+	<fillPercent>0</fillPercent>
+	<castEdgeShadows>false</castEdgeShadows>
+	<statBases>
+	  <Flammability>0</Flammability>
+	  <Beauty>0</Beauty>
+	</statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>FWcounter</defName>
+		<thingClass>SK.Events.Ticker_FWcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>GENcounter</defName>
+		<thingClass>SK.Events.Ticker_GENcounter</thingClass>
+  </ThingDef>
+
+  <ThingDef ParentName="EventBase">
+		<defName>EQcounter</defName>
+		<thingClass>SK.Events.Ticker_EQcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>RPcounter</defName>
+		<thingClass>SK.Events.Ticker_RPcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>MTcounter</defName>
+		<thingClass>SK.Events.Ticker_MTcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>MDcounter</defName>
+		<thingClass>SK.Events.Ticker_MDcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>MTRcounter</defName>
+		<thingClass>SK.Events.Ticker_MTRcounter</thingClass>
+  </ThingDef>
+    
+  <ThingDef ParentName="EventBase">
+		<defName>BVcounter</defName>
+		<thingClass>SK.Events.Ticker_BVcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>SDcounter</defName>
+		<thingClass>SK.Events.Ticker_SDcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>SScounter</defName>
+		<thingClass>SK.Events.Ticker_SScounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>SCcounter</defName>
+		<thingClass>SK.Events.Ticker_SCcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>PCcounter</defName>
+		<thingClass>SK.Events.Ticker_PCcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>RADcounter</defName>
+		<thingClass>SK.Events.Ticker_RADcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>NFcounter</defName>
+		<thingClass>SK.Events.Ticker_NFcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+		<defName>ORcounter</defName>
+		<thingClass>SK.Events.Ticker_ORcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+    <defName>ACcounter</defName>
+    <thingClass>SK.Events.AnimalCorpsesGenerator</thingClass>
+  </ThingDef>
+
+  <ThingDef ParentName="EventBase">
+    <defName>VCcounter</defName>
+    <thingClass>SK.Events.VillagerCorpsesGenerator</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+    <defName>LCcounter</defName>
+		<thingClass>SK.Events.Ticker_LCcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="EventBase">
+    <defName>SWcounter</defName>
+		<thingClass>SK.Events.Ticker_SWcounter</thingClass>
+  </ThingDef>
+  
+  <ThingDef Class="SK.ThingDef_ItemRAD" ParentName="EventBase">
+		<defName>CosmicRAD</defName>
+		<label>radiation filth</label>
+		<thingClass>SK.BuildingRAD</thingClass>
+        <filthLeaving>BuildingRubble</filthLeaving>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>6</glowRadius>
+			<glowColor>(5,30,5,5)</glowColor>
+		  </li>
+		  <li Class="CompProperties_Lifespan">
+			<lifespanTicks>30500</lifespanTicks>
+		  </li>
+		</comps>
+		<DamageAppliedSeverityMin>0.005</DamageAppliedSeverityMin>
+		<DamageAppliedSeverityMax>0.01</DamageAppliedSeverityMax>
+		<ThingDamageAppliedMin>-4</ThingDamageAppliedMin>
+		<ThingDamageAppliedMax>1</ThingDamageAppliedMax>
+		<terrainradfrequency>5000</terrainradfrequency>
+		<radfrequency>1500</radfrequency>
+		<radiationRadius>6</radiationRadius>
+  </ThingDef>
+  
+  <ThingDef Class="SK.ThingDef_ItemRAD" ParentName="EventBase">
+		<category>Building</category>
+		<defName>NFRAD</defName>
+		<label>radiation filth</label>
+		<thingClass>SK.BuildingRAD</thingClass>
+        <filthLeaving>BuildingRubble</filthLeaving>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>7</glowRadius>
+			<glowColor>(5,30,5,5)</glowColor>
+		  </li>
+		  <li Class="CompProperties_Lifespan">
+			<lifespanTicks>3000000</lifespanTicks>
+		  </li>
+		</comps>
+		<DamageAppliedSeverityMin>0.01</DamageAppliedSeverityMin>
+		<DamageAppliedSeverityMax>0.02</DamageAppliedSeverityMax>
+		<ThingDamageAppliedMin>-3</ThingDamageAppliedMin>
+		<ThingDamageAppliedMax>1</ThingDamageAppliedMax>
+		<terrainradfrequency>300</terrainradfrequency>
+		<radfrequency>700</radfrequency>
+		<radiationRadius>7</radiationRadius>
+  </ThingDef>
+  
+  <ThingDef>
+		<defName>NuclearStrikeIncoming</defName>
+		<category>Skyfaller</category>
+		<label>Razor Rain (Incoming!)</label>
+		<thingClass>SK.Events.NuclearStrikeIncoming</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+		  <texPath>Things/Building/Exotic/ShipChunk</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shaderType>Transparent</shaderType>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<altitudeLayer>Filth</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+   </ThingDef>
+   
+  <ThingDef>
+		<defName>RazorRainIncoming</defName>
+		<category>Skyfaller</category>
+		<label>Razor Rain (Incoming!)</label>
+		<thingClass>SK.Events.RazorRainIncoming</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Metal</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shaderType>CutoutFlying</shaderType>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+   </ThingDef>
+
+  
+	<ThingDef>
+		<defName>Thing_RazorSpawner</defName>
+		<label>Razor Spawner</label>
+		<thingClass>SK.Events.Thing_RazorSpawner</thingClass>
+		<graphicData>
+		  <texPath>Razor/entityspawn</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<menuHidden>true</menuHidden>
+	</ThingDef>
+  
+  <!--=============== Misc Resources ====================-->
+  
+  <ThingDef>
+    <defName>FloodWater</defName>
+    <label>Flood Water</label>
+    <thingClass>SK.Events.FloodWater</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+	  <texPath>Terrain/Surfaces/WaterShallow</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Mote</shaderType>
+    </graphicData> 
+    <altitudeLayer>Item</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+	<menuHidden>true</menuHidden>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>FloodSpread</defName>
+    <label>Flooder</label>
+    <thingClass>SK.Events.FloodSpread</thingClass>
+    <graphicData>
+	  <texPath>Filth/Washer</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+    </graphicData> 
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+	<menuHidden>true</menuHidden>
+    <neverMultiSelect>true</neverMultiSelect>
+    <projectile>
+      <speed>4</speed>
+      <soundHitThickRoof>Flood</soundHitThickRoof>
+      <soundExplode>Flood</soundExplode>
+      <soundImpactAnticipate>Flood</soundImpactAnticipate>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>VGlower</defName>
+    <label>light</label>
+    <Description></Description>
+    <graphicData>
+      <texPath>Inv</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <TickerType>Normal</TickerType>
+    <selectable>false</selectable>
+	<menuHidden>true</menuHidden>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <deconstructible>false</deconstructible>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(205,205,205,0)</glowColor>
+      </li>
+    </comps>
+	<statBases>
+      <Beauty>20</Beauty>
+    </statBases>
+  </ThingDef>
+ 
+</Buildings>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Norbhammer_Thrown.label>Молот одина</Norbhammer_Thrown.label>
+	
+	<Norbhammar.label>Молот одина</Norbhammar.label>
+	<Norbhammar.description>Мощная древняя взрывчатка.</Norbhammar.description>
+<!-- шоковая -->	
+<Proj_GrenadeFlashbang.label>Шоковая граната</Proj_GrenadeFlashbang.label>
+<Weapon_GrenadeFlashbang.label>Шоковая граната</Weapon_GrenadeFlashbang.label>
+<Weapon_GrenadeFlashbang.description>Шоковая граната на небольшое время оглушает врага.</Weapon_GrenadeFlashbang.description>
+  <rep>
+    <path>Weapon_GrenadeFlashbang.verbs[0].label</path>
+    <trans>метнуть шоковую гранату</trans>
+  </rep>	
+	
+<!-- зажигательная -->
+  <Proj_GrenadeFlame.label>Зажигательная граната</Proj_GrenadeFlame.label>
+<Weapon_GrenadeFlame.label>Зажигательная граната</Weapon_GrenadeFlame.label>
+<Weapon_GrenadeFlame.description>Сжатое соединение плазменных материалов, при взрыве хорошо сеет панику в рядах противника.</Weapon_GrenadeFlame.description>
+  <rep>
+    <path>Weapon_GrenadeFlame.verbs[0].label</path>
+    <trans>метнуть зажигательную гранату</trans>
+  </rep>
+	
+<!-- плазменная -->
+<Proj_GrenadePlasma.label>Плазменная граната</Proj_GrenadePlasma.label>
+<Weapon_GrenadePlasma.label>Плазменная граната</Weapon_GrenadePlasma.label>
+<Weapon_GrenadePlasma.description>Маленький, но очень убийственный взрыв плазмы, спасёт много жизней и решит много проблем.</Weapon_GrenadePlasma.description>
+  <rep>
+    <path>Weapon_GrenadePlasma.verbs[0].label</path>
+    <trans>метнуть плазменную гранату</trans>
+  </rep>
+
+ <!-- разрывная -->
+<Proj_GrenadeFusion.label>Разрывная граната</Proj_GrenadeFusion.label> 
+<Weapon_GrenadeFusion.label>Разрывная граната</Weapon_GrenadeFusion.label> 
+<Weapon_GrenadeFusion.description> Улучшенная кластерная граната с большим радиусом взрыва.</Weapon_GrenadeFusion.description> 
+<rep>
+    <path>Weapon_GrenadeFusion.verbs[0].label</path>
+    <trans>метнуть разрывную гранату</trans>
+  </rep> 
+	
+ 
+</LanguageData>

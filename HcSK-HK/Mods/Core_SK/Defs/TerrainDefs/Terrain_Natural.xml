@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<TerrainDef>
+		<defName>SoilRich</defName>
+		<label>rich soil</label>
+		<texturePath>Terrain/Surfaces/Soilnew</texturePath>
+		<Description>Soil that has been enriched with Compost to improve crop growth.
+Fertility: 150%.</Description>
+		<EdgeType>FadeRough</EdgeType>
+		<RenderPrecedence>335</RenderPrecedence>
+		<PathCost>10</PathCost>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<Fertility>1.5</Fertility>
+		<TakeFootprints>True</TakeFootprints>
+		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+		<constructEffect>ConstructDirt</constructEffect>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<CostList>
+			<Compost>10</Compost>
+		</CostList>
+		<researchPrerequisites><li>SK_SoilFertillizationI</li></researchPrerequisites>
+	</TerrainDef>
+
+  <TerrainDef>
+    <defName>Sand</defName>
+    <label>sand</label>
+	<Description>Sand is finely divided rock and mineral particles. Naturally found on beaches and deserts.
+Beauty: -1.</Description>
+    <texturePath>Terrain/Surfaces/Sand</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>350</RenderPrecedence>
+    <PathCost>4</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+	  <Cleanliness>-1</Cleanliness>
+      <WorkToBuild>1800</WorkToBuild>
+    </statBases>
+    <CostList>
+      <Sand>75</Sand>
+    </CostList>
+    <designationCategory>SK_category_terraform</designationCategory>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <ScatterType>SoftDry</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <Fertility>0.06</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+
+  <TerrainDef>
+    <defName>Mud</defName>
+    <label>mud</label>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>330</RenderPrecedence>
+    <PathCost>12</PathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Undefined</li>
+	  <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>Marsh</defName>
+    <label>marsh</label>
+    <texturePath>Terrain/Surfaces/Marshnew</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>325</RenderPrecedence>
+    <PathCost>27</PathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0.02</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+	<affordances>
+      <li>Undefined</li> <!-- added affordance undefined, needed for building with this modwith this mod-->
+	  <li>Diggable</li>
+    </affordances>
+  </TerrainDef>
+ 
+   <TerrainDef>
+    <defName>Gravel</defName>
+    <label>gravel</label>
+	<Description>Gravel is a composition of small rocks of varying sizes. Rubble can be gathered from it.
+Beauty: -1.</Description>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>320</RenderPrecedence>
+    <PathCost>5</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <ScatterType>Rocky</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0.5</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+</TerrainDefs>

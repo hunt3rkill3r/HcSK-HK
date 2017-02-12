@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+   
+   <ThingDef ParentName="CyberneticBodyPartBase">
+      <defName>CyberneticTail</defName>
+      <label>Cybernetic tail</label>
+      <description>An even better tail. It's almost like having a third hand!</description>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/CyberneticOrgan</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>6000</MarketValue>
+      </statBases>
+      <techHediffsTags>
+         <li>FuturisticParts</li>
+      </techHediffsTags>
+   </ThingDef>
+  
+</ThingDefs>

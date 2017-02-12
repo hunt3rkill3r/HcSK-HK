@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="PrimitiveFloorBase">
+		<PathCost>-2</PathCost>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<designationCategory>Floors</designationCategory>
+		<Fertility>0</Fertility>
+		<constructEffect>ConstructWood</constructEffect>
+		<AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</TerrainDef>
+
+  <!-- ================= Floors ================= -->
+
+  <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>TikiFloorBamboo</DefName>
+    <label>bamboo tiki floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A nice bamboo tiki floor. 
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/TikiFloorBamboo</texturePath>
+	<uiIconPath>Terrain/Surfaces/TikiFloorBambooIco</uiIconPath>
+    <CostList>
+      <Bamboo>4</Bamboo>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>TikiFloorDark</DefName>
+    <label>dark tiki floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A nice dark tiki floor. 
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/TikiFloorDark</texturePath>
+	<uiIconPath>Terrain/Surfaces/TikiFloorDarkIco</uiIconPath>
+    <CostList>
+      <WoodLog>4</WoodLog>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>TikiFloorLight</DefName>
+    <label>light tiki floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A nice light tiki floor.
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/TikiFloorLight</texturePath>
+	<uiIconPath>Terrain/Surfaces/TikiFloorLightIco</uiIconPath>	
+    <CostList>
+      <WoodLog>4</WoodLog>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>TikiFloorFancy</DefName>
+    <label>fancy tiki floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A nice fancy tiki floor with gold inlays.
+Beauty: 3.</Description>
+    <texturePath>Terrain/Surfaces/TikiFloorFancy</texturePath>
+	<uiIconPath>Terrain/Surfaces/TikiFloorFancyIco</uiIconPath>	
+    <statBases>
+		<WorkToBuild>700</WorkToBuild>
+		<Beauty>3</Beauty>
+	</statBases>
+	<CostList>
+      <WoodLog>4</WoodLog>
+      <Gold>1</Gold>
+      </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>LogFloor</DefName>
+    <label>log floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A simple log floor.
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/LogFloor</texturePath>
+	<uiIconPath>Terrain/Surfaces/LogFloorIco</uiIconPath>	
+    <CostList>
+      <WoodLog>4</WoodLog>
+      </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>ThatchFloor</DefName>
+    <label>thatch floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A primitive thatch floor.
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/ThatchFloor</texturePath>
+	<uiIconPath>Terrain/Surfaces/ThatchFloorIco</uiIconPath>	
+    <CostList>
+      <Hay>5</Hay>
+      </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+ <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>WeaveFloor</DefName>
+    <label>weave floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A nice woven floor.
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/WeaveFloor</texturePath>
+	<uiIconPath>Terrain/Surfaces/WeaveFloorIco</uiIconPath>	
+    <CostList>
+      <Hay>5</Hay>
+      </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+
+ <TerrainDef  ParentName="PrimitiveFloorBase">
+    <DefName>WovenLeafFloor</DefName>
+    <label>woven leaf floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>A nice woven leaf floor.
+Beauty: 1.</Description>
+    <texturePath>Terrain/Surfaces/WovenLeafFloor</texturePath>
+	<uiIconPath>Terrain/Surfaces/WovenLeafFloorIco</uiIconPath>	
+    <CostList>
+      <Hay>5</Hay>
+      </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+</TerrainDefs>

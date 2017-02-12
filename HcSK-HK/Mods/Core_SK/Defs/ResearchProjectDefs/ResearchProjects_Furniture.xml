@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Furniture ===================================-->
+
+
+  <ResearchProjectDef>
+    <defName>SK_Glowstone</defName>
+    <label>Glowstone lamps</label>
+    <description>Discover how to build beautiful lamps with the glowstones.</description>
+    <baseCost>350</baseCost>
+    <techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>SK_Craftsmanship</li>
+		</prerequisites>
+  </ResearchProjectDef>
+	<!-- 
+	GlowstoneLamp
+	-->
+
+  <ResearchProjectDef>
+    <defName>SK_DiningRoomI</defName>
+    <label>Dining room furniture I</label>
+    <description>It opens the possibility of building some new furniture for dining room, such as Long Table and Stool.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>SK_Craftsmanship</li>
+		</prerequisites>
+  </ResearchProjectDef>
+	<!-- 
+	Stool
+	Bench
+	TableLong
+	-->
+
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_DiningRoomII</defName>
+			<label>Dining room furniture II</label>
+			<description>It opens the possibility of building Dining Chair in dining room for comfort of your colonists.</description>
+			<baseCost>200</baseCost>
+			<techLevel>Neolithic</techLevel>
+				<prerequisites>
+					<li>SK_DiningRoomI</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+			<!--
+			DiningChair
+			RoundedTableLong
+			-->
+
+	  
+				  <ResearchProjectDef ParentName="IndustrialBase">
+					<defName>SK_DiningRoomIII</defName>
+					<label>Dining room furniture III</label>
+					<description>This research unlocks Modern Tables and Serving Tables fo dining room.</description>
+					<baseCost>550</baseCost>
+					<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>SK_DiningRoomII</li>
+							<li>SK_Technology</li>
+						</prerequisites>
+				  </ResearchProjectDef>
+				<!--
+				TeaTable
+				ClutterSmallTableModern
+				ClutterMediumTableModern
+				-->
+
+				  
+						  <ResearchProjectDef ParentName="HitechBase">
+							<defName>SK_DiningRoomIV</defName>
+							<label>Dining room furniture IV</label>
+							<description>This research unlocks Beauty Dining Chair fo dining room.</description>
+							<baseCost>850</baseCost>
+							<techLevel>Industrial</techLevel>
+								<prerequisites>
+									<li>SK_DiningRoomIII</li>
+								</prerequisites>
+						  </ResearchProjectDef>
+						<!--
+						PodChair
+						-->
+
+						  
+  <ResearchProjectDef>
+    <defName>SK_RecreationRoomI</defName>
+    <label>Recreation furniture room I</label>
+    <description>It opens methods of obtaining pleasure by constructing and playing in Archery Target and Horseshoe Pin.</description>
+    <baseCost>120</baseCost>
+    <techLevel>Neolithic</techLevel>
+  </ResearchProjectDef>
+	<!--
+	HorseshoesPin
+	Easel
+	ArcheryTarget
+	-->
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_RecreationRoomII</defName>
+			<label>Recreation furniture room II</label>
+			<description>Further advancements in pleasure give your colonists the ability to build some Boardgames, Bookcases and Couches.</description>
+			<baseCost>360</baseCost>
+			<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>SK_RecreationRoomI</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+				<!--
+				ClutterCouchA их два
+				ReversiTable
+				CardTable
+				Bookcase
+				ReadingTable
+				ChessTable
+				GoTable
+				-->
+	  
+				  <ResearchProjectDef ParentName="HitechBase">
+					<!--<defName>SK_RecreationRoomIII</defName>-->
+					<defName>TubeTelevision</defName>
+					<label>Recreation furniture room III</label>
+					<description>Even further advancements in pleasure give your colonists the ability to build some Billiards and Television.</description>
+					<baseCost>750</baseCost>
+					<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>SK_RecreationRoomII</li>
+							<li>MicroelectronicsBasics</li>
+						</prerequisites>
+				  </ResearchProjectDef>
+					<!--
+					JournalTable
+					BilliardsTable
+					TubeTelevision
+					Telescope
+					-->
+				  
+						  <ResearchProjectDef ParentName="HitechMultiBase">
+							<defName>SK_RecreationRoomIV</defName>
+							<label>Recreation furniture room IV</label>
+							<description>Final research in pleasure and rest unlocks Glasswork TV and Telescope.</description>
+							<baseCost>1200</baseCost>
+							<techLevel>Industrial</techLevel>
+								<prerequisites>
+									<li>TubeTelevision</li>
+								</prerequisites>
+						  </ResearchProjectDef>
+							<!--
+							SixSixRoundRug
+							GlassMonitorLarge
+							FlatscreenTelevision
+							MegascreenTelevision
+							
+							HoloEmitter 
+							HoloFlyingDots 
+							HoloSciSign
+							-->  
+						
+						  
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>SK_BedroomI</defName>
+    <label>Medieval bedroom furniture</label>
+    <description>It opens methods of obtaining rest in bedrooms by constructing Comfy Bed and End Table.</description>
+    <baseCost>350</baseCost>
+    <techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>SK_Craftsmanship</li>
+		</prerequisites>
+	<tags>
+		<li>ClassicStart</li>
+	</tags>
+  </ResearchProjectDef>
+			<!-- 
+			Medieval_single_bed
+			Medieval_double_bed
+			EndTableSimple
+			ClutterStylist
+			OneOneSquareRug
+			-->
+
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_BedroomRenaissance</defName>
+			<label>Renaissance bedroom furniture</label>
+			<description>Renaissance bedroom advancements in rest give your colonists the ability to build some Comfortable Beds and Reading Tables.</description>
+			<baseCost>550</baseCost>
+			<techLevel>Medieval</techLevel>
+				<prerequisites>
+					<li>SK_BedroomI</li>
+				</prerequisites>
+			<tags>
+				<li>ClassicStart</li>
+			</tags>
+		  </ResearchProjectDef>
+		  	<!-- 
+			Bed
+			DoubleBed
+			Dresser
+			ComfyBed
+			-->	
+			
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_BedroomII</defName>
+			<label>Royal bedroom furniture</label>
+			<description>Royal bedroom advancements in rest give your colonists the ability to build some Comfortable Beds and Reading Tables.</description>
+			<baseCost>650</baseCost>
+			<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>SK_BedroomRenaissance</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+		  	<!-- 
+			TwoTwoSquareRug
+			ThreeThreeSquareRug
+			RoyalBed
+			Commode
+			-->
+			
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_BedroomIndustrial</defName>
+			<label>Industrial bedroom furniture</label>
+			<description>Industrial bedroom advancements in rest give your colonists the ability to build some Comfortable Beds and Reading Tables.</description>
+			<baseCost>780</baseCost>
+			<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>SK_Technology</li>
+					<li>SK_BedroomII</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+		  	<!-- 
+			industrial_single_bed
+			industrial_double_bed
+			prison_single_bed_LB
+			prison_single_bed_RT
+			-->
+	  
+				  <ResearchProjectDef ParentName="IndustrialBase">
+					<defName>SK_BedroomIII</defName>
+					<label>Luxury bedroom furniture</label>
+					<description>Even further advancements in rest give your colonists the ability to build some Armchairs and Luxury Beds.</description>
+					<baseCost>850</baseCost>
+					<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>SK_BedroomIndustrial</li>
+						</prerequisites>
+				  </ResearchProjectDef>
+					<!--
+					FourFourSquareRug
+					FiveFiveSquareRug
+					EndTable
+					Armchair
+					bedred
+					bedgreen
+					bedblue
+					royalbedred
+					royalbedgreen
+					royalbedblue
+					-->
+				  
+						  <ResearchProjectDef ParentName="HitechMultiBase">
+							<defName>SK_BedroomIV</defName>
+							<label>Nanoelectronics bedroom</label>
+							<description>Nanoelectronics research in pleasure and rest unlocks Comfy Seats and Stylish Beds.</description>
+							<baseCost>1200</baseCost>
+							<techLevel>Industrial</techLevel>
+								<prerequisites>
+									<li>SK_BedroomIII</li>
+									<li>SK_BionicsI</li>
+								</prerequisites>
+						  </ResearchProjectDef>
+						  	<!-- 
+							SixSixSquareRug
+							SevenSevenSquareRug
+							PodBed
+							ClutterBedA
+							ClutterEkieBed
+							-->
+									
+								  <ResearchProjectDef ParentName="HitechMultiBase">
+									<defName>SK_BedroomV</defName>
+									<label>Space bedroom furniture</label>
+									<description>Space research in pleasure and rest unlocks space and cryo beds.</description>
+									<baseCost>1500</baseCost>
+									<techLevel>Industrial</techLevel>
+										<prerequisites>
+											<li>SK_BedroomIV</li>
+											<li>SK_BionicsIII</li>
+										</prerequisites>
+								  </ResearchProjectDef>
+									<!-- 
+										space_single_bed
+										cryo_double_bed
+										space_double_bed
+										cryo_single_bed
+									-->
+
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>SK_ErgonomicsI</defName>
+    <label>Ergonomics I</label>
+    <description>Advanced research in ergonomics allows building and construction of Small Tool Cabinet and some Cooking Tools to speed up work.</description>
+    <baseCost>150</baseCost>
+	<techLevel>Industrial</techLevel>
+	<prerequisites>
+		<li>SK_MachiningII</li>
+	</prerequisites>
+  </ResearchProjectDef>
+	<!-- 
+	Small_ToolCabinet
+	CookingTools
+	-->
+
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_ErgonomicsII</defName>
+			<label>Ergonomics II</label>
+			<description>Further research in ergonomics allows building and construction of File Cabinet and some Tool Cabinet to speed up work.</description>
+			<baseCost>500</baseCost>
+			<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>SK_ErgonomicsI</li>
+					<li>ComponentAssembly</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+					<!-- 
+					FileCabinet
+					Patterner
+					-->
+	  
+				  <ResearchProjectDef ParentName="HitechBase">
+					<!-- <defName>SK_ErgonomicsIII</defName>-->
+					<defName>MultiAnalyzer</defName>
+					<label>Ergonomics III</label>
+					<description>Even further research in ergonomics allows building and construction of Multi Analyzer.</description>
+					<baseCost>1400</baseCost>
+					<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>SK_ErgonomicsII</li>
+							<li>SK_ElectronicsIII</li>
+						</prerequisites>
+				  </ResearchProjectDef>
+					<!-- 
+					ToolCabinet
+					MultiAnalyzer
+					-->
+  
+  <ResearchProjectDef>
+    <defName>SK_HygleneI</defName>
+    <label>Hyglene I</label>
+    <description>This allows colonists to build crematoriums, which can incinerate unwanted corpses, apparel and materials.</description>
+    <baseCost>120</baseCost>
+    <techLevel>Neolithic</techLevel>
+  </ResearchProjectDef>
+		<!-- 
+		OneTwoRunner
+		OneThreeRunner
+		OneFourRunner
+		Kiln
+		-->
+		
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<!--<defName>SK_HygleneII</defName>-->
+			<defName>ElectricCremation</defName>
+			<label>Hyglene II</label>
+			<description>This allows colonists to build electric crematoriums, which can incinerate unwanted corpses, apparel and materials faster.</description>
+			<baseCost>350</baseCost>
+			<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>SK_HygleneI</li>
+					<li>ElectricSmelting</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+			<!-- 
+			OneFiveRunner Six Seven
+			ElectricCrematorium
+			ClutterTrashBin
+			-->
+
+  <ResearchProjectDef>
+    <defName>SK_StorageI</defName>
+    <label>Storage I</label>
+    <description>"So where did I put this pistol? What a mess!" \n Unlocks Feeding Bowl, Hamper and Pallet.</description>
+    <baseCost>130</baseCost>
+    <techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>SK_Craftsmanship</li>
+		</prerequisites>
+  </ResearchProjectDef>
+	<!--
+	Storage_WoodenPalletSmall
+	Storage_FabricHamper
+	EquipmentRack
+	ClutterShelf
+	ClutterLocker
+	Candle а фиг его знает что тут свечка делает
+	-->
+
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>SK_StorageII</defName>
+			<label>Storage II</label>
+			<description>Further research in storage technologies allows building and construction of Cupboards, Shelves, Skip and Racks.</description>
+			<baseCost>250</baseCost>
+			<techLevel>Neolithic</techLevel>
+				<prerequisites>
+					<li>SK_StorageI</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+			<!--
+			Storage_SkipBig
+			Item_shelf
+			Storage_Locker
+			ClutterSmallServingTable
+			ClutterCabinetA
+			ClutterMedicKitTable
+			-->
+	  
+				  <ResearchProjectDef ParentName="HitechBase">
+					<defName>SK_StorageIII</defName>
+					<label>Storage III</label>
+					<description>"Beam me up... Um, no seriously, how does this work?" \n"This is an advanced storage solution. When placed under a stockpile zone it will attempt to pile up adjacent items on top of itself, well over normal storage limits. Unlocks HazMat Container and Refrigerated Rack."</description>
+					<baseCost>550</baseCost>
+					<techLevel>Industrial</techLevel>
+						<prerequisites>
+							<li>SK_StorageII</li>
+							<li>AirConditioning</li>
+						</prerequisites>
+				  </ResearchProjectDef>
+					<!--
+					RefrigeratedTrayRack
+					Storage_HazMatContainer
+					ClutterResourceTable
+					ClutterLockerA
+					-->
+				  
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>SK_TrainingFacilitiesI</defName>
+    <label>Training facilities I</label>
+    <description>This allows colonists to construct some Autopsy Tables - doctors can hone their skills by testing their techniques on corpses; and Punching Bags - a man-able punching bag that your colonists can use to practice their melee skills with.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+  </ResearchProjectDef>
+			<!-- 
+			PunchingBag
+			MartialArtsTarget
+			-->
+			
+		  <ResearchProjectDef ParentName="HitechBase">
+			<defName>SK_TrainingFacilitiesII</defName>
+			<label>Training facilities II</label>
+			<description>This allows colonists to construct some Holodecks - a man-able holosuite that your colonists can use to practice their social skills with.</description>
+			<baseCost>650</baseCost>
+			<techLevel>Industrial</techLevel>
+				<prerequisites>
+					<li>SK_TrainingFacilitiesI</li>
+				</prerequisites>
+		  </ResearchProjectDef>
+			<!--
+			ShootingRangeTarget
+			Holodeck
+			-->
+			
+  <ResearchProjectDef>
+    <defName>FloorArt</defName>
+    <label>Floor Art I</label>
+    <description>The ability to make beautiful floor - is also an art. Tier 1.</description>
+    <baseCost>150</baseCost>
+	<techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>SK_Craftsmanship</li>
+    </prerequisites>
+  </ResearchProjectDef>
+	<!-- 
+	Bunch of terrain thingdefs ?
+	-->
+  
+	  <ResearchProjectDef ParentName="IndustrialBase">
+		<defName>FloorArtII</defName>
+		<label>Floor Art II</label>
+		<description>The ability to make beautiful floor - is also an art. Tier 2.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>SK_Technology</li>
+			<li>FloorArt</li>
+		</prerequisites>
+	  </ResearchProjectDef>
+		<!-- 
+		Bunch of terrain thingdefs ?
+		-->
+
+	  
+		  <ResearchProjectDef ParentName="IndustrialBase">
+			<defName>FloorArtIII</defName>
+			<label>Floor Art III</label>
+			<description>The ability to make beautiful floor - is also an art. Tier 3.</description>
+			<baseCost>800</baseCost>
+			<techLevel>Industrial</techLevel>
+			<prerequisites>
+			  <li>FloorArtII</li>
+			  <li>SK_ConstructionI</li>
+			</prerequisites>
+		  </ResearchProjectDef>
+			<!-- 
+			Bunch of terrain thingdefs ?
+			-->		  
+			  <ResearchProjectDef ParentName="IndustrialBase">
+				<defName>FloorArtIV</defName>
+				<label>Floor Art IV</label>
+				<description>The ability to make beautiful floor - is also an art. Tier 4.</description>
+				<baseCost>1200</baseCost>
+				<techLevel>Industrial</techLevel>
+				<prerequisites>
+				  <li>FloorArtIII</li>
+				</prerequisites>
+			  </ResearchProjectDef>
+				<!-- 
+				Bunch of terrain thingdefs ?
+				-->
+		</Defs>

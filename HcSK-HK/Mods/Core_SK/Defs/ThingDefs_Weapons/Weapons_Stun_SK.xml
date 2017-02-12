@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+
+
+  <!-- ============================================================== -->
+
+
+  <ThingDef Name="BaseMeleeStun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>3</DeteriorationRate>
+      <SellPriceFactor>0.35</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Melee</li>
+    </weaponTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		 <li>TableElectronics</li>
+      </recipeUsers>
+		<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>12</minLevel>
+		</li>
+		</skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+ 
+  <ThingDef ParentName="BaseMeleeStun">
+    <defName>MeleeWeapon_Shocker</defName>
+    <label>Melee Shocker</label>
+    <description>A melee shocker that can stun the victim.</description>
+    <graphicData>
+    <texPath>Things/Weapons/Tazer</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>			
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<CostList>
+			<Component>3</Component>
+			<Weapon_Parts>12</Weapon_Parts>
+			<Electronics>5</Electronics>
+			<Plastic>35</Plastic>
+		</CostList>
+    <soundInteract>InteractPistol</soundInteract>
+    <statBases>
+	  <WorkToMake>11500</WorkToMake>
+      <MeleeWeapon_DamageAmount>2</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.4</MeleeWeapon_Cooldown>
+      <Bulk>1.20</Bulk>
+      <Mass>1.10</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.04</MoveSpeed>
+		<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+	</equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>ElectricShock</meleeDamageDef>
+		<meleeDamageBaseAmount>6</meleeDamageBaseAmount>   
+      </li>
+    </verbs>
+		<thingCategories>
+		  <li>SpecialMelee</li>
+		</thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeStun">
+    <defName>MeleeWeapon_ElectricBaton</defName>
+    <label>Electric Baton</label>
+    <weaponTags>
+      <li>HitechMelee</li>
+    </weaponTags>	
+    <description>An electrified Melee Weapon, perfect for incapacitating.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/MeleeWeapon_ElectricBaton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractMelee</soundInteract>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.7</MeleeWeapon_Cooldown>
+      <Flammability>1</Flammability>
+      <Bulk>1.70</Bulk>
+      <Mass>2.20</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>50</costStuffCount>
+    <costList>
+		<Component>5</Component>
+		<Weapon_Parts>12</Weapon_Parts>
+		<Electronics>7</Electronics>
+		<Plastic>25</Plastic>
+    </costList>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+		<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+	</equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <meleeDamageDef>ElectricShock</meleeDamageDef>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageBaseAmount>9</meleeDamageBaseAmount>   	
+      </li>
+    </verbs>
+		<thingCategories>
+		  <li>SpecialMelee</li>
+		</thingCategories>
+  </ThingDef>
+
+</ThingDefs>

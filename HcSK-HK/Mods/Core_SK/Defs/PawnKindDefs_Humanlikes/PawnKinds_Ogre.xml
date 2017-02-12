@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+
+  <PawnKindDef>
+    <defName>Ogre</defName>
+    <label>Ogre</label>
+    <race>Mutant_Ogre</race>
+    <combatPower>280</combatPower>
+    <defaultFactionType>OgreClan</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <techHediffsChance>0</techHediffsChance>
+	<apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Ogrenaut</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.8)</volume>
+            <offset>(0,0,-1.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>250</min>
+      <max>310</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Ogre</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+  <PawnKindDef>
+    <defName>OgreDES</defName>
+    <label>Ogre destroyer</label>
+    <race>Mutant_Ogre</race>
+    <combatPower>770</combatPower>
+    <defaultFactionType>OgreClan</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <techHediffsChance>0</techHediffsChance>
+	<apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Ogrenaut</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.8)</volume>
+            <offset>(0,0,-1.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+		<weaponMoney>
+			<min>2600</min>
+			<max>2900</max>
+		</weaponMoney>
+    <weaponTags>
+      <li>OgreHeavy</li>
+    </weaponTags>
+	<fixedInventory>
+	  <LoadoutGen_AmmoTypeG>1</LoadoutGen_AmmoTypeG>
+	</fixedInventory>
+  </PawnKindDef>
+  
+  <PawnKindDef>
+    <defName>OgreDEV</defName>
+    <label>Ogre Devastator</label>
+    <race>Mutant_Ogre</race>
+    <combatPower>780</combatPower>
+    <defaultFactionType>OgreClan</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <techHediffsChance>0</techHediffsChance>
+	<apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/Ogrenaut</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.8)</volume>
+            <offset>(0,0,-1.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+		<weaponMoney>
+			<min>2650</min>
+			<max>2700</max>
+		</weaponMoney>
+    <weaponTags>
+      <li>OgreLaunchers</li>
+    </weaponTags>
+	<fixedInventory>
+	  <LoadoutGen_AmmoTypeD>1</LoadoutGen_AmmoTypeD>
+	</fixedInventory>
+  </PawnKindDef>
+
+
+</PawnKindDefs>

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<TerrainDef Name="FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothHard</li>
+		</affordances>
+		<PathCost>-2</PathCost>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<designationCategory>Floors</designationCategory>
+		<Fertility>0</Fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="TileStoneBase">
+		<RenderPrecedence>220</RenderPrecedence>
+		<Description>Solid stone tiles for a castle feeling.
+Beauty: 2.</Description>
+		<texturePath>Terrain/Surfaces/TileStone</texturePath>
+		<PathCost>-2</PathCost>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<Beauty>2</Beauty>
+		</statBases>
+
+		<designationCategory>NaturalFloors</designationCategory>
+		<researchPrerequisites><li>FloorArtII</li></researchPrerequisites>
+	</TerrainDef>
+
+
+	<!-- ================= Outside Tile ================= -->
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>Concrete</defName>
+		<label>Concrete</label>
+		<Description>Quick-poured concrete in a flat, grey surface. You'll need to be able to dig out the ground to pour this. 
+Beauty: 2.</Description>
+		<texturePath>Terrain/Surfaces/Concrete</texturePath>
+		<EdgeType>Hard</EdgeType>
+		<RenderPrecedence>150</RenderPrecedence>
+		<PathCost>0</PathCost>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<CostList>
+			<ConcreteResource>3</ConcreteResource>
+		</CostList>
+		<designationCategory>OutsideFloors</designationCategory>
+		<researchPrerequisites><li>FloorArtII</li></researchPrerequisites>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>DarkConcrete</defName>
+		<label>Dark Concrete</label>
+		<Description>Dark concrete in a honeycomb pattern. You'll need to be able to dig out the ground to pour this. 
+Beauty: 2.</Description>
+		<texturePath>Terrain/Surfaces/DarkConcrete</texturePath>
+		<EdgeType>Hard</EdgeType>
+		<RenderPrecedence>150</RenderPrecedence>
+		<PathCost>0</PathCost>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<CostList>
+			<ConcreteResource>3</ConcreteResource>
+		</CostList>
+		<designationCategory>OutsideFloors</designationCategory>
+		<researchPrerequisites><li>FloorArtIII</li></researchPrerequisites>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<DefName>CeramicTile</DefName>
+		<label>Ceramic Tile</label>
+		<RenderPrecedence>230</RenderPrecedence>
+		<Description>Small white ceramic tiles with a dark bordering. Quick to move around on. 
+Beauty: 3.</Description>
+		<texturePath>Terrain/Surfaces/CeramicTile</texturePath>
+		<statBases>
+			<WorkToBuild>1200</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<CostList>
+			<Component>1</Component>
+			<ConcreteResource>1</ConcreteResource>
+		</CostList>
+		<researchPrerequisites><li>FloorArtIV</li></researchPrerequisites>
+		<designationCategory>OutsideFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<DefName>PavedTile</DefName>
+		<label>Paved Tile</label>
+		<RenderPrecedence>230</RenderPrecedence>
+		<Description>Large grey tiles with a thick, dark border. Quick to move around on. 
+Beauty: 3.</Description>
+		<texturePath>Terrain/Surfaces/PavedTile</texturePath>
+		<statBases>
+			<WorkToBuild>1200</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<CostList>
+			<ConcreteResource>2</ConcreteResource>
+			<Component>1</Component>
+		</CostList>
+		<researchPrerequisites><li>FloorArtIII</li></researchPrerequisites>
+		<designationCategory>OutsideFloors</designationCategory>
+	</TerrainDef>
+
+	<!-- ============ Tile stone ============ -->
+
+	<TerrainDef ParentName="TileStoneBase">
+		<DefName>TileSandstone</DefName>
+		<label>Sandstone Tile</label>
+		<color>(126,104,94)</color>
+		<CostList>
+			<BlocksSandstone>3</BlocksSandstone>
+		</CostList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="TileStoneBase">
+		<DefName>TileGranite</DefName>
+		<label>Granite Tile</label>
+		<color>(105,95,97)</color>
+		<CostList>
+			<BlocksGranite>3</BlocksGranite>
+		</CostList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="TileStoneBase">
+		<DefName>TileLimestone</DefName>
+		<label>Limestone Tile</label>
+		<color>(158,153,135)</color>
+		<CostList>
+			<BlocksLimestone>3</BlocksLimestone>
+		</CostList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="TileStoneBase">
+		<DefName>TileSlate</DefName>
+		<label>Slate Tile</label>
+		<color>(70,70,70)</color>
+		<CostList>
+			<BlocksSlate>3</BlocksSlate>
+		</CostList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="TileStoneBase">
+		<DefName>TileMarble</DefName>
+		<label>Marble Tile</label>
+		<color>(132,135,132)</color>
+		<CostList>
+			<BlocksMarble>3</BlocksMarble>
+		</CostList>
+	</TerrainDef> 
+
+
+	<!-- ============ Rough Sandstone ============ -->
+
+	<TerrainDef  ParentName="FloorBase">
+		<DefName>RoughSandstoneFloor</DefName>
+		<label>Rough Sandstone</label>
+		<RenderPrecedence>190</RenderPrecedence>
+		<Description>Sandstone eroded by the elements.
+Beauty: -1.</Description>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<EdgeType>Fade</EdgeType>
+		<PathCost>0</PathCost>
+		<ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+		<constructEffect>ConstructDirt</constructEffect>
+		<Fertility>0</Fertility>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<CostList>
+			<BlocksSandstone>3</BlocksSandstone>
+		</CostList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<color>(126,104,94)</color>
+		<researchPrerequisites><li>FloorArt</li></researchPrerequisites>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<!-- ============= Rough Granite ============ -->
+	<TerrainDef  ParentName="FloorBase">
+		<DefName>RoughGraniteFloor</DefName>
+		<label>Rough Granite</label>
+		<RenderPrecedence>191</RenderPrecedence>
+		<Description>Granite eroded by the elements. 
+Beauty: -1.</Description>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<EdgeType>Fade</EdgeType>
+		<PathCost>0</PathCost>
+		<ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+		<constructEffect>ConstructDirt</constructEffect>
+		<Fertility>0</Fertility>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<CostList>
+			<BlocksGranite>3</BlocksGranite>
+		</CostList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<color>(105,95,97)</color>
+		<researchPrerequisites><li>FloorArt</li></researchPrerequisites>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<!-- ============ Rough Limestone ============ -->
+	<TerrainDef  ParentName="FloorBase">
+		<DefName>RoughLimestoneFloor</DefName>
+		<label>Rough Limestone</label>
+		<RenderPrecedence>192</RenderPrecedence>
+		<Description>Limestone eroded by the elements. 
+Beauty: -1.</Description>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<EdgeType>Fade</EdgeType>
+		<PathCost>0</PathCost>
+		<ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+		<constructEffect>ConstructDirt</constructEffect>
+		<Fertility>0</Fertility>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<CostList>
+			<BlocksLimestone>3</BlocksLimestone>
+		</CostList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<color>(158,153,135)</color>
+		<researchPrerequisites><li>FloorArt</li></researchPrerequisites>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<!-- ============ Rough Slate ============ -->
+	<TerrainDef  ParentName="FloorBase">
+		<DefName>RoughSlateFloor</DefName>
+		<label>Rough Slate</label>
+		<RenderPrecedence>193</RenderPrecedence>
+		<Description>Slate eroded by the elements. 
+Beauty: -1.</Description>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<EdgeType>Fade</EdgeType>
+		<PathCost>0</PathCost>
+		<ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+		<constructEffect>ConstructDirt</constructEffect>
+		<Fertility>0</Fertility>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<CostList>
+			<BlocksSlate>3</BlocksSlate>
+		</CostList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<color>(70,70,70)</color>
+		<researchPrerequisites><li>FloorArt</li></researchPrerequisites>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<!-- =========== Rough Marble ============= -->
+	<TerrainDef  ParentName="FloorBase">
+		<DefName>RoughMarbleFloor</DefName>
+		<label>Rough Marble</label>
+		<RenderPrecedence>194</RenderPrecedence>
+		<Description>Marble eroded by the elements. 
+Beauty: -1.</Description>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<EdgeType>Fade</EdgeType>
+		<PathCost>-1</PathCost>
+		<ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+		<constructEffect>ConstructDirt</constructEffect>
+		<Fertility>0</Fertility>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<CostList>
+			<BlocksMarble>3</BlocksMarble>
+		</CostList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<color>(132,135,132)</color>
+		<researchPrerequisites><li>FloorArt</li></researchPrerequisites>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+</TerrainDefs>

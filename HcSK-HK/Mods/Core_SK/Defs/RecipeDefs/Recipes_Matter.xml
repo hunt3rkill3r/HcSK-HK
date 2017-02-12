@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <!-- ============================================================== -->
+  <!-- Convert to matter -->
+  <!-- ============================================================== -->
+  
+    <!-- Raw resources -->
+    <RecipeDef>
+    <defName>ConvertResourcesRaw</defName>
+    <label>Make Inorganic Matter</label>
+    <description>Make Inorganic Matter by processing and converting various types of raw resources. Produces 5.</description>
+    <jobString>Converting resources to matter.</jobString>
+    <workAmount>800</workAmount>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ResourcesRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Matter>5</Matter>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+  </RecipeDef>
+  
+ 
+  <!-- ============================================================== -->
+  <!-- Convert from matter -->
+  <!-- ============================================================== -->
+  
+  
+    <!-- steel -->
+    <RecipeDef>
+    <defName>ConvertToSteel</defName>
+    <label>Make Iron Ore</label>
+    <description>Convert Inorganic Matter into Iron Ore. Produces 25.</description>
+    <jobString>Converting matter into Iron Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Steel>25</Steel>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+
+	
+    <!-- copper -->
+    <RecipeDef>
+    <defName>ConvertToCopper</defName>
+    <label>Make Copper Ore</label>
+    <description>Convert Inorganic Matter into Copper Ore. Produces 9.</description>
+    <jobString>Converting matter into copper ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Copper>9</Copper>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+
+	
+    <!-- aluminium -->
+    <RecipeDef>
+    <defName>ConvertToAluminium</defName>
+    <label>Make Bauxite Ore</label>
+    <description>Convert Inorganic Matter into Bauxite Ore. Produces 20.</description>
+    <jobString>Converting matter into Bauxite Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aluminium>20</Aluminium>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+	
+	
+    <!-- manganese -->
+    <RecipeDef>
+    <defName>ConvertToPyrolusite</defName>
+    <label>Make Pyrolusite Ore</label>
+    <description>Convert Inorganic Matter into Pyrolusite Ore. Produces 3.</description>
+    <jobString>Converting matter into Pyrolusite Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Pyrolusite>3</Pyrolusite>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+	
+	
+    <!-- Nickel -->
+    <RecipeDef>
+    <defName>ConvertToNickel</defName>
+    <label>Make Nickel Ore</label>
+    <description>Convert inorganic matter into Nickel Ore. Produces 2.</description>
+    <jobString>Converting matter into Nickel Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Nickel>2</Nickel>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+
+	
+    <!--uranium -->
+    <RecipeDef>
+    <defName>ConvertToUranium</defName>
+    <label>Make Uranium Ore</label>
+    <description>Convert Inorganic Matter into Uranium Ore. Produces 5.</description>
+    <jobString>Converting matter into Uranium Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Uranium>5</Uranium>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+	
+	
+	    <!--ilmenite -->
+    <RecipeDef>
+    <defName>ConvertToTitanium</defName>
+    <label>Make Ilmenite Ore</label>
+    <description>Convert Inorganic Matter into Ilmenite, the ore of Titanium. Produces 2.</description>
+    <jobString>Converting matter into Ilmenite Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>14</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ilmenite>2</Ilmenite>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+	
+	
+    <!--wolframite -->
+    <RecipeDef>
+    <defName>ConvertToWolframite</defName>
+    <label>Make Wolframite Ore</label>
+    <description>Convert Inorganic Matter into Wolframite, the ore of Tungsten. Produces 1.</description>
+    <jobString>Converting matter into Wolframite Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>28</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Wolframite>1</Wolframite>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+
+	
+    <!--silver -->
+    <RecipeDef>
+    <defName>ConvertToSilver</defName>
+    <label>Make Silver Ore</label>
+    <description>Convert Inorganic Matter into Silver Ore. Produces 50.</description>
+    <jobString>Converting matter into Silver Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Silver>50</Silver>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+	
+	
+    <!--gold -->
+    <RecipeDef>
+    <defName>ConvertToGold</defName>
+    <label>Make Gold Ore</label>
+    <description>Convert Inorganic Matter into Gold Ore. Produces 2.</description>
+    <jobString>Converting matter into Gold Ore.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gold>2</Gold>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+
+	
+	<!-- Cloth -->
+    <RecipeDef>
+    <defName>ConvertToCloth</defName>
+    <label>Make Cloth</label>
+    <description>Convert Inorganic Matter into Cloth. Produces 25.</description>
+    <jobString>Converting matter into Cloth.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Cloth>25</Cloth>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+  </RecipeDef>
+
+  
+	<!-- GlassBatch -->
+    <RecipeDef>
+    <defName>ConvertToGlassBatch</defName>
+    <label>Make Glass Batch</label>
+    <description>Convert Inorganic Matter into Glass Batch. Produces 20.</description>
+    <jobString>Converting matter into Glass Batch.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GlassBatch>20</GlassBatch>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+  </RecipeDef>
+
+  
+	<!-- Polymers -->
+    <RecipeDef>
+    <defName>ConvertToPolymers</defName>
+    <label>Make Polymers</label>
+    <description>Convert Inorganic Matter into Polymers. Produces 25.</description>
+    <jobString>Converting matter into Polymers.</jobString>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Matter</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Matter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Polymers>25</Polymers>
+    </products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>16</minLevel>
+			</li>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+  </RecipeDef>
+  
+</RecipeDefs>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RecipeDefs>
+
+    <RecipeDef>
+    <defName>MakePillar</defName>
+    <label>Make Pillar</label>
+    <description>Make Pillar. Needed to build a foundation base to quickly put up a bridge or build a platform.</description>
+    <jobString>Makeing Pillar.</jobString>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BlocksSandstone</li>
+            <li>BlocksGranite</li>
+            <li>BlocksLimestone</li>
+            <li>BlocksSlate</li>
+            <li>BlocksMarble</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Pillar>4</Pillar>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+            <li>BlocksSandstone</li>
+            <li>BlocksGranite</li>
+            <li>BlocksLimestone</li>
+            <li>BlocksSlate</li>
+            <li>BlocksMarble</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+	 <researchPrerequisite>SK_Bridges</researchPrerequisite>
+  </RecipeDef>
+ 
+ <RecipeDef>
+    <defName>MakeBlocksSandstone</defName>
+    <label>Baking Sandstone Blocks </label>
+    <description>Baking Sandstone Blocks from sand.</description>
+    <jobString>Baking Sandstone Blocks.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Interact_Repair</soundWorking>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+	  <li>Kiln</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+			<li>Sand</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <BlocksSandstone>5</BlocksSandstone>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Sand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+</RecipeDefs>

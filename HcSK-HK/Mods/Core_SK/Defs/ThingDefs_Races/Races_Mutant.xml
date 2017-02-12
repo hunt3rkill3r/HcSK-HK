@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef ParentName="BasePawn" Name="BaseMutant" Abstract="True">
+    <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
+    <statBases>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+      <Flammability>1</Flammability>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ComfyTemperatureMax>45</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <meatColor>(200,135,100)</meatColor>
+      <hasGenders>false</hasGenders>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseMutant">
+    <defName>Mutant_Ogre</defName>
+	<thingClass>SK.Berserk</thingClass>
+    <label>Ogre</label>
+    <description>Originally designed for construction and heavy industry, the Ogron™ is a large, tough, thickheaded xenohuman. In rimworld condition, Many feral clans use them as brutal war beasts.</description>
+    <statBases>
+	  <Mass>150</Mass>
+      <MoveSpeed>3.7</MoveSpeed>
+      <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+      <MeatAmount>45</MeatAmount>
+      <LeatherAmount>15</LeatherAmount>
+      <CarryWeight>170</CarryWeight>
+      <CarryBulk>70</CarryBulk>
+	  <ArmorPenetration>0.6</ArmorPenetration>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.8</defaultCooldownTime>
+        <meleeDamageBaseAmount>25</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.8</defaultCooldownTime>
+        <meleeDamageBaseAmount>25</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <intelligence>ToolUser</intelligence>
+      <body>Ogre</body>
+      <predator>true</predator>
+      <baseHungerRate>1.5</baseHungerRate>
+      <lifeExpectancy>80</lifeExpectancy>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>5.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Bear_Injured</soundWounded>
+          <soundDeath>Pawn_Bear_Death</soundDeath>
+          <soundCall>Pawn_Bear_Call</soundCall>
+          <soundAngry>Pawn_Bear_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	  <useMeatFrom>Human</useMeatFrom>
+	  <useLeatherFrom>Elephant</useLeatherFrom>
+	  <hediffGiverSets>
+        <li>BerserkPassiveSet</li>
+      </hediffGiverSets>
+    </race>
+  </ThingDef>
+  
+
+
+</ThingDefs>

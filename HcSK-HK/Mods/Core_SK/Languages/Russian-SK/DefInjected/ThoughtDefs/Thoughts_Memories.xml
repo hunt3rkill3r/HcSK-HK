@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+  <rep>
+    <path>AteReplicatedMeal.stages[0].label</path>
+    <trans>употребление синтезированного блюда</trans>
+  </rep>
+  <rep>
+    <path>AteReplicatedMeal.stages[0].description</path>
+    <trans>Мне довелось съесть синтезированное блюдо. Не очень вкусно, но питательно.</trans>
+  </rep>
+
+  
+    <rep>
+    <path>AteCannedMeal.stages[0].label</path>
+    <trans>питание консервами</trans>
+  </rep>
+  <rep>
+    <path>AteCannedMeal.stages[0].description</path>
+    <trans>Мне довелось съесть консервы. У меня на языке остался металлический привкус.</trans>
+  </rep>
+
+</LanguageData>

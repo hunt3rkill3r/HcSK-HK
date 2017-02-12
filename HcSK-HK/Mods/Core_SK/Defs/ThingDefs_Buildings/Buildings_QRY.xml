@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Quarry</defName>
+    <thingClass>Quarry.Building_Quarry</thingClass>
+    <label>quarry</label>
+    <description>A large pit for digging up long buried resources.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Quarry</texPath>
+      <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <drawOffscreen>true</drawOffscreen>
+    <constructEffect>ConstructDirt</constructEffect>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <fillPercent>0</fillPercent>
+    <destroyable>true</destroyable>
+    <statBases>
+      <Flammability>0</Flammability>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+    </statBases>
+    <size>(12,12)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <surfaceType>Item</surfaceType>
+    <rotatable>false</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <designationCategory>Production</designationCategory>
+    <building>
+      <isInert>true</isInert>
+      <deconstructible>true</deconstructible>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <costList>
+      <WoodPlank>350</WoodPlank>
+    </costList>
+    <placeWorkers>
+      <li>Quarry.PlaceWorker_SingleQuarry</li>
+    </placeWorkers>
+    <researchPrerequisites><li>SK_Quarry</li></researchPrerequisites>
+  </ThingDef>
+  
+</Defs>

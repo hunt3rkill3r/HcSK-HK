@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--================================ Abstract bases ======================================-->
+
+  <ThingDef Name="ArtBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase" Name="AdvanceArtBase" Abstract="True">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Sculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="AdvanceArtBase" Name="SculptureBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+ 
+  <!--================================ Sculptures ======================================-->
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculptureSmall</defName>
+    <label>small sculpture</label>
+    <description>A torso-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureSmall</texPath>
+    </graphicData>
+    <minifiedDef>MinifiedSculpture</minifiedDef>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Beauty>20</Beauty>
+      <WorkToMake>16000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Precious</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculptureLarge</defName>
+    <label>large sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureLarge</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedSculpture</minifiedDef>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Beauty>40</Beauty>
+      <WorkToMake>30000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Precious</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>110</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculptureGrand</defName>
+    <label>grand sculpture</label>
+    <description>A car-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureGrand</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedSculpture</minifiedDef>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>70</Beauty>
+      <WorkToMake>50000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Precious</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SculptureBase">
+		<defName>MuffaloArt</defName>
+		<label>muffalo sculpture</label>
+		<uiIconPath>Things/Building/Art/Muffalo_MenuIcon</uiIconPath>
+		<description>The holy Muffalo is a creature worshiped by the Cheda of the Indigo Gerbil Tribe on Alioth Posterius.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Muffalo</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedSculpture</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Beauty>90</Beauty>
+			<WorkToMake>70000</WorkToMake>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>250</costStuffCount>
+	</ThingDef>
+
+  <ThingDef ParentName="SculptureBase">
+		<defName>QueenArt</defName>
+		<label>queen sculpture</label>
+		<uiIconPath>Things/Building/Art/Queen_MenuIcon</uiIconPath>
+		<description>This stunning statue is a likeness of "Anha the Graceful" a matriarch of the Gray People Tribe known to be a dazzling and exquisite beauty.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Queen</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedSculpture</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>70</Beauty>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>160</costStuffCount>
+	</ThingDef>
+
+
+  <ThingDef ParentName="SculptureBase">
+		<defName>WolfArt</defName>
+		<label>wolf sculpture</label>
+		<uiIconPath>Things/Building/Art/Wolf_MenuIcon</uiIconPath>
+		<description>This statue depicts the wolf-like god named "LORDI", worshiped by the Purple Lobster Crouca on Aldhafera XI</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Wolf</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedSculpture</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>85</Beauty>
+			<WorkToMake>55000</WorkToMake>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>160</costStuffCount>
+	</ThingDef>
+	
+  <ThingDef ParentName="SculptureBase">
+		<defName>DecorativeUrnSmall</defName>
+		<label>decorative urn</label>
+		<description>A small piece of decorative pottery.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/SmallUrn</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedSculpture</minifiedDef>
+		<fillPercent>0.25</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>17000</WorkToMake>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+	</ThingDef>
+  
+  <ThingDef ParentName="SculptureBase">
+		<defName>SmallPottery</defName>
+		<label>decorative pottery</label>
+		<description>A small pieces of pottery decorated with various pictures and carvings. They have no practical use.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/SmallPottery</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedSculpture</minifiedDef>
+		<fillPercent>0.25</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Beauty>17</Beauty>
+			<WorkToMake>15000</WorkToMake>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+	</ThingDef>
+	
+  <ThingDef ParentName="SculptureBase">
+		<defName>PotteryDisplay</defName>
+		<label>pottery display stand</label>
+		<description>A display stand showing various pieces of decorative pottery. Many of these have painted or carved pictures on them.</description>
+		<graphicData>
+		<texPath>Things/Building/Art/Display/Display</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>	
+		  <drawSize>(3.2,3.2)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedSculpture</minifiedDef>
+		<fillPercent>0.4</fillPercent>
+		<rotatable>true</rotatable>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>80</Beauty>
+			<WorkToMake>50000</WorkToMake>
+		</statBases>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>	  
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+	   <CostList>
+		  <WoodLog>60</WoodLog>
+		</CostList>
+	</ThingDef>
+  
+  
+  <!--================================ Snowman ======================================-->
+
+  <ThingDef ParentName="ArtBase">
+    <defName>Snowman</defName>
+    <label>snowman</label>
+    <description>A set of large snowballs piled and shaped to resemble a person.</description>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>25</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Art/Snowman</texPath>
+    </graphicData>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Beauty>4</Beauty>
+	  <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompMelter</compClass>
+      </li>
+    </comps>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <building>
+      <expandHomeArea>false</expandHomeArea>
+      <repairable>false</repairable>
+      <isInert>true</isInert>
+    </building>
+  </ThingDef>
+  
+</Defs>

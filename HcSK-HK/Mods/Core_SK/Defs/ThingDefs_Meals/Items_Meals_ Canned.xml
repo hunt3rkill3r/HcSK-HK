@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="CannedBase" ParentName="MealBase" Abstract="True">
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Bulk>0.04</Bulk>
+	  <Mass>0.06</Mass>
+    </statBases>
+    <stackLimit>75</stackLimit>
+  </ThingDef>
+
+  <ThingDef ParentName="CannedBase">
+    <defName>SaltedMeat</defName>
+    <label>salted meat</label>
+    <description>Meat that has been cured with salt.</description>
+    <graphicData>
+	<graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Meal/SaltedMeat</texPath>
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>Meat</foodType>
+      <nutrition>0.05</nutrition>
+    </ingestible>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="CannedBase">
+		<defName>PickledVeg</defName>
+		<label>Pickled Vegetable</label>
+		<description>Vegetables that have been preserved in a salty brine.</description>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Meal/PickleVeg</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>13</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <nutrition>0.2</nutrition>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CannedBase">
+    <defName>ExtraCannedFood</defName>
+    <label>Extra Canned Meal</label>
+    <description>A meal preserved in cans to prevent it from going bad.</description>
+    <graphicData>
+      <texPath>Things/Item/canveg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>3.5</MarketValue>
+    </statBases>
+    <ingestible>
+	<foodType>VegetableOrFruit</foodType>
+	<preferability>MealSimple</preferability>
+	<nutrition>0.04</nutrition>
+	<ingestEffect>EatVegetarian</ingestEffect>
+	<ingestSound>RawVegetable_Eat</ingestSound>
+	<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+         
+        <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+		<thingCategories>
+			<li>ExtraPlantFoodRaw</li>
+		</thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="CannedBase">
+    <defName>BasicCannedFood</defName>
+    <label>Basic Canned Meal</label>
+    <description>A meal preserved in cans to prevent it from going bad.</description>
+    <graphicData>
+      <texPath>Things/Item/canveg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>3.5</MarketValue>
+    </statBases>
+    <ingestible>
+	<foodType>VegetableOrFruit</foodType>
+	<preferability>MealSimple</preferability>
+	<nutrition>0.06</nutrition>
+	<ingestEffect>EatVegetarian</ingestEffect>
+	<ingestSound>Meal_Eat</ingestSound>
+	<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+    </ingestible>
+		<comps>
+      <li Class="CompProperties_Rottable">
+         
+        <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+		</comps>
+		<thingCategories>
+			<li>BasicPlantFoodRaw</li>
+		</thingCategories>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="CannedBase">
+    <defName>MetalCannedMeat</defName>
+    <label>Metal Canned Meat</label>
+    <description>A meal preserved in cans to prevent it from going bad.</description>
+    <graphicData>
+      <texPath>Things/Item/canmeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>3.5</MarketValue>
+    </statBases>
+    <ingestible>
+	<foodType>Meat</foodType>
+	<preferability>MealSimple</preferability>
+	<nutrition>0.10</nutrition>
+	<ingestEffect>EatMeat</ingestEffect>
+	<ingestSound>RawMeat_Eat</ingestSound>
+	<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+    </ingestible>
+		<comps>
+      <li Class="CompProperties_Rottable">
+         
+        <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+		</comps>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+  </ThingDef>
+  
+   <ThingDef ParentName="CannedBase">
+      <defName>driedfruit</defName>
+      <label>Dried Fruit</label>
+      <description>Fruit that has had the water removed to increase it's shelf life.</description>
+      <graphicData>
+      <texPath>Things/Item/Meal/Meal_Driedfruit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+      <statBases>
+         <DeteriorationRate>0.4</DeteriorationRate>
+         <MarketValue>14</MarketValue>
+         <WorkToMake>1500</WorkToMake>
+      </statBases>
+      <ingestible>
+	  <foodType>Meal, Processed</foodType>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.42</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+	  <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      </ingestible>
+		<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+		</comps>
+   </ThingDef>
+
+</ThingDefs>

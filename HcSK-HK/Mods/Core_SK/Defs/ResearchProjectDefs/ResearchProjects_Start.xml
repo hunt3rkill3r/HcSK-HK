@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Start ===================================-->
+
+  <ResearchProjectDef>
+    <defName>SK_Craftsmanship</defName>
+    <label>Primary Craftsmanship</label>
+    <description>You're not in stone age! Sit down and try to remember basics of your life before this catastrophe. Unlocks basic kitchen and production workbenches, some primal lightning and storages.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+	<tags>
+		<li>ClassicStart</li>
+		<li>TribalStart</li>
+	</tags>
+			<!-- 
+			FueledStove
+			TableOven
+			TableFurnace
+			TableShort
+			RoundedTableShort
+			Storage_WoodenPalletSmall
+			OutdoorGroundLamp
+			Lighting_PathLamp
+			chevalDeFrise
+			-->
+  </ResearchProjectDef>
+  
+		<ResearchProjectDef>
+			<defName>SK_Medicalcare</defName>
+			<label>Medical care</label>
+			<description>New means to set up your medical area medieval style.</description>
+			<baseCost>300</baseCost>
+			<techLevel>Medieval</techLevel>
+			<tags>
+				<li>ClassicStart</li>
+			</tags>
+		</ResearchProjectDef>
+  
+		  <ResearchProjectDef>
+			<defName>Pemmican</defName>
+			<label>Pemmican</label>
+			<description>Make pemmican, a preserved mixture of meat and plant matter that doesn't go bad for a long time. Great for traveling.</description>
+			<baseCost>300</baseCost>
+			<techLevel>Neolithic</techLevel>
+			<prerequisites>
+				<li>SK_Craftsmanship</li>
+			</prerequisites>
+			<tags>
+				<li>TribalStart</li>
+			</tags>
+		  </ResearchProjectDef>
+		  
+		  <ResearchProjectDef>
+			<defName>EnthalpicCooling</defName>
+			<label>Coldstone battery</label>
+			<description>Build an efficient passive cooling unit fueled coldstones.</description>
+			<baseCost>500</baseCost>
+			<techLevel>Neolithic</techLevel>
+			<prerequisites>
+			  <li>SK_Craftsmanship</li>
+			</prerequisites>
+			<tags>
+				<li>TribalStart</li>
+			</tags>
+		  </ResearchProjectDef>
+			<!-- 
+			ColdstoneBattery
+			-->
+		  
+		</Defs>

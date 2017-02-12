@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>CremateCorpse</defName>
+		<label>Cremate Corpse</label>
+		<description>Cremate a corpse into ashes. Produces 4.</description>
+		<jobString>Cremating.</jobString>
+		<workAmount>200</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ash>4</Ash>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<exceptedCategories>
+				<li>CorpsesMechanoid</li>
+			</exceptedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Human_Corpse</li>
+				<li>Norbal_Corpse</li>
+				<li>Alien_Nova_Corpse</li>
+				<li>Alien_Orassan</li>
+				<li>Alien_Asari_Corpse</li>
+			</thingDefs>
+			<specialFiltersToAllow>
+				<li>AllowCorpsesColonist</li>
+				<li>AllowCorpsesStranger</li>
+			</specialFiltersToAllow>
+		</defaultIngredientFilter>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>BurnApparel</defName>
+		<label>Burn Apparel</label>
+		<description>Burn apparel into ashes. Produces 2.</description>
+		<jobString>Burning apparel.</jobString>
+		<workAmount>100</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ash>2</Ash>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Apparel</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>BurnThings</defName>
+		<label>Burn Materials</label>
+		<description>Burn wood, textiles and leathers into ashes. Produces 3.</description>
+		<jobString>Burning apparel.</jobString>
+		<workAmount>150</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+						<li>Woody</li>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ash>3</Ash>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+				<li>Woody</li>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>CremateCorpseCampfire</defName>
+		<label>Cremate Corpse</label>
+		<description>Cremate a corpse into ashes. Produces 4.</description>
+		<jobString>Cremating.</jobString>
+		<workAmount>600</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ash>4</Ash>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<exceptedCategories>
+				<li>CorpsesMechanoid</li>
+			</exceptedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Human_Corpse</li>
+				<li>Norbal_Corpse</li>
+				<li>Alien_Nova_Corpse</li>
+				<li>Alien_Orassan</li>
+				<li>Alien_Asari_Corpse</li>
+			</thingDefs>
+			<specialFiltersToAllow>
+				<li>AllowCorpsesColonist</li>
+				<li>AllowCorpsesStranger</li>
+			</specialFiltersToAllow>
+		</defaultIngredientFilter>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>BurnApparelCampfire</defName>
+		<label>Burn Apparel</label>
+		<description>Burn apparel into ashes. Produces 2.</description>
+		<jobString>Burning apparel.</jobString>
+		<workAmount>300</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ash>2</Ash>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Apparel</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>BurnThingsCampfire</defName>
+		<label>Burn Materials</label>
+		<description>Burn wood, textiles and leather into ashes. Produces 3.</description>
+		<jobString>Burning apparel.</jobString>
+		<workAmount>450</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+						<li>Woody</li>
+						<li>Textiles</li>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ash>3</Ash>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+				<li>Woody</li>
+				<li>Textiles</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</RecipeDefs>

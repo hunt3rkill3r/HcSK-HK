@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+
+	<FactionDef>
+		<defName>Feral</defName>
+		<label>Feral clan</label>
+    <description>So, who the ferals are? Think about savages living in the ruins of collapsed civilization. They had to sacrifice lots of things to survive; Technology, culture, history, and adobe all, their humanity.
+
+They are the group of savages who pillage, plunder, murder, or otherwise ruin the day of anyone unfortunate enough to not be one of them. Although usually not very powerful on their own, ferals are most often encountered in groups. With a random mix of scrap weapons, they can prove to be formidable opponents for the lonesome colony. </description>
+    <pawnsPlural>ferals</pawnsPlural>
+    <factionBaseSelectionWeight>1</factionBaseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>90</raidCommonality>
+    <canSiege>true</canSiege>
+	<autoFlee>true</autoFlee>
+    <canStageAttacks>true</canStageAttacks>
+    <expandingIconTexture>UI/Icons/Factions/Ferals</expandingIconTexture>
+    <colorSpectrum>
+      <li>(0.4, 0.92, 0.35)</li>
+      <li>(0.89, 0.89, 0.7)</li>
+      <li>(1, 1, 0.1)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-35</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <factionBaseNameMaker>NamerFactionBaseTribal</factionBaseNameMaker>
+    <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategory>Raider</backstoryCategory>
+	<appreciative>false</appreciative>
+    <leaderTitle>Clan leader</leaderTitle>
+		<hairTags>
+			<li>Punk</li>
+			<li>Urban</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-95</max>
+    </naturalColonyGoodwill>
+    <factionBaseTraderKinds>
+      <li>FactionBase_Neolithic_Standard</li>
+    </factionBaseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-35</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <apparelStuffFilter>
+	<categories>
+		<li>Leathers</li>
+	</categories>
+    <thingDefs>
+        <li>WoodPlank</li>
+        <li>CopperBar</li>
+		<li>Bronze</li>
+        <li>SteelBar</li>
+        <li>SilverBar</li>
+    </thingDefs>
+    </apparelStuffFilter>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+	    <commonality>100</commonality>
+		<disallowedStrategies>
+          <li>StageThenAttack</li>		
+          <li>ImmediateAttackSappers</li>
+          <li>Siege</li>		  
+        </disallowedStrategies>
+        <options>
+          <FeralHusker>200</FeralHusker>
+          <FeralMangler>200</FeralMangler>
+          <FeralGrinder>50</FeralGrinder>
+          <FeralSkulker>50</FeralSkulker>
+          <FeralScorcher>30</FeralScorcher>
+          <FeralBoomer>30</FeralBoomer>
+          <FeralThumper>30</FeralThumper>
+          <FeralLeader>5</FeralLeader>
+          <Ogre>35</Ogre>
+        </options>
+      </li>
+      <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <FeralHusker>200</FeralHusker>
+          <FeralMangler>200</FeralMangler>
+          <FeralGrinder>50</FeralGrinder>
+          <FeralSkulker>50</FeralSkulker>
+          <FeralScorcher>30</FeralScorcher>
+          <FeralBoomer>30</FeralBoomer>
+          <FeralThumper>30</FeralThumper>
+          <FeralLeader>5</FeralLeader>
+          <Ogre>35</Ogre>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/TribalFactionBase</homeIconPath>
+  </FactionDef>
+  
+</FactionDefs>

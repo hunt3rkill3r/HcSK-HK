@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<!--========================= Vanilla Sandbags for Siege =============================-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Sandbags</defName>
+		<label>sandbags</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+    <graphicData>
+		<texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+      <linkType>Basic</linkType>
+		<linkFlags>
+			<li>Sandbags</li>
+		</linkFlags>
+    </graphicData>
+    <blueprintGraphicData>
+		<texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+		<uiIconPath>Things/Building/Linked/Sandbags_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.65</fillPercent>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<WorkToBuild>550</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+    </building>
+		<description>A sandbag barrier that provides cover from gunfire.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+		  <Cloth>6</Cloth>
+		</costList>
+		<filthLeaving>SandbagRubble</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<researchPrerequisites><li>SK_Security</li></researchPrerequisites>
+		<constructEffect>ConstructDirt</constructEffect>
+		<repairEffect>ConstructDirt</repairEffect>
+	</ThingDef>
+
+<!--
+  <ThingDef ParentName="BuildingBase">
+    <defName>StampedEarthWall</defName>
+    <label>Stamped Earth Wall</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <description>A defensive wall made of compacted earth. It requires no additional resources to build and is quite strong, but it takes a lot of work.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(64,55,48)</color>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+	<li>Wall</li>
+	<li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/Security/StampedEarthWall_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+	<blockLight>true</blockLight>
+    <building>
+      <isInert>true</isInert>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+  </ThingDef>
+-->
+
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>Parapet</defName>
+    <label>parapet</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Walls/Parapet_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom2</li>
+      </linkFlags>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/Walls/Parapet_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>85</pathCost>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.68</fillPercent>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+    </building>
+    <description>A waist-high stone wall built for defense.</description>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>6</costStuffCount>
+		<filthLeaving>SandbagRubble</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<repairEffect>ConstructDirt</repairEffect>
+		<researchPrerequisites><li>IEDBomb</li></researchPrerequisites>
+	</ThingDef>
+
+
+  <!--========================= Cheval de frise =============================-->
+
+	
+  <ThingDef ParentName="BuildingBase">
+    <defName>chevalDeFrise</defName>
+    <label>cheval de frise</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Security/ChevalDeFrise</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+		<shadowData>
+        		<volume>(0.3, 0.6, 0.3)</volume>
+		</shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>60</pathCost>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>700</WorkToBuild>
+      <Flammability>1</Flammability>
+    </statBases>
+    <Size>(2,1)</Size>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+    </building>
+    <description>A defensive barrier made of sharpened sticks. It is weak but slow to climb over.</description>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
+	<holdsRoof>false</holdsRoof>
+    <blockLight>false</blockLight>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationCategory>Security</designationCategory>
+    <repairEffect>ConstructWood</repairEffect>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+	<researchPrerequisites><li>SK_Craftsmanship</li></researchPrerequisites>
+  </ThingDef>
+
+  
+  <!--========================= Embrasures =============================-->
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>WallEmbrasure</defName>
+    <label>embrasure</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Embrasure/Embrasure_Atlas_Smooth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Embrasure/EmbrasureSmooth_MenuIcon</uiIconPath>
+    <blueprintGraphicData>
+    <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>85</pathCost>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.74</fillPercent>
+    <statBases>
+      <MaxHitPoints>480</MaxHitPoints>
+			<Beauty>-5</Beauty>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>8</costStuffCount>
+    	<costList>
+	<Component>2</Component>
+    	</costList>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+    </building>
+    <description>A waist-high stone wall built for defense.</description>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <coversFloor>true</coversFloor>
+	<holdsRoof>false</holdsRoof>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <repairEffect>ConstructDirt</repairEffect>
+	<researchPrerequisites><li>IEDIncendiary</li></researchPrerequisites>
+  </ThingDef>
+
+  <!--========================= Barbed Wire =============================-->
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>WallWire</defName>
+    <label>barbed wire</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Security/Wire/Razor_Wire_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		<linkType>Basic</linkType>
+		<linkFlags>
+			<li>Wall</li>
+			<li>Rock</li>
+		</linkFlags>	
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>Things/Building/Security/Wire/Razor_Wire_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/Security/Wire/Razor_Wire_MenuIcon</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>78</pathCost>
+	<pathCostIgnoreRepeat>False</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.05</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+    </building>
+    <description>Good fences make for good neighbor. This fencing is made out of razor wire to keep most people away.</description>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+	<Component>2</Component>
+    </costList>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+	<holdsRoof>false</holdsRoof>
+	<blockLight>false</blockLight>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructEffect>ConstructDirt</constructEffect>
+    <repairEffect>ConstructDirt</repairEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	<researchPrerequisites><li>IEDBomb</li></researchPrerequisites>
+  </ThingDef>
+
+ 
+  <!--========================= Moat =============================-->
+
+  
+	<ThingDef ParentName="BuildingBase">
+    <defName>Moat</defName>
+    <thingClass>Building</thingClass>
+    <label>shallow moat</label>
+    <category>Building</category>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Walls/MoatAtlasBlueprint</texPath>
+    </blueprintGraphicData>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Walls/MoatAtlas</texPath>
+      <shaderType>Transparent</shaderType>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <uiIconPath>Things/Building/Walls/MenuMoatIcon</uiIconPath>
+    <pathCost>70</pathCost>
+	<pathCostIgnoreRepeat>False</pathCostIgnoreRepeat>
+    <statBases>
+      <Beauty>-20</Beauty>
+      <WorkToBuild>700</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+     <SoftClay>10</SoftClay>
+     <Sand>10</Sand>
+     <CrudeOil>5</CrudeOil>
+    </costList>
+    <description>A light perimeter defense to slow down your enemy.</description>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+       <blockLight>false</blockLight>
+	<holdsRoof>false</holdsRoof>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructEffect>ConstructDirt</constructEffect>
+    <repairEffect>ConstructDirt</repairEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <researchPrerequisites><li>IEDIncendiary</li></researchPrerequisites>
+  </ThingDef>
+
+	<!--==================== Traps ======================== -->
+  
+ 	<ThingDef ParentName="BuildingBase">
+		<defName>Razor_Wire_Trap</defName>
+		<label>razor wire trap</label>
+		<thingClass>Building_TrapRearmable</thingClass>
+		<description>Very dangerous trap.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/Wire/Razor_Wire_Atlas_Armed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>			
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Security/Wire/Razor_Wire_Trap_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Security/Wire/Razor_Wire_Trap_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<WorkToBuild>180</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-3</Beauty>
+			<TrapMeleeDamage>60</TrapMeleeDamage>
+			<TrapSpringChance>0.8</TrapSpringChance>
+		</statBases>
+		<CostList>
+			<Component>2</Component>
+			<Wire>4</Wire>
+		</CostList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>240</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>.10</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<building>
+			<isTrap>true</isTrap>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<trapUnarmedGraphicData>
+				<texPath>Things/Building/Security/Wire/Razor_Wire_Atlas_Disarmed</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<shaderType>Cutout</shaderType>
+			</trapUnarmedGraphicData>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+	</ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TrapDeadfall</defName>
+    <label>deadfall trap</label>
+    <thingClass>Building_TrapRearmable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/DeadfallArmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Beauty>-4</Beauty>
+      <TrapMeleeDamage>60</TrapMeleeDamage>
+      <TrapSpringChance>0.8</TrapSpringChance>
+    </statBases>
+    <description>A suspended spiked weight held up by a delicate trigger. When the victim disturbs the trigger, the weight is released and falls on his head or torso.</description>
+	<costList>
+		<Component>4</Component>
+		<Wire>2</Wire>
+	</costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <trapUnarmedGraphicData>
+        <texPath>Things/Building/Security/DeadfallUnarmed</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Cutout</shaderType>
+      </trapUnarmedGraphicData>
+    </building>
+  </ThingDef>
+
+  
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TrapIEDBomb</defName>
+    <label>IED trap</label>
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDBomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>0.8</TrapSpringChance>
+    </statBases>
+    <description>An artillery shell connected to a homemade trigger. When someone disturbs the trigger, the shell explodes. The improvised trigger has a random delay that might allow a nimble enemy to escape.</description>
+	<costList>
+		<MortarShell>1</MortarShell>
+		<Component>2</Component>
+		<Wire>2</Wire>
+		<Mechanism>1</Mechanism>
+	</costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+    </building>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>
+          <min>15</min>
+          <max>70</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <researchPrerequisites><li>IEDIncendiary</li></researchPrerequisites>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>TrapIEDIncendiary</defName>
+    <label>IED incendiary trap</label>
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDIncendiary</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>0.8</TrapSpringChance>
+    </statBases>
+    <description>Explosives mixed into an incendiary paste with a chemical trigger for dispersal. Its chemical trigger is simple and reliable.</description>
+		<costList>
+			<Napalm>10</Napalm>
+			<Component>2</Component>
+			<Wire>2</Wire>
+			<Mechanism>1</Mechanism>
+		</costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+    </building>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>
+          <min>10</min>
+          <max>50</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <researchPrerequisites><li>IEDIncendiary</li></researchPrerequisites>
+  </ThingDef>
+
+
+
+	<ThingDef ParentName="BuildingBase" Name="NanoShieldBase" Abstract="True">
+		<category>Building</category>
+		<altitudeLayer>Building</altitudeLayer>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<blockLight>true</blockLight>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<fillPercent>1</fillPercent>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<holdsRoof>false</holdsRoof>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>25</Beauty>
+		</statBases>
+		<costList>
+			<MagneticMaterial>25</MagneticMaterial>
+			<BiosyntheticMaterial>15</BiosyntheticMaterial>
+			<Component>12</Component>
+			<AdvMechanism>8</AdvMechanism>
+      		<Microchips>6</Microchips>
+		</costList>
+		<passability>Impassable</passability>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+
+	<ThingDef ParentName="NanoShieldBase">
+		<defName>Building_Pawn_Upgrader</defName>
+		<label>nanite shield station</label>
+		<description>Supplies and recharges Nanite Shield Modulators on colonists to protect them from injury.</description>
+		<thingClass>Core_SK.PersonalShields.Building_Pawn_Upgrader</thingClass>
+		<researchPrerequisites><li>Personal_Shield_research</li></researchPrerequisites>
+    <graphicData>
+		<texPath>Things/ShieldBuilding_Red</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+    </graphicData>
+		<uiIconPath>Things/ShieldBuilding_Red</uiIconPath>
+		<specialDisplayRadius>2</specialDisplayRadius>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>4500</basePowerConsumption>
+			</li>
+		</comps>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+</ThingDefs>

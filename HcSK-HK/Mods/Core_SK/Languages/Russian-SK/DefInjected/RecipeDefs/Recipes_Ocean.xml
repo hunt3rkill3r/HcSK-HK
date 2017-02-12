@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <MakeBlocksSandstone.label>Изготовить песчаные блоки</MakeBlocksSandstone.label>
+    <MakeBlocksSandstone.description>Изготовить песчаные блоки из песка.</MakeBlocksSandstone.description>
+    <MakeBlocksSandstone.jobString>Изготавливает песчаные блоки.</MakeBlocksSandstone.jobString>
+  
+</LanguageData>

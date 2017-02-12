@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+	<!-- Env -->
+	<FrontLeftFlipper.label>Передний левый плавник</FrontLeftFlipper.label> 
+	<FrontRightFlipper.label>Передний правый плавник</FrontRightFlipper.label>
+	
+	<RearLeftFlipper.label>Задний левый плавник</RearLeftFlipper.label> 
+	<RearRightFlipper.label>Задний правый плавник</RearRightFlipper.label>
+	
+	<!-- Insectoid -->
+	
+	<LeftAntisForeleg.label>Левая передняя нога</LeftAntisForeleg.label> 
+	<RightAntisForeleg.label>Правая передняя нога</RightAntisForeleg.label>
+	
+	<!-- Animal -->
+	
+	<LeftFirstLegClaw.label>первый коготь левой лапы</LeftFirstLegClaw.label>
+	<LeftSecondLegClaw.label>второй коготь левой лапы</LeftSecondLegClaw.label>
+	<LeftThirdLegClaw.label>третий коготь левой лапы</LeftThirdLegClaw.label>
+	<LeftFourthLegClaw.label>четвёртый коготь левой лапы</LeftFourthLegClaw.label>
+	
+	<RightFirstLegClaw.label> первый коготь правой лапы</RightFirstLegClaw.label>
+	<RightSecondLegClaw.label>второй коготь правой лапы</RightSecondLegClaw.label>
+	<RightThirdLegClaw.label>третий коготь правой лапы</RightThirdLegClaw.label>
+	<RightFourthLegClaw.label>четвёртый коготь правой лапы</RightFourthLegClaw.label>
+ 
+</LanguageData>
+    
