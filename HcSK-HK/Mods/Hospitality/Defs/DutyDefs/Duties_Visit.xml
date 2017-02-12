@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DutyDef>
+    <defName>Relax</defName>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+		<li Class="Hospitality.ThinkNode_InGuestArea">
+		  <invert>true</invert>
+          <subNodes>
+			<li Class="Hospitality.JobGiver_GotoGuestArea"/>
+          </subNodes>
+		</li>
+        <li Class="Hospitality.ThinkNode_FilterGuestRooms">
+          <subNodes>
+            <li Class="ThinkNode_PrioritySorter">
+              <subNodes>
+				<li Class="Hospitality.JobGiver_Relax"/>
+                <li Class="JobGiver_GetFood"/>
+                <li Class="Hospitality.JobGiver_Sleep"/>
+                <li Class="JobGiver_Work"/>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  <DutyDef>
+    <defName>TakeWoundedGuest</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_TakeWoundedGuest" />
+        <li Class="JobGiver_ExitMapBest">
+          <defaultLocomotion>Jog</defaultLocomotion>
+          <jobMaxDuration>500</jobMaxDuration>
+          <forceCanDig>false</forceCanDig>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+</Defs>

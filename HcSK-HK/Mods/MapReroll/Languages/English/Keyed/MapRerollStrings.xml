@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<MapReroll_windowTitle>Map Reroll</MapReroll_windowTitle>
+	<MapReroll_oresLeft>Resources remaining: {0}%</MapReroll_oresLeft>
+	<MapReroll_rerollGeysersBtn>Reroll Geysers{0}</MapReroll_rerollGeysersBtn>
+	<MapReroll_rerollMapBtn>Reroll Map{0}</MapReroll_rerollMapBtn>
+	<MapReroll_resourceCost_suffix> ({0}%)</MapReroll_resourceCost_suffix>
+	<MapReroll_freeRerollsLabel>Reroll costs are disabled</MapReroll_freeRerollsLabel>
+	
+	<MapReroll_stash_readInscription>Read inscription</MapReroll_stash_readInscription>
+	<MapReroll_stash_inscription>The inscription reads:\n"&lt;b&gt;Property of Dread Pirate Steve. Hands off, ya wanker!&quot;&lt;/b&gt;</MapReroll_stash_inscription>
+	
+	<MapReroll_secretLetter_title>Secret found!</MapReroll_secretLetter_title>
+	<MapReroll_secretLetter_text>You discovered the secret feature of Map Reroll! Well done!</MapReroll_secretLetter_text>
+	
+	<setting_paidRerolls_label>Rerolls cost resources</setting_paidRerolls_label>
+<setting_paidRerolls_desc>When enabled, rerolling maps and geysers will cost unmined resources from the map.\nFree rerolls disable the &lt;b&gt;&lt;i&gt;secret feature&lt;/i&gt;&lt;/b&gt;.</setting_paidRerolls_desc>
+	<setting_loadingMessages_label>Custom loading messages</setting_loadingMessages_label>
+	<setting_loadingMessages_desc>Will display custom loading messages on the loading screen while rerolling a map.</setting_loadingMessages_desc>
+	<setting_widgetSize_label>Dice button size</setting_widgetSize_label>
+	<setting_widgetSize_desc>The size of the red dice button in pixels.</setting_widgetSize_desc>
+	<setting_logConsumption_label>Log consumed resources</setting_logConsumption_label>
+	<setting_logConsumption_desc>Writes the amounts of resources consumed by the reroll operations to the console.</setting_logConsumption_desc>
+	<setting_noVomiting_label>Disable Cryptosleep sickness</setting_noVomiting_label>
+	<setting_noVomiting_desc>Enable this to keep your colonists from vomiting all over your shiny new map.</setting_noVomiting_desc>
+	
+	<!-- optional loading messages, vanilla loading message will be used if none are found -->
+	
+	<MapReroll_loading0>Bribing Fates</MapReroll_loading0>
+	<MapReroll_loading1>Reticulating Splines</MapReroll_loading1>
+	<MapReroll_loading2>Rewinding Time</MapReroll_loading2>
+	<MapReroll_loading3>Meanwhile, in Texas</MapReroll_loading3>
+	<MapReroll_loading4>Twiddling thumbs</MapReroll_loading4>
+	<MapReroll_loading5>Recreating universe</MapReroll_loading5>
+	<MapReroll_loading6>Shifting continents</MapReroll_loading6>
+	<MapReroll_loading7>Growing rocks</MapReroll_loading7>
+	<MapReroll_loading8>Breeding Thrumbos</MapReroll_loading8>
+	<MapReroll_loading9>You saw nothing</MapReroll_loading9>
+	<MapReroll_loading10>Cranking Magic</MapReroll_loading10>
+	<MapReroll_loading11>Poking God</MapReroll_loading11>
+	<MapReroll_loading12>Hiding treasure</MapReroll_loading12>
+	<MapReroll_loading13>Taunting mechanoids</MapReroll_loading13>
+	<MapReroll_loading14>Fueling OCD</MapReroll_loading14>
+	<MapReroll_loading15>Making More Better</MapReroll_loading15>
+	<MapReroll_loading16>Breaking rules</MapReroll_loading16>
+	<MapReroll_loading17>Draining oceans</MapReroll_loading17>
+	<MapReroll_loading18>Rolling dice</MapReroll_loading18>
+	<MapReroll_loading19>Compacting steel</MapReroll_loading19>
+	<MapReroll_loading20>Hiding gold</MapReroll_loading20>
+	<MapReroll_loading21>Flushing evidence</MapReroll_loading21>
+	<MapReroll_loading22>We must go deeper</MapReroll_loading22>
+	<MapReroll_loading23>'T was only a dream</MapReroll_loading23>
+	<MapReroll_loading24>Mocking pirates</MapReroll_loading24>
+	<MapReroll_loading25>Grinding gears</MapReroll_loading25>
+	<MapReroll_loading26>Fluffing bunnies</MapReroll_loading26>
+	<MapReroll_loading27>Refueling Boomalopes</MapReroll_loading27>
+	<MapReroll_loading28>Rerolling hills</MapReroll_loading28>
+	<MapReroll_loading29>Flattening world</MapReroll_loading29>
+	<MapReroll_loading30>Preparing carefully</MapReroll_loading30>
+	<MapReroll_loading31>Spinning up world</MapReroll_loading31>
+	<MapReroll_loading32>Building pirate bases</MapReroll_loading32>
+	<MapReroll_loading33>Hiding pentagons</MapReroll_loading33>
+</LanguageData>

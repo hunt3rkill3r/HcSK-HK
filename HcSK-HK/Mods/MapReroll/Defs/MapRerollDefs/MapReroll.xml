@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MapReroll.MapRerollDef>
+		<defName>MapRerollSettings</defName>
+		<geyserRerollCost>1.0</geyserRerollCost>
+		<mapRerollCost>2.0</mapRerollCost>
+		<enableInterface>true</enableInterface>
+	</MapReroll.MapRerollDef>
+</Defs>
