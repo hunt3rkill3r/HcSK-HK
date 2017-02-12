@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Survival Core SK</name>
+  <author>Owlchemist</author>
+  <url>http://hardcore-sk.ru/</url>
+  <targetVersion>0.16.1386</targetVersion>
+  <description>Aligns the balance of HardcoreSK closer to vanilla, designed for players who use the vanilla storytellers such as Cassandra. In general, the survival aspects will be harder to balance a less combat-focused experience that the custom hardcoreSK storytellers provide. This mod folder includes an optional ModsConfig.xml which you may install. It excludes a few of HardcoreSK's modules that are not well balanced into this experience.</description>
+</ModMetaData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MainTabDefs>
+
+  <MainTabDef>
+    <defName>Tech_Advancing</defName>
+    <label>Tech</label>
+    <description>Configure how Tech Advancing affects your game.</description>
+    <windowClass>TechAdvancing.TechAdvancing_Config_Tab</windowClass>
+    <order>250</order>
+	<showTabButton>false</showTabButton>
+  </MainTabDef>
+
+</MainTabDefs>
