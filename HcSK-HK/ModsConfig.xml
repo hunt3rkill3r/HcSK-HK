@@ -11,6 +11,8 @@
 	<li>Survival HardcoreSK</li>
     <li>SeedsPlease_SK</li>
     <li>EdBPrepareCarefully</li>
+	<li>Better Pathfinding</li>
+	<li>PathAvoid</li>
 	<li>MapReroll</li>
     <li>TechAdvancing</li>
     <li>StackMerger</li>
@@ -32,5 +34,6 @@
     <li>WorldPawnGC</li>
     <li>ColonistBar_KF</li>
 	<li>Miniaturisation</li>
+	<li>ED-LaserDrill</li>
   </activeMods>
 </ModsConfigData>

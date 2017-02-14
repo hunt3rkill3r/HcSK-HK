@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PathAvoid>
+<PathAvoid.PathAvoidDef>
+    <defName>PathAvoidPrefer</defName>
+    <Name>Prefer</Name>
+	<Level>0</Level>
+	<Color>(130,213,255)</Color>	
+  </PathAvoid.PathAvoidDef>
+  
+<PathAvoid.PathAvoidDef>
+    <defName>PathAvoidNormal</defName>
+    <Name>Normal</Name>
+	<Level>10</Level>
+	<Color>(0,255,0)</Color>
+	<Display>false</Display>
+  </PathAvoid.PathAvoidDef>
+  
+  <PathAvoid.PathAvoidDef>
+    <defName>PathAvoidDislike</defName>
+    <Name>Dislike</Name>
+	<Level>80</Level>
+	<Color>(255, 238, 86)</Color>
+  </PathAvoid.PathAvoidDef>
+  
+  <PathAvoid.PathAvoidDef>
+    <defName>PathAvoidHate</defName>
+    <Name>Hate</Name>
+	<Level>160</Level>
+	<Color>(226, 136, 34)</Color>
+  </PathAvoid.PathAvoidDef>
+  
+  <PathAvoid.PathAvoidDef>
+    <defName>PathAvoidStrong</defName>
+    <Name>Strong</Name>
+	<Level>250</Level>
+	<Color>(255,0,0)</Color>
+  </PathAvoid.PathAvoidDef>
+
+</PathAvoid>
