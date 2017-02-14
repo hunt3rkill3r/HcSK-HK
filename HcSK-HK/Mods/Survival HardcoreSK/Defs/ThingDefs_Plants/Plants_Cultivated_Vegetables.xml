@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+   <ThingDef ParentName="PlantDef">
+    <defName>PlantPotato</defName>
+    <label>Potato Plant</label>
+    <description>Potato Plants produce nutritious tubers called Potatoes. Potato Plants grow quickly and are a reliable food source crop for basic meals.</description>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+  <graphicData>
+      <texPath>Things/Plant/PotatoPlant</texPath>
+  <graphicClass>Graphic_Random</graphicClass>
+  </graphicData>
+    <plant>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowMinSkill>1</sowMinSkill>
+      <harvestedThingDef>RawPotatoes</harvestedThingDef>
+      <harvestYield>12</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6.5</growDays>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <fertilityMin>0.5</fertilityMin>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.05</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="PlantDef">
+    <defName>PlantCorn</defName>
+    <label>Corn Plant</label>
+    <description>Corn Plants are large grain plants that produce ears of delicious yellow seeds that are called Corn. Corn Plants grow slowly but yeild lots of food. Corn is useful as a food ingredient or for making Ethanol Fuel.</description>
+  <graphicData>
+      <texPath>Things/Plant/CornPlant</texPath>
+    <graphicClass>Graphic_Random</graphicClass>
+  </graphicData>
+    <ingestible>
+      <nutrition>0.30</nutrition>
+    </ingestible>
+    <plant>
+      <sowMinSkill>6</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_CerealsII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>RawCorn</harvestedThingDef>
+      <harvestYield>20</harvestYield>
+      <topWindExposure>0.35</topWindExposure>
+      <growDays>14.5</growDays>
+      <fertilitySensitivity>1</fertilitySensitivity>
+      <fertilityMin>0.4</fertilityMin>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.4</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+   <ThingDef ParentName="PlantDef">
+    <defName>PlantRice</defName>
+    <label>Rice Plant</label>
+    <description>Rice Plants are short grain plants that yields numerous amounts of edible seeds called Rice. Rice is useful as a meal ingredient, can be made into Ethanol Fuel or distilled into Sake from the Brewery.</description>
+  <graphicData>
+      <texPath>Things/Plant/RicePlant</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+    <plant>
+      <sowMinSkill>12</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_CerealsIII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>RawRice</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6.2</growDays>
+      <fertilitySensitivity>1</fertilitySensitivity>
+      <fertilityMin>0.5</fertilityMin>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>0.8</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+   <ThingDef ParentName="PlantDef">
+    <defName>Planteggplant</defName>
+    <label>Eggplant Bush</label>
+    <description>Eggplant Bushes produce large, purple, egg-shaped fruits called Eggplant Fruit. Eggplant Bushes grow quickly, as the plant is related to the fast growing Potato Plant.</description>
+    <graphicData>
+      <texPath>Things/Plant/eggplantPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <plant>
+      <sowMinSkill>8</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_VegetablesII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags> 
+      <harvestedThingDef>Raweggplant</harvestedThingDef>
+      <harvestYield>14</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>6.2</growDays>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <fertilityMin>0.8</fertilityMin>
+      <visualSizeRange>
+        <min>0.25</min>
+        <max>1.00</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+ 
+ 
+   <ThingDef ParentName="PlantDef">
+    <defName>Plantpumpkin</defName>
+    <label>Pumpkin Vine</label>
+    <description>Pumpkin Vines produce large, orange squashes called Pumpkins. The fleshy inside of a Pumpkin is great when baked into a pie from the Electric Oven.</description>
+  <graphicData>
+      <texPath>Things/Plant/pumpkinPlant</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+    <plant>
+      <sowMinSkill>11</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_VegetablesIII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>Rawpumpkin</harvestedThingDef>
+      <harvestYield>14</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5.8</growDays>
+      <fertilitySensitivity>1.1</fertilitySensitivity>
+      <fertilityMin>1.15</fertilityMin>
+      <visualSizeRange>
+        <min>0.25</min>
+        <max>1.00</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+
+
+   <ThingDef ParentName="PlantDef">
+    <defName>Plantbean</defName>
+    <label>Bean Stalk</label>
+    <description>A Bean Stalk produces a Bean Pod, a soft shell with small, edible seeds inside. They can be used as a meal ingredient or can be refined into BioDiesel Fuel.</description>
+    <graphicData>
+      <texPath>Things/Plant/beanPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <nutrition>0.30</nutrition>
+    </ingestible>
+    <plant>
+      <sowMinSkill>13</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_VegetablesIII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>Rawbean</harvestedThingDef>
+      <harvestYield>35</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>13.5</growDays>
+      <fertilitySensitivity>1</fertilitySensitivity>
+      <fertilityMin>1</fertilityMin>
+      <visualSizeRange>
+        <min>0.25</min>
+        <max>1.00</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+
+
+   <ThingDef ParentName="PlantDef">
+    <defName>PlantTomato</defName>
+    <label>Tomato Vine</label>
+    <description>Tomato Vines produce round, palm sized, red, sharp-tasting fruits called Tomatoes. Tomatoes are related to Potato Plants and grow very quickly.</description>
+  <graphicData>
+      <texPath>Things/Plant/TomatoPlant</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+    <plant>
+      <sowMinSkill>15</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_FruitsII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>RawTomatoes</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>4.0</growDays>
+      <fertilitySensitivity>1.2</fertilitySensitivity>
+      <fertilityMin>1.3</fertilityMin>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.05</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+ 
+  
+   <ThingDef ParentName="PlantDef">
+    <defName>PlantCarrot</defName>
+    <label>Carrot Plant</label>
+    <description>Carrot Plants produce long, crunchy, orange root vegetables called Carrots. Carrots are refreshing to eat raw and have a long shelf life.</description>
+    <graphicData>
+      <texPath>Things/Plant/CarrotPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <foodType>Plant</foodType>
+      <preferability>NeverForNutrition</preferability>
+      <nutrition>0.40</nutrition>
+    </ingestible>
+    <plant>
+      <sowMinSkill>5</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_VegetablesI</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>RawCarrots</harvestedThingDef>
+      <harvestYield>7</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>4.9</growDays>
+      <fertilitySensitivity>1</fertilitySensitivity>
+      <fertilityMin>0.9</fertilityMin>
+      <visualSizeRange>
+        <min>0.25</min>
+        <max>1.00</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+   <ThingDef ParentName="PlantDef">
+    <defName>PlantLettuce</defName>
+    <label>Lettuce Plant</label>
+    <description>Lettuce Plants produce large, edible leaves called Lettuce. Lettuce is an essential component in many salads.</description>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+  <graphicData>
+    <texPath>Things/Plant/LettucePlant</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+    <plant>
+      <sowMinSkill>6</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>SK_VegetablesII</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>RawLettuce</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>4.4</growDays>
+      <fertilitySensitivity>0.08</fertilitySensitivity>
+      <fertilityMin>0.9</fertilityMin>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.05</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+
+   <ThingDef ParentName="PlantDef">
+    <defName>Plantmushroom</defName>
+	<label>Champignon Mushroom</label>
+    <description>Champignon Mushrooms produce white or brown edible caps called Raw Champignon. This robust mushroom has been genetically engineered and is cultivated to produce a filling meat substitute.</description>
+    <graphicData>
+      <texPath>Things/Plant/mushroomPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <plant>
+      <sowMinSkill>4</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>Fungiponics</li>
+      </sowResearchPrerequisites>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <harvestedThingDef>Rawmushroom</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5.8</growDays>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <fertilityMin>0.9</fertilityMin>
+      <visualSizeRange>
+        <min>0.25</min>
+        <max>1.00</max>
+      </visualSizeRange>
+	<wildBiomes>
+	   <TemperateForest>0.15</TemperateForest>
+	   <TropicalRainforest>0.15</TropicalRainforest>    			   
+	   <BorealForest>0.15</BorealForest>
+	</wildBiomes>
+    </plant>
+  </ThingDef>
+
+</ThingDefs>

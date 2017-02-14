@@ -4,7 +4,7 @@
 	<StorytellerDef>
 		<defName>Hildegarde</defName>
     <label>Hildegarde Epic</label>
-    <description>A Veteran of the grim Mechanoid war and a skald of Jotunheim assault infantry corps, Hildegarde's songs are full of flame and war. Just like Jotunheim Prime's people themselves. She will send more "big threats" while causing less incidents.</description>
+    <description>Hildegarde is a veteran of the Mechanoid War. She will send more "big threats" while causing less incidents.</description>
     <portraitLarge>Things/Storytellers/Hildegarde</portraitLarge>
     <portraitTiny>Things/Storytellers/HildegardeTiny</portraitTiny>
     <listOrder>43</listOrder>
@@ -49,7 +49,7 @@
 	<StorytellerDef>
 	<defName>Rey</defName>
     <label>Rey Torturer</label>
-	<description>Rey is a tough and consistent torturer. She will taunt you until magma flows out of your ass.</description>
+	<description>Rey is a bitch, you will die most likely.</description>
 	<portraitLarge>Things/Storytellers/Rey</portraitLarge>
 	<portraitTiny>Things/Storytellers/ReyTiny</portraitTiny>
     <listOrder>45</listOrder>
@@ -80,7 +80,7 @@
 	<StorytellerDef>
 	<defName>Haseo</defName>
     <label>Haseo Infiltrator</label>
-	<description>Haseo an experienced headhunter. He will tell you the story of despair and hopelessness.</description>
+	<description>Haseo an experienced headhunter. He will raid you hard.</description>
 	<portraitLarge>Things/Storytellers/Haseo</portraitLarge>
 	<portraitTiny>Things/Storytellers/HaseoTiny</portraitTiny>
     <listOrder>50</listOrder>

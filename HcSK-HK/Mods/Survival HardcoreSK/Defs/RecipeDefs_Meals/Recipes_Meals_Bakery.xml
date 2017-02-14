@@ -94,6 +94,11 @@
 		<products>
 			<GrilledCheese>1</GrilledCheese>
 		</products>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>ElectricStove_Pro</li>
+		</recipeUsers>
 		<skillRequirements>
 			<li>
 				<skill>Cooking</skill>
@@ -101,6 +106,7 @@
 			</li>
 		</skillRequirements>
 		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>SK_ProductionI</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef>
@@ -169,6 +175,11 @@
 		<products>
 			<CheeseBurger>1</CheeseBurger>
 		</products>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>ElectricStove_Pro</li>
+		</recipeUsers>
 		<skillRequirements>
 			<li>
 				<skill>Cooking</skill>
@@ -176,13 +187,14 @@
 			</li>
 		</skillRequirements>
 		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>SK_ProductionI</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef>
 		<defName>MakePieBlueberry</defName>
-		<label>bake blueberry pies</label>
-		<description>Bake tasty blueberry pies. Produces 5.</description>
-		<jobString>Baking Blueberry Pies.</jobString>
+		<label>bake berry pies</label>
+		<description>Bake tasty berry pies. Produces 5.</description>
+		<jobString>Baking Berry Pies.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<workAmount>1500</workAmount>

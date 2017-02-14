@@ -5,9 +5,10 @@
 	<RecipeDef>
 		<defName>MakeRoastwMushrooms</defName>
 		<label>cook pot roast and mushrooms</label>
-		<description>Prepare a roast with seared mushrooms on top. Produces 1.</description>
+		<description>As far as nutritional value goes, roast meat and mushrooms is slightly more effective than a fine meal. It, however, lacks some of the finer touches and won't quite get the same spirited reaction.</description>
 		<jobString>Cooking Pot Roast and Mushrooms.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>450</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -27,7 +28,7 @@
 						<li>AnimalProductRaw</li>	
 					</categories>
 				</filter>
-				<count>5</count>
+				<count>7</count>
 			</li>
 		</ingredients>
 		<products>
@@ -80,9 +81,10 @@
 	<RecipeDef>
 		<defName>MakeRoastwMushrooms_Bulk</defName>
 		<label>cook pot roast and mushrooms (x4)</label>
-		<description>Prepare a couple of pots and throw in a roast and a couple of mushrooms in each one and wait ... Bam! Post Roast and Mushrooms. Produces 4.</description>
+		<description>As far as nutritional value goes, roast meat and mushrooms is slightly more effective than a fine meal. It, however, lacks some of the finer touches and won't quite get the same spirited reaction.</description>
 		<jobString>Cooking Pot Roast and Mushrooms.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1800</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -102,7 +104,7 @@
 						<li>AnimalProductRaw</li>
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>28</count>
 			</li>
 		</ingredients>
 		<products>
@@ -158,9 +160,10 @@
 	<RecipeDef>
 		<defName>MakeStewMushrooms</defName>
 		<label>cook mushroom stew</label>
-		<description>Prepares a hearty stew of mushrooms. Produces 1.</description>
+		<description>Mushroom stews are just slightly less effective than a simple meal. However, it makes up for it in providing some hearty benefits that may act as a boon for sick colonists.</description>
 		<jobString>Cooking Mushroom Stew.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>500</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Chemlab_Medicine_Drink</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -171,7 +174,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>5</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<products>
@@ -211,9 +214,10 @@
 	<RecipeDef>
 		<defName>MakeStewMushrooms_Bulk</defName>
 		<label>cook mushroom stew (x4)</label>
-		<description>Prepares hearty stews of mushrooms. Produces 4.</description>
+		<description>Mushroom stews are just slightly less effective than a simple meal. However, it makes up for it in providing some hearty benefits that may act as a boon for sick colonists.</description>
 		<jobString>Cooking Mushroom Stews.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>2000</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Chemlab_Medicine_Drink</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -226,7 +230,7 @@
 						<li>Rawmushroom</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>40</count>
 			</li>
 		</ingredients>
 		<products>
@@ -269,9 +273,10 @@
 	<RecipeDef>
 		<defName>MakeSaladwMushrooms</defName>
 		<label>make mushroom salad</label>
-		<description>Prepares a salad of mushrooms. Produces 1.</description>
+		<description>A small batch of salad that may be useful for clearing up any leftover shrooms in storage. Produces 5.</description>
 		<jobString>Making Mushroom Salad.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>140</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -292,11 +297,11 @@
 						<li>BasicPlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>5</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<products>
-			<SaladwMushrooms>1</SaladwMushrooms>
+			<SaladwMushrooms>5</SaladwMushrooms>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -326,7 +331,7 @@
 		<skillRequirements>
 			<li>
 				<skill>Cooking</skill>
-				<minLevel>6</minLevel>
+				<minLevel>1</minLevel>
 			</li>
 		</skillRequirements>
 		<workSkill>Cooking</workSkill>
@@ -337,7 +342,7 @@
 	<RecipeDef>
 		<defName>MakeSaladwMushrooms_Bulk</defName>
 		<label>make mushroom salads (x4)</label>
-		<description>Prepares several salads of mushrooms. Produces 4.</description>
+		<description>A small batch of salad that may be useful for clearing up any leftover shrooms in storage. Produces 20.</description>
 		<jobString>Making Mushroom Salads.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -360,11 +365,11 @@
 						<li>BasicPlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>4</count>
 			</li>
 		</ingredients>
 		<products>
-			<SaladwMushrooms>4</SaladwMushrooms>
+			<SaladwMushrooms>20</SaladwMushrooms>
 		</products>
 
 		<fixedIngredientFilter>
@@ -396,7 +401,7 @@
 		<skillRequirements>
 			<li>
 				<skill>Cooking</skill>
-				<minLevel>10</minLevel>
+				<minLevel>5</minLevel>
 			</li>
 		</skillRequirements>
 		<workSkill>Cooking</workSkill>

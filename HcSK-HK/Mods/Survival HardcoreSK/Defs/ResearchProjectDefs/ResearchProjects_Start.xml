@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Pemmican</defName>
+		<label>Food preservation</label>
+		<description>Learn how preserve foods and make pemmican, a preserved mixture of meat and plant matter that doesn't go bad for a long time. Great for traveling.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>SK_Craftsmanship</li>
+		</prerequisites>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
+	</ResearchProjectDef>
+
+
+</Defs>

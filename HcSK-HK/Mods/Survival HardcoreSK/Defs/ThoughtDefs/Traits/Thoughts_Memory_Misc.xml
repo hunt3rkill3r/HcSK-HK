@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThoughtDefs>
+
+  <ThoughtDef>
+    <defName>SleptOutside</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+	<nullifyingTraits>
+		<li>Tough</li>
+	</nullifyingTraits>
+    <stages>
+      <li>
+        <label>slept outside</label>
+        <description>I had to sleep outdoors without any protection from the elements.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SleptOnGround</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+	<nullifyingTraits>
+		<li>Tough</li>
+	</nullifyingTraits>
+    <stages>
+      <li>
+        <label>slept on ground</label>
+        <description>I had to sleep on the ground like an animal.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SleptInCold</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+	<nullifyingTraits>
+		<li>Tough</li>
+	</nullifyingTraits>
+    <stages>
+      <li>
+        <label>slept in the cold</label>
+        <description>I had to sleep in the cold. We really need some heaters.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SleptInHeat</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+	<nullifyingTraits>
+		<li>Tough</li>
+	</nullifyingTraits>
+    <stages>
+      <li>
+        <label>slept in the heat</label>
+        <description>I had to sleep in unbearable heat. Can't we have air conditioning?</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- ============== Human corpse butchering ===============-->
+
+  <ThoughtDef>
+    <defName>ButcheredHumanlikeCorpse</defName>
+    <durationDays>6.0</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+	  <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>I butchered humanlike</label>
+        <description>I butchered someone up like an animal.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>KnowButcheredHumanlikeCorpse</defName>
+    <durationDays>6.0</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+	  <li>Cannibal</li>
+	  <li>Pragmatist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>We butchered humanlike</label>
+        <description>We butchered someone up like an animal.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</ThoughtDefs>

@@ -45,7 +45,7 @@
 			<meatLabel>raw meat</meatLabel>
 			<leatherLabel>thick leather</leatherLabel>
 			<leatherColor>(90,57,27)</leatherColor>
-			<leatherMarketValueFactor>4.0</leatherMarketValueFactor>
+			<leatherMarketValueFactor>6.0</leatherMarketValueFactor>
 			<leatherStatFactors>
 				<MaxHitPoints>1.7</MaxHitPoints>
 				<Beauty>1</Beauty>
