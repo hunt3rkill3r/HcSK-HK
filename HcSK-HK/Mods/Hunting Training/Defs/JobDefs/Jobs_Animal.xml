@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <JobDef>
+		<defName>HuntTrained</defName>
+		<driverClass>Nandonalt_Limbs.JobDriver_AnimalHunt</driverClass>
+		<reportString>hunting TargetA (trained).</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <canCheckOverrideOnDamage>false</canCheckOverrideOnDamage>
+  </JobDef>
+
+    <JobDef>
+		<defName>HuntTrainedAssist</defName>
+		<driverClass>Nandonalt_Limbs.JobDriver_AnimalHuntAssist</driverClass>
+		<reportString>assisting TargetB in hunting TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <canCheckOverrideOnDamage>false</canCheckOverrideOnDamage>
+  </JobDef>
+
+  
+</Defs>

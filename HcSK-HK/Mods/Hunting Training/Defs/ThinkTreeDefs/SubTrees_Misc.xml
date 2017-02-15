@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThinkTrees>
+
+  
+  <ThinkTreeDef>
+    <defName>AnimalHuntTrained</defName>
+	<insertTag>Animal_PreWander</insertTag>
+    <insertPriority>100</insertPriority>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+              <li Class="ThinkNode_ChancePerHour_Constant">
+              <mtbHours>4.0</mtbHours>
+              <subNodes>
+         <li Class="ThinkNode_ConditionalTrainableCompleted">
+              <trainable>HuntingTraining</trainable>
+              <subNodes>
+                <li Class="Nandonalt_Limbs.JobGiver_AnimalHunt"/>
+                  </subNodes>
+            </li>
+			  </subNodes>
+            </li>
+        
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+ 
+
+
+</ThinkTrees>

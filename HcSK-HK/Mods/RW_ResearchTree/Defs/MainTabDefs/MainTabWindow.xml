@@ -3,7 +3,7 @@
 
   <MainTabDef>
     <defName>ResearchTree</defName>
-    <label>research tree</label>
+    <label>Tech Tree</label>
     <description>Examine and decide on research projects.</description>
     <windowClass>ResearchTree.MainTabWindow_ResearchTree</windowClass>
     <order>91</order>
