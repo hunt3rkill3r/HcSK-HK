@@ -4,7 +4,7 @@
 	<StorytellerDef>
 		<defName>Hildegarde</defName>
     <label>Hildegarde Epic</label>
-    <description>A Veteran of the grim Mechanoid war and a skald of Jotunheim assault infantry corps, Hildegarde's songs are full of flame and war. Just like Jotunheim Prime's people themselves. She will send more "big threats" while causing less incidents.</description>
+    <description>Hildegarde is a veteran warrior, she will send more "big threats" while causing less incidents.</description>
     <portraitLarge>Things/Storytellers/Hildegarde</portraitLarge>
     <portraitTiny>Things/Storytellers/HildegardeTiny</portraitTiny>
     <listOrder>43</listOrder>
