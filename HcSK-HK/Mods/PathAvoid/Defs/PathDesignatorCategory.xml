@@ -5,7 +5,7 @@
     <defName>Pathing</defName>
     <label>pathing</label>
     <description>Allows you to customize pathing</description>
-    <order>955</order>
+    <order>0</order>
   </PathAvoid.PathDesignationCategoryDef>
   
 </Defs>

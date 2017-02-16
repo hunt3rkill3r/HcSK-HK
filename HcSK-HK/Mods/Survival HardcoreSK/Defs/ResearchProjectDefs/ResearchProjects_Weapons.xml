@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SmithingI</defName>
+		<label>metalworking</label>
+		<description>Learn how to build electric smithy, which can be used for more advanced and quicker projects. Also reveals the fundamentals of guns, opening up a new research branch.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_Pistols</defName>
+		<label>explosive weaponry</label>
+		<description>Bullets n' bombs are one way of dealing the problems life may throw at you. Learn how to make pistols, grenades, as well as powerful upgrades to some of your older weapons such as explosive-tipped arrows. With your newfound knowledge, you can begin research into more advanced and specialized weapons.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SmithingI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_SMG</defName>
+		<label>submachine guns</label>
+		<description>Submachine guns, better known as SMGs, are slightly better than a pistol and fire automatically, though their accuracy is all over the place.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_Pistols</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_RiflesI</defName>
+		<label>rifles</label>
+		<description>Rifles are long-barreled guns fired from the shoulder level. They offer more range and damage over pistols.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_Pistols</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_Shotguns</defName>
+		<label>shotguns</label>
+		<description>Why should just one bullet at a time when you can shoot many? Shotguns fire a cone of projectiles, ideal for those who either can't aim well or just need the extra stopping power. Great for hunting.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_Pistols</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_SpecialAmmoI</defName>
+		<label>specialized ammunition</label>
+		<description>With the right resources, you could design bullets that could penetrate armor of do even deadlier damage to soft tissues.</description>
+		<baseCost>1300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_Pistols</li>
+			<li>SK_Petrochemistry</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_SpecialAmmoII</defName>
+		<label>armor piercing ammunition</label>
+		<description>The dense remains of depleted uranium from a nuclear power plant, may be put to some use with hard ammo.</description>
+		<baseCost>2100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_SpecialAmmoI</li>
+			<li>SK_NuclearII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_AssaultRifle</defName>
+		<label>assault rifles</label>
+		<description>Combining the machine efficiency of SMGs and the advantages of rifles, assault rifles will arm your fighters with some professional grade gear.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_RiflesI</li>
+			<li>SSK_SMG</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>SSK_RiflesII</defName>
+		<label>sniper rifles</label>
+		<description>Continued research into rifle design would allow for even longer barrels and more powerful chambers, delivering shots long range with remarkable accuracy..</description>
+		<baseCost>2100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SSK_RiflesI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>
