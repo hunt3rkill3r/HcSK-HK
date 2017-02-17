@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef>
+		<defName>SoilRich</defName>
+		<label>rich soil</label>
+		<texturePath>Terrain/Surfaces/Soilnew</texturePath>
+		<Description>Soil that has been enriched with Compost to improve crop growth.
+Fertility: 150%.</Description>
+		<EdgeType>FadeRough</EdgeType>
+		<RenderPrecedence>335</RenderPrecedence>
+		<PathCost>10</PathCost>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<Fertility>1.4</Fertility>
+		<TakeFootprints>True</TakeFootprints>
+		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+		<constructEffect>ConstructDirt</constructEffect>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<CostList>
+			<Compost>10</Compost>
+		</CostList>
+		<researchPrerequisites><li>SK_SoilFertillizationI</li></researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef>
+		<defName>SoilTilled</defName>
+		<label>tilled soil</label>
+		<Description>Tilled soil is enriched with compost and synthetic ammonia for maximum fertility. It will allow you to plant crops properly.
+Fertility: 200%.</Description>
+		<texturePath>Terrain/Surfaces/SoilTilled</texturePath>
+		<EdgeType>FadeRough</EdgeType>
+		<RenderPrecedence>335</RenderPrecedence>
+		<PathCost>12</PathCost>
+		<statBases>
+			<Beauty>0</Beauty>
+			<WorkToBuild>2200</WorkToBuild>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<constructEffect>ConstructDirt</constructEffect>
+		<CostList>
+			<Compost>15</Compost>
+			<SyntheticAmmonia>3</SyntheticAmmonia>
+		</CostList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<Fertility>1.8</Fertility>
+		<TakeFootprints>True</TakeFootprints>
+		<acceptFilth>false</acceptFilth>
+		<avoidWander>true</avoidWander>
+		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+		<researchPrerequisites><li>SK_SoilFertillizationII</li></researchPrerequisites>
+	</TerrainDef>
+
+</TerrainDefs>

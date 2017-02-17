@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_PlasmaBombard.label>플라즈마 구체</Bullet_PlasmaBombard.label>
+  <Bullet_CrucibleCannon.label>에너지 볼트</Bullet_CrucibleCannon.label>
+
+	<AD_CrucibleCannon.label>연방 크루시블 속사포</AD_CrucibleCannon.label>
+	<AD_CrucibleCannon.description>암즈 다이내믹스 '스크리머' 크루시블 속사포입니다. 육중한 에너지 중화기로 대부분의 적을 간단히 거꾸러뜨릴 수 있습니다.</AD_CrucibleCannon.description>
+
+	<AD_PlasmaBombard.label>연방 플라즈마 구포</AD_PlasmaBombard.label>
+	<AD_PlasmaBombard.description>초고열 금속 플라즈마 구체를 발사하도록 설계된 '레벨러' 플라즈마 구포는 고대 돌격포의 현대화된 모습입니다.</AD_PlasmaBombard.description>
+
+
+
+</LanguageData>
+
+
+

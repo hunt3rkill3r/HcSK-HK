@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Harvester</defName>
+    <label>energy bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/Laser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Optic</damageDef>
+      <explosionRadius>1</explosionRadius>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFedGun">
+    <defName>Gun_Harvester</defName>
+    <label>harvester cannon</label>
+    <graphicData>
+      <texPath>Things/A13/Pacificator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <menuHidden>true</menuHidden>
+    <description>Heavy crucible weapon.</description>
+    <soundInteract>InteractADWeapons</soundInteract>
+    <canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>1</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Harvester</projectileDef>
+        <warmupTime>1.95</warmupTime>
+        <range>35</range>
+        <ticksBetweenBurstShots>25</ticksBetweenBurstShots>
+        <burstShotCount>15</burstShotCount>
+        <soundCast>RS_ShotCR</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PB</defName>
+    <label>plasma sphere</label>
+    <graphicData>
+      <texPath>Things/Projectile/Plasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>True</flyOverhead>
+      <speed>10</speed>
+      <damageDef>Plasma</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <explosionRadius>1.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFedGun">
+    <defName>Gun_PB</defName>
+    <label>plasma bombard</label>
+    <graphicData>
+      <texPath>Things/A13/Axiom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <menuHidden>true</menuHidden>
+    <description>Heavy plasma weapon.</description>
+    <soundInteract>InteractADWeapons</soundInteract>
+    <canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>5</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_PB</projectileDef>
+        <warmupTime>3.55</warmupTime>
+        <range>500</range>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>15</burstShotCount>
+        <soundCast>RS_ShotHarmonizer</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <minRange>25</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</ThingDefs>

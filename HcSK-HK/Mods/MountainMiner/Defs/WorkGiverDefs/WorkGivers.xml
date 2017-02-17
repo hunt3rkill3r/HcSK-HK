@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+  <WorkGiverDef>
+    <defName>DrillUp</defName>
+    <label>drillup</label>
+    <giverClass>MountainMiner.WorkGiver_UpDrill</giverClass>
+    <workType>Mining</workType>
+    <priorityInType>50</priorityInType>
+    <verb>drill</verb>
+    <gerund>drilling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</WorkGivers>

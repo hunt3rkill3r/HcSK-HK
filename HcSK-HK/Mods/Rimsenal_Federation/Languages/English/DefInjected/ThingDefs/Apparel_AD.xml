@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--FedSuit-->
+  <FedSuit.label>Federation jumpsuit</FedSuit.label>
+  <FedSuit.description>A carbon crystalline fiber jumpsuit for military personnel. It is light and thin, but surprisingly sturdy. It is the uniform of the Federation.</FedSuit.description>
+  <!--Apparel_Judicator-->
+  <Apparel_Judicator.label>riot gear</Apparel_Judicator.label>
+  <Apparel_Judicator.description>A "Judicator" riot gear was produced by Arms Dynamics for the creepy Federation Peacekeeper. This is a really great personal armor if you can withstand from scornful eyes of the people.</Apparel_Judicator.description>
+  <!--Apparel_JudicatorH-->
+  <Apparel_JudicatorH.label>riot gear helmet</Apparel_JudicatorH.label>
+  <Apparel_JudicatorH.description>It is a helmet of the FPC riot gear. If you wear this, you will be an eyesore of your colony.</Apparel_JudicatorH.description>
+  <!--Apparel_MarksmanGear-->
+  <Apparel_MarksmanGear.label>marksman gear</Apparel_MarksmanGear.label>
+  <Apparel_MarksmanGear.description>Arms Dynamics "Condemner" Marksman gear. With joint stabilizer unit, this outfit assure steady aim. Standard issue gear of the Federation Peacebringer assassin corps.</Apparel_MarksmanGear.description>
+  <!--Apparel_MarksmanGearH-->
+  <Apparel_MarksmanGearH.label>marksmangear helmet</Apparel_MarksmanGearH.label>
+  <Apparel_MarksmanGearH.description>It is a helmet of the "Condemner" marksman gear. Integrated target spotter guarantees high accuracy and fast reaction.</Apparel_MarksmanGearH.description>
+</LanguageData>

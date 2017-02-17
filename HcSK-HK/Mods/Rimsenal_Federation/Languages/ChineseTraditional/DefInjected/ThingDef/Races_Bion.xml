@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bion_Grunt.label>獸兵型生化人</Bion_Grunt.label>
+  <Bion_Grunt.description>量產、低智力、思維受控、經過基因修改的聯邦生化人是專為戰爭設計的變異人。從技術上講，他們不再是人類了。</Bion_Grunt.description>
+  <!-- No Leather: Butcher Products -->
+  <Bion_Grunt_Meat.label>生化體肉</Bion_Grunt_Meat.label>
+  <Bion_Grunt_Meat.description>生化體肉</Bion_Grunt_Meat.description>
+  <Bion_Grunt_Corpse.label>生化人屍體</Bion_Grunt_Corpse.label>
+  <Bion_Grunt_Corpse.description>生化人屍體</Bion_Grunt_Corpse.description>
+
+  <Bion_Stalker.label>潛行者型生化人</Bion_Stalker.label>
+  <Bion_Stalker.description>「潛行者」型生化人是專為滲透和間諜活動設計。敏捷、靜謐，潛行者可不是頭腦簡單的人。</Bion_Stalker.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Stalker_Corpse.label>生化人屍體</Bion_Stalker_Corpse.label>
+  <Bion_Stalker_Corpse.description>生化人屍體</Bion_Stalker_Corpse.description>
+
+  <Bion_Federator.label>聯邦者</Bion_Federator.label>
+  <Bion_Federator.description>“聯邦者”主戰機甲是由“武裝動力”生產的機甲型號。“聯邦士”的設計參照了主戰坦克，作為突擊型外裝甲而開發。</Bion_Federator.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Federator_Corpse.label>聯邦者屍體</Bion_Federator_Corpse.label>
+  <Bion_Federator_Corpse.description>聯邦者屍體</Bion_Federator_Corpse.description>
+
+  <Bion_Hulk.label>維護者型生化人</Bion_Hulk.label>
+  <Bion_Hulk.description>如果你認為和平衛士是變異人中最惡劣的變種，那麼你就大錯特錯了。來自聯邦維和部隊的精英特遣隊：和平教士部隊的生化人，由聯邦的頂尖基因工程師所特別設計的「維護者」型。</Bion_Hulk.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Hulk_Corpse.label>生化人屍體</Bion_Hulk_Corpse.label>
+  <Bion_Hulk_Corpse.description>生化人屍體</Bion_Hulk_Corpse.description>
+
+
+</LanguageData>

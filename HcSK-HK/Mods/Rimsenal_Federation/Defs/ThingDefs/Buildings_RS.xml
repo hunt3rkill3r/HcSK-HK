@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BenchBase">
+    <DefName>FedTable</DefName>
+    <label>energy crucible</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A table with equipments for assembling the federation equipments.</Description>
+    <graphicData>
+      <texPath>Things/Building/FedTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <CostList>
+      <CrucibleCore>8</CrucibleCore>
+      <Foerum>60</Foerum>
+      <Plasteel>15</Plasteel>
+      <Component>6</Component>
+    </CostList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(160,110,110,0)</glowColor>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites><li>CrucibleTech</li></researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+</ThingDefs>

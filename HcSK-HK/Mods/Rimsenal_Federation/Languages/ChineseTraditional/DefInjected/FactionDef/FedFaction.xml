@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FPC.label>聯邦維和部隊</FPC.label>
+  <FPC.description>過去銀河系的中心有一個公正且強大的星際帝國，現在只被稱為“聯邦”。然而，漫長而殘酷的與機械族的戰爭改變了一切。以“安全”為名踐踏自由和公平。以“秩序”之名施以壓迫和暴政。漫長的反聯邦戰爭開始了。\n\n內戰爆發，一場前所未有的星際戰爭撕裂了聯邦。現在聯邦和它臭名昭著的維和部隊只不過是一頁歷史。\n\n然而，在與世隔絕的邊緣世界，聯邦之名與其走狗的意味完全不同。\n\n聯邦維和部隊：Federation Peacekeeper Corps</FPC.description>
+  <FPC.pawnsPlural>聯邦士兵</FPC.pawnsPlural>
+  <FPC.leaderTitle>首領</FPC.leaderTitle>
+
+
+</LanguageData>

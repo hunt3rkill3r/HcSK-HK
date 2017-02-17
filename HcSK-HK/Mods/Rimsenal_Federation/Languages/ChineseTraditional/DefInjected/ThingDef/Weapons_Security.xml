@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_Harvester.label>能量子彈</Bullet_Harvester.label>
+
+  <Gun_Harvester.label>收割者加農炮</Gun_Harvester.label>
+  <Gun_Harvester.description>重型熔爐武器。</Gun_Harvester.description>
+
+  <Bullet_PB.label>電漿球</Bullet_PB.label>
+
+  <Gun_PB.label>電漿轟擊炮</Gun_PB.label>
+  <Gun_PB.description>重型電漿武器。</Gun_PB.description>
+
+
+</LanguageData>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>BionWound</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionWound</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BionHitPawn</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionHitPawn</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.51151</min>        
+          <max>42.93479</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1</min>        
+          <max>1.14837</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BionHitBuilding</defName> 
+    <context>MapOnly</context> 
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionHitBuilding</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.51151</min>        
+          <max>42.93479</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1</min>        
+          <max>1.14837</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BionMiss</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionMiss</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.51151</min>        
+          <max>42.93479</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1</min>        
+          <max>1.14837</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BionDeath</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionDeath</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9311765</min>        
+          <max>1.045882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BionCall</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionCall</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9311765</min>        
+          <max>1.045882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BionAngry</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/BionAngry</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechAngry</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechAngry</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechCall</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechCall</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechDeath</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechDeath</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechHitBuilding</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechHitBuilding</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechHitPawn</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechHitPawn</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechMiss</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechMiss</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ <SoundDef>
+    <defName>MechWound</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MechWound</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.068824</max>
+        </pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

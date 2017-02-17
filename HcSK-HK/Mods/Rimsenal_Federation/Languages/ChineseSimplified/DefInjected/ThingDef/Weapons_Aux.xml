@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_Sentinel.label>电浆球</Bullet_Sentinel.label>
+
+  <AD_Sentinel.label>电浆步枪</AD_Sentinel.label>
+  <AD_Sentinel.description>「哨兵」电浆步枪是一种单兵电浆武器，即使在联邦制式武器中也是罕见且可怕的。发射含有爆炸性液态电离金属的小型球体。</AD_Sentinel.description>
+
+  <Bullet_PBomb.label>电浆炸弹</Bullet_PBomb.label>
+
+  <AD_PBomb.label>电浆炸弹</AD_PBomb.label>
+  <AD_PBomb.description>便携式电浆反应器制成的自杀炸弹。</AD_PBomb.description>
+
+  <Bullet_AuxPistol.label>能量子弹</Bullet_AuxPistol.label>
+
+  <AD_AuxPistol.label>奴隶手枪</AD_AuxPistol.label>
+  <AD_AuxPistol.description>「谈判者」熔炉手枪的粗制量产版。</AD_AuxPistol.description>
+
+  <Bullet_MCrucibleRifle.label>能量子弹</Bullet_MCrucibleRifle.label>
+
+  <Gun_MCrucibleRifle.label>简易熔炉步枪</Gun_MCrucibleRifle.label>
+  <Gun_MCrucibleRifle.description>简易的熔炉枪械，由损坏的联邦武器部件拼凑而成。虽然拥有部分熔炉武器的特性，但粗糙的做功限制了它的性能，射速慢的低质量武器。</Gun_MCrucibleRifle.description>
+
+
+</LanguageData>

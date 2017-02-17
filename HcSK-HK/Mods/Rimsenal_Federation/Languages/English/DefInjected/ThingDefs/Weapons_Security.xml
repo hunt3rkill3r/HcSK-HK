@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--Bullet_Harvester-->
+  <Bullet_Harvester.label>energy bolt</Bullet_Harvester.label>
+  <!--Gun_Harvester-->
+  <Gun_Harvester.label>harvester cannon</Gun_Harvester.label>
+  <Gun_Harvester.description>Heavy crucible weapon.</Gun_Harvester.description>
+  <!--Bullet_PB-->
+  <Bullet_PB.label>plasma sphere</Bullet_PB.label>
+  <!--Gun_PB-->
+  <Gun_PB.label>plasma bombard</Gun_PB.label>
+  <Gun_PB.description>Heavy plasma weapon.</Gun_PB.description>
+</LanguageData>

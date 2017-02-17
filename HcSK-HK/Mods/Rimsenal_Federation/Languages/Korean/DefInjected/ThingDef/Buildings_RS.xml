@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FedTable.label>에너지 도가니</FedTable.label>
+  <FedTable.description>연방 장비를 생산하기 위한 설비입니다.</FedTable.description>
+  <FedTable_Blueprint.label>에너지 도가니 (청사진)</FedTable_Blueprint.label>
+  <FedTable_Frame.label>에너지 도가니 (건설중)</FedTable_Frame.label>
+
+
+</LanguageData>

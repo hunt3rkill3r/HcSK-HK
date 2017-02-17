@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FedTable.label>能量熔爐</FedTable.label>
+  <FedTable.description>配備了工具的桌子，用於裝配和拆解聯邦裝備。</FedTable.description>
+  <FedTable_Blueprint.label>能量熔爐（藍圖）</FedTable_Blueprint.label>
+  <FedTable_Frame.label>能量熔爐（建造中）</FedTable_Frame.label>
+
+
+</LanguageData>

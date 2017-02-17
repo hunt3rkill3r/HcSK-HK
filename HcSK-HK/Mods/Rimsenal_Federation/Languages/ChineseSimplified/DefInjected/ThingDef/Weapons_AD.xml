@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_Pacificator.label>能量子弹</Bullet_Pacificator.label>
+
+  <AD_Pacificator.label>熔炉步枪</AD_Pacificator.label>
+  <AD_Pacificator.description>「动力武装」的「平定者」熔炉步枪，臭名昭著的联邦维和部队制式步枪。「平定者」能发射密集的能量子弹，蒸发一切。然而由于容易过热，射速较慢。</AD_Pacificator.description>
+
+  <Bullet_Negotiator.label>能量子弹</Bullet_Negotiator.label>
+
+  <AD_Negotiator.label>熔炉手枪</AD_Negotiator.label>
+  <AD_Negotiator.description>「动力武装」的「谈判者」熔炉手枪，使用一种被成为「能量熔炉」的非常规火力结构。「谈判者」的缺点是射速慢的令人抓狂。然而，威力和精度弥补了这一缺陷。</AD_Negotiator.description>
+
+  <Bullet_Arbiter.label>熔炉炮弹</Bullet_Arbiter.label>
+
+  <AD_Arbiter.label>熔炉加农炮</AD_Arbiter.label>
+  <AD_Arbiter.description>「动力武装」的「仲裁者」熔炉加农炮。在联邦中「仲裁者」是收到严格管制的，因此这种灼烧能量武器仅装备给「联邦维和教士」——联邦维和部队中最强力成员。</AD_Arbiter.description>
+
+  <Bullet_Intercessor.label>能量子弹</Bullet_Intercessor.label>
+
+  <AD_Intercessor.label>熔炉精准步枪</AD_Intercessor.label>
+  <AD_Intercessor.description>作为「联邦和平使者」暗杀部队最青睐的武器，「动力武装」的「祈祷者」是一把远程能量武器。虽然「祈祷者」的单发威力略低于传统的狙击步枪，但他的高精度三连发子弹和更远的射程使其成为最可怕的武器。</AD_Intercessor.description>
+
+  <Bullet_Axiom.label>电浆球</Bullet_Axiom.label>
+
+  <AD_Axiom.label>电浆投射器</AD_Axiom.label>
+  <AD_Axiom.description>联邦最后一样武力，「公理」是提供给部队的武器中最臭名昭著的。「公理」发射的电浆球飞行非常缓慢，很容易躲过。然而一个「公理」一发就能摧毁整座建筑。</AD_Axiom.description>
+
+
+</LanguageData>

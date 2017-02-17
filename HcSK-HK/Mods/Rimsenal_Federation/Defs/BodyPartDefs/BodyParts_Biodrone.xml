@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>SeekerHull</defName>
+    <label>hull</label>
+    <hitPoints>20</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>SeekerFrame</defName>
+    <label>frame</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Talking</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>SeekerCore</defName>
+    <label>core</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Talking</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftSeekerShoulder</defName>
+    <label>left shoulder</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_way0</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftSeekerArm</defName>
+    <label>left arm</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_way1</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftSeekerHand</defName>
+    <label>left hand</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_way2</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftHandSeekerPinky</defName>
+    <label>left pinky</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftHandSeekerMiddleFinger</defName>
+    <label>left middle finger</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftHandSeekerIndexFinger</defName>
+    <label>left index finger</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftHandSeekerThumb</defName>
+    <label>left thumb</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightSeekerShoulder</defName>
+    <label>right shoulder</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_way0</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightSeekerArm</defName>
+    <label>right arm</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_way1</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightSeekerHand</defName>
+    <label>right hand</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_way2</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightHandSeekerPinky</defName>
+    <label>right pinky</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightHandSeekerMiddleFinger</defName>
+    <label>right middle finger</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightHandSeekerIndexFinger</defName>
+    <label>right index finger</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightHandSeekerThumb</defName>
+    <label>right thumb</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftSeekerEngine</defName>
+    <label>left engine</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Moving_leftWay1</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftSeekerThruster</defName>
+    <label>left thruster</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Moving_way2</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightSeekerEngine</defName>
+    <label>right engine</label>
+    <hitPoints>15</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Moving_rightWay1</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightSeekerThruster</defName>
+    <label>right thruster</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <isAlive>false</isAlive>
+    <activities>
+      <li>Moving_way2</li>
+    </activities>
+  </BodyPartDef>
+  
+</Defs>

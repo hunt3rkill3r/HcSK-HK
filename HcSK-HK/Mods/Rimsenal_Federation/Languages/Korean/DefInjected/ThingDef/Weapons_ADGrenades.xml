@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Plasma grenade -->
+
+  <Proj_Repose.label>플라즈마 수류탄</Proj_Repose.label>
+
+	<AD_Repose.label>연방 플라즈마 수류탄</AD_Repose.label>
+	<AD_Repose.description>'리포즈' 플라즈마 수류탄. 재래식 수류탄보다 폭발 범위는 좁은 대신 화력은 더 강합니다.</AD_Repose.description>
+  <AD_Repose.verbs.0.label>플라즈마 수류탄 투척</AD_Repose.verbs.0.label>
+
+
+</LanguageData>

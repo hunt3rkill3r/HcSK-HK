@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bion_Grunt.label>兽兵型生化人</Bion_Grunt.label>
+  <Bion_Grunt.description>量产、低智力、思维受控、经过基因修改的联邦生化人是专为战争设计的变异人。从技术上讲，他们不再是人类了。</Bion_Grunt.description>
+  <!-- No Leather: Butcher Products -->
+  <Bion_Grunt_Meat.label>生化体肉</Bion_Grunt_Meat.label>
+  <Bion_Grunt_Meat.description>生化体肉</Bion_Grunt_Meat.description>
+  <Bion_Grunt_Corpse.label>生化人尸体</Bion_Grunt_Corpse.label>
+  <Bion_Grunt_Corpse.description>生化人尸体</Bion_Grunt_Corpse.description>
+
+  <Bion_Stalker.label>潜行者型生化人</Bion_Stalker.label>
+  <Bion_Stalker.description>「潜行者」型生化人是专为渗透和间谍活动设计。敏捷、静谧，潜行者可不是头脑简单的人。</Bion_Stalker.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Stalker_Corpse.label>生化人尸体</Bion_Stalker_Corpse.label>
+  <Bion_Stalker_Corpse.description>生化人尸体</Bion_Stalker_Corpse.description>
+
+  <Bion_Federator.label>联邦者</Bion_Federator.label>
+  <Bion_Federator.description>“联邦者”主战机甲是由“武装动力”生产的机甲型号。“联邦士”的设计参照了主战坦克，作为突击型外装甲而开发。</Bion_Federator.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Federator_Corpse.label>联邦者尸体</Bion_Federator_Corpse.label>
+  <Bion_Federator_Corpse.description>联邦者尸体</Bion_Federator_Corpse.description>
+
+  <Bion_Hulk.label>维护者型生化人</Bion_Hulk.label>
+  <Bion_Hulk.description>如果你认为和平卫士是变异人中最恶劣的变种，那么你就大错特错了。来自联邦维和部队的精英特遣队：和平教士部队的生化人，由联邦的顶尖基因工程师所特别设计的「维护者」型。</Bion_Hulk.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Hulk_Corpse.label>生化人尸体</Bion_Hulk_Corpse.label>
+  <Bion_Hulk_Corpse.description>生化人尸体</Bion_Hulk_Corpse.description>
+
+
+</LanguageData>

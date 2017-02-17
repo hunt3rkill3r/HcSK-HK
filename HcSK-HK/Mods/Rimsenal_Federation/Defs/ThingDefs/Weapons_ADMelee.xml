@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+  
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>AD_Verdict</defName>
+    <label>Concussion baton</label>
+    <description>Standard issue close combat weapon of Federation Peacekeeper Corps, the "Verdict" is simple non lethal weapon in show, but it's not.</description>
+    <graphicData> <texPath>Things/A16/Verdict</texPath>
+    <graphicClass>Graphic_Single</graphicClass> </graphicData>
+    <techLevel>Spacer</techLevel>
+ 		<weaponTags>
+  		    <li>FedCC</li>
+ 		</weaponTags>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <Mass>2.4</Mass>
+      <WorkToMake>36500</WorkToMake>
+      <MarketValue>1380</MarketValue>
+      <MeleeWeapon_DamageAmount>24</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+    </statBases>
+   <costList>
+      <Steel>20</Steel>
+      <Plasteel>75</Plasteel>
+      <Component>6</Component>
+    </costList>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>CrucibleTech</researchPrerequisite>
+      <recipeUsers>
+        <li>FedTable</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+
+</ThingDefs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_PlasmaBombard.label>電漿球</Bullet_PlasmaBombard.label>
+
+  <AD_PlasmaBombard.label>電漿轟擊炮</AD_PlasmaBombard.label>
+  <AD_PlasmaBombard.description>「平等者」電漿炮是古代突擊炮的現代化變種，發射極高溫的金屬粒子球體。</AD_PlasmaBombard.description>
+
+  <Bullet_CrucibleCannon.label>能量子彈 bolt</Bullet_CrucibleCannon.label>
+
+  <AD_CrucibleCannon.label>熔爐加農炮</AD_CrucibleCannon.label>
+  <AD_CrucibleCannon.description>重型熔爐加農炮。</AD_CrucibleCannon.description>
+
+
+</LanguageData>

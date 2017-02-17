@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--Bullet_PlasmaBombard-->
+  <Bullet_PlasmaBombard.label>plasma sphere</Bullet_PlasmaBombard.label>
+  <!--AD_PlasmaBombard-->
+  <AD_PlasmaBombard.label>plasma bombard</AD_PlasmaBombard.label>
+  <AD_PlasmaBombard.description>Designed to deliver spheres of superheated metal plsama to the target, "Leveler" plasma bombard is a mordernized variant of the ancient assault gun.</AD_PlasmaBombard.description>
+  <!--Bullet_CrucibleCannon-->
+  <Bullet_CrucibleCannon.label>energy bolt</Bullet_CrucibleCannon.label>
+  <!--AD_CrucibleCannon-->
+  <AD_CrucibleCannon.label>crucible cannon</AD_CrucibleCannon.label>
+  <AD_CrucibleCannon.description>Heavy crucible cannon.</AD_CrucibleCannon.description>
+</LanguageData>

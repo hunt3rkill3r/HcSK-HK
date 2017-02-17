@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--CrucibleTech-->
+  <CrucibleTech.label>crucible tech</CrucibleTech.label>
+  <CrucibleTech.description>Allows you to build the Federation's weapons and armors.</CrucibleTech.description>
+  <!--PlasmaTech-->
+  <PlasmaTech.label>plasma weapons</PlasmaTech.label>
+  <PlasmaTech.description>Allows you to build plasma weapons.</PlasmaTech.description>
+</LanguageData>

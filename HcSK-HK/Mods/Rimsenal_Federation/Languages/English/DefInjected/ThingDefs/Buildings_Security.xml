@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--Harvester-->
+  <Harvester.label>harvester</Harvester.label>
+  <Harvester.description>This type of burst laser emplacements are called "Harvesters". As can be inferred from it's name this heavy weapon turret can mow entire enemy groups down in no time.</Harvester.description>
+  <!--Harmonizer-->
+  <Harmonizer.label>plasma bombard</Harmonizer.label>
+  <Harmonizer.description>Heavy plasma bombard. Slow but powerful.</Harmonizer.description>
+</LanguageData>

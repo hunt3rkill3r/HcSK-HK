@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SeekerHull.label>外壳</SeekerHull.label>
+  <SeekerFrame.label>框架</SeekerFrame.label>
+  <SeekerCore.label>核心</SeekerCore.label>
+  <LeftSeekerShoulder.label>左肩</LeftSeekerShoulder.label>
+  <LeftSeekerArm.label>左臂</LeftSeekerArm.label>
+  <LeftSeekerHand.label>左手</LeftSeekerHand.label>
+  <LeftHandSeekerPinky.label>左小指</LeftHandSeekerPinky.label>
+  <LeftHandSeekerMiddleFinger.label>左中指</LeftHandSeekerMiddleFinger.label>
+  <LeftHandSeekerIndexFinger.label>左食指</LeftHandSeekerIndexFinger.label>
+  <LeftHandSeekerThumb.label>左拇指</LeftHandSeekerThumb.label>
+  <RightSeekerShoulder.label>右肩</RightSeekerShoulder.label>
+  <RightSeekerArm.label>右臂</RightSeekerArm.label>
+  <RightSeekerHand.label>右手</RightSeekerHand.label>
+  <RightHandSeekerPinky.label>右小指</RightHandSeekerPinky.label>
+  <RightHandSeekerMiddleFinger.label>右中指</RightHandSeekerMiddleFinger.label>
+  <RightHandSeekerIndexFinger.label>右食指</RightHandSeekerIndexFinger.label>
+  <RightHandSeekerThumb.label>右拇指</RightHandSeekerThumb.label>
+  <LeftSeekerEngine.label>左引擎</LeftSeekerEngine.label>
+  <LeftSeekerThruster.label>左推进器</LeftSeekerThruster.label>
+  <RightSeekerEngine.label>右引擎</RightSeekerEngine.label>
+  <RightSeekerThruster.label>右推进器</RightSeekerThruster.label>
+
+
+</LanguageData>

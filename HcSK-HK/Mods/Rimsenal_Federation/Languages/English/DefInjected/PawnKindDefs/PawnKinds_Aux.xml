@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--FPCAuxiliary-->
+  <FPCAuxiliary.label>auxiliary</FPCAuxiliary.label>
+  <!--FPCBomber-->
+  <FPCBomber.label>suicide bomber</FPCBomber.label>
+  <!--FPCCommander-->
+  <FPCCommander.label>commander</FPCCommander.label>
+</LanguageData>

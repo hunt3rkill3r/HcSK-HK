@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MineableGlowstone</defName>
+		<label>rimstone deposit</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(69,63,48)</color>
+			<colorTwo>(73,87,112)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>20</Beauty>
+			<MaxHitPoints>3400</MaxHitPoints>
+		</statBases>
+		<description>A strange mineral that seems to be unique to this planet. With the right know-how, they say it can be catalyzed in such a way that it will emit light, or create a cooling phenomenon.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Rimrinite</mineableThing>
+			<mineableYield>20</mineableYield>
+			<mineableScatterCommonality>0.45</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>14</min>
+				<max>25</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<!-- The only change is the commonality, to no longer spawn. Other changes are just to make it look and act like rimrinite for existing saves. -->
+	<ThingDef ParentName="RockBase">
+		<defName>MineableColdstone</defName>
+		<label>rimstone deposit</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(69,63,48)</color>
+			<colorTwo>(73,87,112)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<MaxHitPoints>3200</MaxHitPoints>
+		</statBases>
+		<description>A strange mineral that seems to be unique to this planet. With the right know-how, they say it can be catalyzed in such a way that it will emit light, or create a cooling phenomenon.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Rimrinite</mineableThing>
+			<mineableYield>20</mineableYield>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>12</min>
+				<max>22</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<!-- THE RAW ORE  -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Rimrinite</defName>
+		<thingClass>SK.Item_PL</thingClass>
+		<label>rimstone</label>
+		<description>Rimstone is a dark, blue-grey metal that seems to be unique to this part of space. It has some unique properties that even a low-tech civilization can bring out, such as self-luminescence.</description>
+		<graphicData>
+			<texPath>Things/Item/Rimrinite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>35</MarketValue>
+			<SellPriceFactor>0.25</SellPriceFactor>
+		</statBases>
+		<thingCategories>
+			<li>Extracted</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+	</ThingDef>
+
+	<!-- THE RECIPES -->
+
+	<RecipeDef>
+		<defName>MakeGlowstone</defName>
+		<label>catalyze glowstone</label>
+		<description>Creating glowstone from rimstone takes a lot of work and skill. However, aside from the rimstone itself, the other elements are trivial, and most of the work comes from careful heating and cooling of the ore in a very specific way to create a small batch.</description>
+		<jobString>Creating glowstones.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rimrinite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rimrinite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Glowstone>4</Glowstone>
+		</products>
+		<recipeUsers>
+			<li>TableFurnace</li>
+			<li>ElectricSmelter</li>
+			<li>EAF</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.65</workSkillLearnFactor>
+		<researchPrerequisite>SK_Glowstone</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeColdstone</defName>
+		<label>catalyze coldstone</label>
+		<description>When mixed with a little bit of silver, and heated in a skilled technique, rimstone demonstrates a cooling property which may be exploited by specialized devices, such as coldstone batteries.</description>
+		<jobString>Creating coldstones.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rimrinite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rimrinite</li>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Coldstone>8</Coldstone>
+		</products>
+		<recipeUsers>
+			<li>TableFurnace</li>
+			<li>ElectricSmelter</li>
+			<li>EAF</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.65</workSkillLearnFactor>
+		<researchPrerequisite>EnthalpicCooling</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- THE TECHNOLOGY -->
+
+	<ResearchProjectDef>
+		<defName>EnthalpicCooling</defName>
+		<label>rimstone refining I</label>
+		<description>Discover how to exploit the unique mineral of rimstone on this planet. With the right mixture, they it can dispel heat and create a cooling phenomenon.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>SK_Craftsmanship</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>SK_Glowstone</defName>
+		<label>rimstone refining II</label>
+		<description>With a skilled enough smelter, you could bring out the raw energy of this mineral and create some long-lasting lamps that won't require any electricity.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>EnthalpicCooling</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+
+</ThingDefs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <DamageDef Name="LocalInjuryBase" Abstract="True">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>Optic</defName>
+    <label>Energy</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <spreadOut>true</spreadOut>
+    <explosionDamage>3</explosionDamage>
+    <explosionBuildingDamageFactor>3</explosionBuildingDamageFactor>
+    <explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastOptic</explosionCellMote>
+    <soundExplosion>Explosion_OpticBurst</soundExplosion>
+  </DamageDef>
+
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>Plasma</defName>
+    <label>Plasma</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <spreadOut>true</spreadOut>
+    <explosionDamage>8</explosionDamage>
+    <explosionBuildingDamageFactor>8</explosionBuildingDamageFactor>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastPlasma</explosionCellMote>
+    <soundExplosion>Explosion_PlasmaEXP</soundExplosion>
+  </DamageDef>
+
+</Defs>

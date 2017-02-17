@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--Proj_Repose-->
+  <Proj_Repose.label>plasma grenade</Proj_Repose.label>
+  <!--AD_Repose-->
+  <AD_Repose.label>throw molotov</AD_Repose.label>
+  <AD_Repose.description>"Repose" plasma grenades. Plasma grenade packs more punch than the standard frag grenade but It lacks of blast radius of conventional one.</AD_Repose.description>
+</LanguageData>

@@ -150,7 +150,7 @@
     <label>Antis</label>
     <race>Antis</race>
     <defaultFactionType>Insectoid</defaultFactionType>
-    <combatPower>190</combatPower>
+    <combatPower>230</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -331,7 +331,7 @@
     <label>Gnawler</label>
     <race>Gnawler</race>
     <defaultFactionType>Insectoid</defaultFactionType>
-    <combatPower>220</combatPower>
+    <combatPower>270</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>

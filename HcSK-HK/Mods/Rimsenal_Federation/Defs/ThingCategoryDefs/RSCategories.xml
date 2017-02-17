@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+  
+	<ThingCategoryDef>
+		<defName>ADWeapons</defName>
+		<label>Federation weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+</ThingCategoryDefs>

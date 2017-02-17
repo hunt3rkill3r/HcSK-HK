@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<CrucibleCore.label>크루시블 코어</CrucibleCore.label>
+	<CrucibleCore.description>큰 에너지 손실 없이 열 에너지와 물질을 상호 변환하는 에너지 도가니 기술은 연방 무기 공학의 근간입니다. 연방 장비를 생산하기 위해서는 적절한 수의 크루시블 코어가 필요합니다.</CrucibleCore.description>
+
+	<Foerum.label>푀륨</Foerum.label>
+	<Foerum.description>연방에서 널리 쓰이는 푀데라튬(이하 푀륨)은 경량 초경도 복합 소재입니다. 푀륨은 재래식 플라스틸보다 훨씬 제작이 쉽기 때문에 연방에서 이 소재를 사용하지 않는 곳을 찾아보기 힘들 정도입니다. 사실 뭐, 이 물질의 분자 구조는 둔중하지만 집중된 충격에 정말로 취약하긴 합니다. 근데 솔직히 이야기해 봅시다. 전장에서 그런 힘에 노출될 상황이 얼마나 많겠습니까? 원시인의 몽둥이?</Foerum.description>
+
+</Defs>

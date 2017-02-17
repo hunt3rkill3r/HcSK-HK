@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ADOriginal_Pacificator.label>熔爐步槍</ADOriginal_Pacificator.label>
+  <ADOriginal_Pacificator.description>「動力武裝」的「平定者」熔爐步槍，臭名昭著的聯邦維和部隊制式步槍。「平定者」能發射密集的能量子彈，蒸發一切。然而由於容易過熱，射速較慢。</ADOriginal_Pacificator.description>
+
+  <ADOriginal_Negotiator.label>熔爐手槍</ADOriginal_Negotiator.label>
+  <ADOriginal_Negotiator.description>「動力武裝」的「談判者」熔爐手槍，使用一種被成為「能量熔爐」的非常規火力結構。「談判者」的缺點是射速慢的令人抓狂。然而，威力和精度彌補了這一缺陷。</ADOriginal_Negotiator.description>
+
+  <ADOriginal_Arbiter.label>熔爐加農炮</ADOriginal_Arbiter.label>
+  <ADOriginal_Arbiter.description>「動力武裝」的「仲裁者」熔爐加農炮。在聯邦中「仲裁者」是收到嚴格管制的，因此這種灼燒能量武器僅裝備給「聯邦維和教士」——聯邦維和部隊中最強力成員。</ADOriginal_Arbiter.description>
+
+  <ADOriginal_Intercessor.label>熔爐精準步槍</ADOriginal_Intercessor.label>
+  <ADOriginal_Intercessor.description>作為「聯邦和平使者」暗殺部隊最青睞的武器，「動力武裝」的「祈禱者」是一把遠程能量武器。雖然「祈禱者」的單發威力略低於傳統的狙擊步槍，但他的高精度三連發子彈和更遠的射程使其成為最可怕的武器。</ADOriginal_Intercessor.description>
+
+  <ADOriginal_Axiom.label>電漿投射器</ADOriginal_Axiom.label>
+  <ADOriginal_Axiom.description>聯邦最後一樣武力，「公理」是提供給部隊的武器中最臭名昭著的。「公理」發射的電漿球飛行非常緩慢，很容易躲過。然而一個「公理」一發就能摧毀整座建築。</ADOriginal_Axiom.description>
+
+
+</LanguageData>

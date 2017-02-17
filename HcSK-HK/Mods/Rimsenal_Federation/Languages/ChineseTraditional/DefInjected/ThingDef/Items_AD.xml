@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrucibleCore.label>熔爐核心</CrucibleCore.label>
+  <CrucibleCore.description>無嚴重損耗地將能量轉化成物質形式，能量熔爐技術是聯邦武器的基礎。製造聯邦裝備，你需要適量的熔爐核心。</CrucibleCore.description>
+
+  <Foerum.label>極合金</Foerum.label>
+  <Foerum.description>在聯邦中應用廣泛的恶合金是一種輕型的、超高強度的複合材料。由於極合金比傳統的玻璃鋼更容易製造，在聯邦中很難看到不使用這種材料的地方。嗯，實際上，這種材料的分子結構確實容易受到鈍器和集中的物理衝擊的傷害。但是，說真的，誰還會用這種武器？原始的穴居人？</Foerum.description>
+  <Foerum.stuffProps.stuffAdjective>極合金</Foerum.stuffProps.stuffAdjective>
+
+
+</LanguageData>

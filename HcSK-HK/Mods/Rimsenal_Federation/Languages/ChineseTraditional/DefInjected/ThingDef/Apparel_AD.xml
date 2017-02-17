@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FedSuit.label>聯邦連體服</FedSuit.label>
+  <FedSuit.description>為軍事人員特制的碳晶纖維連體服。輕薄，但驚人地堅固。是聯邦的軍服。</FedSuit.description>
+
+  <Apparel_Judicator.label>防暴服</Apparel_Judicator.label>
+  <Apparel_Judicator.description>「武裝動力」為聯邦人類指揮官製造的「判決者」防暴服。如果你不在意他人輕蔑的眼光，這絕對是頂級的個人裝備。</Apparel_Judicator.description>
+
+  <Apparel_JudicatorH.label>防暴頭盔</Apparel_JudicatorH.label>
+  <Apparel_JudicatorH.description>聯邦維和部隊防暴服的頭盔。如果你戴上這個，你會成為整個殖民地的眼中釘。</Apparel_JudicatorH.description>
+
+  <Apparel_MarksmanGear.label>神射手服</Apparel_MarksmanGear.label>
+  <Apparel_MarksmanGear.description>「動力武裝」的「宣判者」神射手護甲。通過關節穩定裝置，這套裝備能保證瞄准時更穩定。「聯邦和平使者」暗殺部隊的標准制式護甲。</Apparel_MarksmanGear.description>
+
+  <Apparel_MarksmanGearH.label>神射手頭盔</Apparel_MarksmanGearH.label>
+  <Apparel_MarksmanGearH.description>「宣判者」神射手護甲頭盔。集成的目標指示器保證了高精確度。</Apparel_MarksmanGearH.description>
+
+
+</LanguageData>

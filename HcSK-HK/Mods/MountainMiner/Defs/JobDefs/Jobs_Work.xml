@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>OperateHighDrill</defName>
+    <driverClass>MountainMiner.JobDriver_DrillUp</driverClass>
+    <reportString>Drilling Roofs</reportString>
+  </JobDef>
+</Defs>

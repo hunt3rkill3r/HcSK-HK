@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>CrucibleCore</defName>
+    <label>crucible core</label>
+    <description>Converting heat energy in material form without serious energy loss, the energy crucible technology is a base of the federation weapons. To make the federation equipments, you need a proper number of crucible core.</description>
+    <graphicData>
+      <texPath>Things/A16/CrucibleCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>CrucibleTech</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>FedTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    </recipeMaker>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <Component>1</Component>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>50</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+    
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Foerum</defName>
+    <label>foerum</label>
+    <description>Widely used in the federation, Foederatium(AKA 'Foerum') is a lightweight, super-strength composite material. Because foerum is more easy to manufacture than conventional plasteel, it is difficult to find places that do not use this material in the federation. Well, actually, this material's molecular structure is really vulnerable to blunt, focused physical impact. But, seriously, who would use such force as a weapon? A primitive caveman?</description>
+    <graphicData>
+      <texPath>Things/A16/Foerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.01</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(255,255,255)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.4</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.15</Flammability>
+        <WorkToMake>2</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Biodrone_Seeker.label>시커</Biodrone_Seeker.label>
+  <Biodrone_Seeker.description>연방이 정찰용으로 제작한 소형 비무장 바이오드론입니다. 탑재된 생체반응로가 불안정해 파괴시 폭발을 일으킵니다.</Biodrone_Seeker.description>
+  <!--<Biodrone_Seeker_Leather.label>합성피부</Biodrone_Seeker_Leather.label>-->
+  <!--<Biodrone_Seeker_Leather.description>합성피부</Biodrone_Seeker_Leather.description>-->
+  <!--<Biodrone_Seeker_Leather.stuffProps.stuffAdjective>합성피부</Biodrone_Seeker_Leather.stuffProps.stuffAdjective>-->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Biodrone_Seeker_Corpse.label>시커 잔해</Biodrone_Seeker_Corpse.label>
+  <Biodrone_Seeker_Corpse.description>시커 잔해</Biodrone_Seeker_Corpse.description>
+
+
+</LanguageData>

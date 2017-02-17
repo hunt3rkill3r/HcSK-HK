@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_Sentinel.label>플라즈마탄</Bullet_Sentinel.label>
+  <Bullet_PBomb.label>플라즈마 폭탄</Bullet_PBomb.label>
+  <Bullet_AuxPistol.label>에너지 볼트</Bullet_AuxPistol.label>
+  <Bullet_MCrucibleRifle.label>에너지 볼트</Bullet_MCrucibleRifle.label>
+
+	<AD_Sentinel.label>연방 플라즈마 소총</AD_Sentinel.label>
+	<AD_Sentinel.description>연방 기준으로도 희귀하고 소름끼치는 무기인 '센티넬'은 개인 휴대용 플라즈마 화기입니다. 이 무기는 금속 플라즈마를 담고 있는 자기 구체를 속사합니다.</AD_Sentinel.description>
+
+	<AD_AuxPistol.label>연방 보조병 권총</AD_AuxPistol.label>
+	<AD_AuxPistol.description>보다 정교한 네고시에이터 권총의 대량생산용 열화판입니다.</AD_AuxPistol.description>
+
+	<AD_PBomb.label>연방 플라즈마 폭탄</AD_PBomb.label>
+	<AD_PBomb.description>자살폭탄 용도로 개조된 휴대용 플라즈마 반응로입니다.</AD_PBomb.description>
+
+	<Gun_MCrucibleRifle.label>급조 크루시블 소총</Gun_MCrucibleRifle.label>
+	<Gun_MCrucibleRifle.description>부서진 연방 무기 부품으로 제작된 급조 크루시블 화기입니다. 진짜 크루시블 화기와 특징을 어느정도 공유하지만, 설계 자체가 조악해 명중률도 떨어지고 연사속도도 느립니다.</Gun_MCrucibleRifle.description>
+</LanguageData>

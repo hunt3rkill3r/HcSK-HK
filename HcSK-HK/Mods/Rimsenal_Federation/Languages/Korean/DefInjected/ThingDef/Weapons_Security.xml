@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_Harvester.label>에너지 볼트</Bullet_Harvester.label>
+
+  <Gun_Harvester.label>하베스터 포</Gun_Harvester.label>
+  <Gun_Harvester.description>에너지 속사포.</Gun_Harvester.description>
+
+  <Bullet_PB.label>플라즈마 탄</Bullet_PB.label>
+
+  <Gun_PB.label>플라즈마 포</Gun_PB.label>
+  <Gun_PB.description>장거리 플라즈마 포</Gun_PB.description>
+
+
+</LanguageData>

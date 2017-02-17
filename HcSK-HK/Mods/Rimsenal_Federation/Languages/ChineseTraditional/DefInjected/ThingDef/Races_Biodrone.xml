@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Biodrone_Seeker.label>探索者</Biodrone_Seeker.label>
+  <Biodrone_Seeker.description>由聯邦部署的、靈活小巧、沒有武裝的偵察機器人。他的生化反應堆不穩定，在毀壞時會發生爆炸。</Biodrone_Seeker.description>
+  <!-- No Leather: Butcher Products -->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Biodrone_Seeker_Corpse.label>探索者屍體</Biodrone_Seeker_Corpse.label>
+  <Biodrone_Seeker_Corpse.description>探索者屍體</Biodrone_Seeker_Corpse.description>
+
+
+</LanguageData>

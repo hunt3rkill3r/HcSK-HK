@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Plasma grenade -->
+
+  <Proj_Repose.label>電漿手榴彈</Proj_Repose.label>
+
+  <AD_Repose.label>電漿手榴彈</AD_Repose.label>
+  <AD_Repose.description>「動力武裝」的「寂靜」電漿手雷。比傳統手雷更有殺傷力，但爆炸半徑略遜。</AD_Repose.description>
+  <AD_Repose.verbs.0.label>投擲電漿手榴彈</AD_Repose.verbs.0.label>
+
+
+</LanguageData>

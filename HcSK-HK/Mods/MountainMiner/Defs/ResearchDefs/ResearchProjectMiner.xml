@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MountainMining</defName>
+    <label>mountain mining</label>
+    <description>Allows colonists to build the Mountain Miner, which allows you to clear mountain roofs</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--Optic-->
+  <Optic.label>에너지</Optic.label>
+ <Optic.deathMessage>{0}은(는) 총에 맞아죽었습니다.</Optic.deathMessage>
+  <!--Plasma-->
+  <Plasma.label>플라즈마</Plasma.label>
+  <Plasma.deathMessage>{0}은(는) 산 채로 용해되었습니다. 거참 끔찍한 최후네요.</Plasma.deathMessage>
+</LanguageData>

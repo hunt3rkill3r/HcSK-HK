@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ManualMountainMiner</defName>
+    <label>mountain miner</label>
+    <description>a hand-operated machine used to mine out the area above the tunneling level. Allows for rock roof removal, and chunk reclamation.</description>
+    <thingClass>MountainMiner.Building_MountainDrill</thingClass>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <designationCategory>Production</designationCategory>
+    <designationHotKey>Misc12</designationHotKey>
+    <specialDisplayRadius>1.5</specialDisplayRadius>
+    <rotatable>true</rotatable>
+    <costList>
+      <Steel>400</Steel>
+	    <Plasteel>50</Plasteel>
+      <Component>20</Component>
+    </costList>
+    <placeWorkers>
+      <li>MountainMiner.PlaceWorker_ShowRockRoof</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>MountainMining</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-25</Beauty>
+    </statBases>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Production/DeepDrill</texPath>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+  </ThingDef>
+</ThingDefs>

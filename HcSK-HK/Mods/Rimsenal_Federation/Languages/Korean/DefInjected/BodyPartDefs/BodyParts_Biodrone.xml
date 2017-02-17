@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--SeekerHull-->
+  <SeekerHull.label>동체</SeekerHull.label>
+  <!--SeekerFrame-->
+  <SeekerFrame.label>프레임</SeekerFrame.label>
+  <!--SeekerCore-->
+  <SeekerCore.label>코어</SeekerCore.label>
+  <!--LeftSeekerShoulder-->
+  <LeftSeekerShoulder.label>왼쪽 어깨</LeftSeekerShoulder.label>
+  <!--LeftSeekerArm-->
+  <LeftSeekerArm.label>왼팔</LeftSeekerArm.label>
+  <!--LeftSeekerHand-->
+  <LeftSeekerHand.label>왼손</LeftSeekerHand.label>
+  <!--LeftHandSeekerPinky-->
+  <LeftHandSeekerPinky.label>왼손 약지</LeftHandSeekerPinky.label>
+  <!--LeftHandSeekerMiddleFinger-->
+  <LeftHandSeekerMiddleFinger.label>왼손 중지</LeftHandSeekerMiddleFinger.label>
+  <!--LeftHandSeekerIndexFinger-->
+  <LeftHandSeekerIndexFinger.label>왼손 검지</LeftHandSeekerIndexFinger.label>
+  <!--LeftHandSeekerThumb-->
+  <LeftHandSeekerThumb.label>왼손 엄지</LeftHandSeekerThumb.label>
+  <!--RightSeekerShoulder-->
+  <RightSeekerShoulder.label>오른쪽 어깨</RightSeekerShoulder.label>
+  <!--RightSeekerArm-->
+  <RightSeekerArm.label>오른팔</RightSeekerArm.label>
+  <!--RightSeekerHand-->
+  <RightSeekerHand.label>오른손</RightSeekerHand.label>
+  <!--RightHandSeekerPinky-->
+  <RightHandSeekerPinky.label>오른손 약지</RightHandSeekerPinky.label>
+  <!--RightHandSeekerMiddleFinger-->
+  <RightHandSeekerMiddleFinger.label>오른손 중지</RightHandSeekerMiddleFinger.label>
+  <!--RightHandSeekerIndexFinger-->
+  <RightHandSeekerIndexFinger.label>오른손 검지</RightHandSeekerIndexFinger.label>
+  <!--RightHandSeekerThumb-->
+  <RightHandSeekerThumb.label>오른손 엄지</RightHandSeekerThumb.label>
+  <!--LeftSeekerEngine-->
+  <LeftSeekerEngine.label>왼쪽 엔진</LeftSeekerEngine.label>
+  <!--LeftSeekerThruster-->
+  <LeftSeekerThruster.label>왼쪽 추진기</LeftSeekerThruster.label>
+  <!--RightSeekerEngine-->
+  <RightSeekerEngine.label>오른쪽 엔진</RightSeekerEngine.label>
+  <!--RightSeekerThruster-->
+  <RightSeekerThruster.label>오른쪽 추진기</RightSeekerThruster.label>
+</LanguageData>

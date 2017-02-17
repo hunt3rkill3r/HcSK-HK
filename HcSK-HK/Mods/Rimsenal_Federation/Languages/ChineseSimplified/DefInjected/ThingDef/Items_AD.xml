@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrucibleCore.label>熔炉核心</CrucibleCore.label>
+  <CrucibleCore.description>无严重损耗地将能量转化成物质形式，能量熔炉技术是联邦武器的基础。制造联邦装备，你需要适量的熔炉核心。</CrucibleCore.description>
+
+  <Foerum.label>极合金</Foerum.label>
+  <Foerum.description>在联邦中应用广泛的恶合金是一种轻型的、超高强度的复合材料。由于极合金比传统的玻璃钢更容易制造，在联邦中很难看到不使用这种材料的地方。嗯，实际上，这种材料的分子结构确实容易受到钝器和集中的物理冲击的伤害。但是，说真的，谁还会用这种武器？原始的穴居人？</Foerum.description>
+  <Foerum.stuffProps.stuffAdjective>极合金</Foerum.stuffProps.stuffAdjective>
+
+
+</LanguageData>

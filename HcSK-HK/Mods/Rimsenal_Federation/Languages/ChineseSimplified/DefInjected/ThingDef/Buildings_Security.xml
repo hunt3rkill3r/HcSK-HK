@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Harvester.label>收割者</Harvester.label>
+  <Harvester.description>这种型号的激光脉冲炮被成为「收割者」。恰如其名，这种重型炮台可以瞬间收割成片的敌人。</Harvester.description>
+  <Harvester_Blueprint.label>收割者 (蓝图)</Harvester_Blueprint.label>
+  <Harvester_Frame.label>收割者 (建造中)</Harvester_Frame.label>
+
+  <Harmonizer.label>电浆轰击炮</Harmonizer.label>
+  <Harmonizer.description>重型电浆轰击炮，速度慢但威力巨大。</Harmonizer.description>
+  <Harmonizer_Blueprint.label>电浆轰击炮 (蓝图)</Harmonizer_Blueprint.label>
+  <Harmonizer_Frame.label>电浆轰击炮 (建造中)</Harmonizer_Frame.label>
+
+
+</LanguageData>

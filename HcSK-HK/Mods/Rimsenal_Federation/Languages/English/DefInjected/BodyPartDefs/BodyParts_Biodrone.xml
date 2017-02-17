@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--[자동생성] 림월드 모드 번역 도우미 v1.7 by 가람이예요-->
+<LanguageData>
+  <!--SeekerHull-->
+  <SeekerHull.label>hull</SeekerHull.label>
+  <!--SeekerFrame-->
+  <SeekerFrame.label>frame</SeekerFrame.label>
+  <!--SeekerCore-->
+  <SeekerCore.label>core</SeekerCore.label>
+  <!--LeftSeekerShoulder-->
+  <LeftSeekerShoulder.label>left shoulder</LeftSeekerShoulder.label>
+  <!--LeftSeekerArm-->
+  <LeftSeekerArm.label>left arm</LeftSeekerArm.label>
+  <!--LeftSeekerHand-->
+  <LeftSeekerHand.label>left hand</LeftSeekerHand.label>
+  <!--LeftHandSeekerPinky-->
+  <LeftHandSeekerPinky.label>left pinky</LeftHandSeekerPinky.label>
+  <!--LeftHandSeekerMiddleFinger-->
+  <LeftHandSeekerMiddleFinger.label>left middle finger</LeftHandSeekerMiddleFinger.label>
+  <!--LeftHandSeekerIndexFinger-->
+  <LeftHandSeekerIndexFinger.label>left index finger</LeftHandSeekerIndexFinger.label>
+  <!--LeftHandSeekerThumb-->
+  <LeftHandSeekerThumb.label>left thumb</LeftHandSeekerThumb.label>
+  <!--RightSeekerShoulder-->
+  <RightSeekerShoulder.label>right shoulder</RightSeekerShoulder.label>
+  <!--RightSeekerArm-->
+  <RightSeekerArm.label>right arm</RightSeekerArm.label>
+  <!--RightSeekerHand-->
+  <RightSeekerHand.label>right hand</RightSeekerHand.label>
+  <!--RightHandSeekerPinky-->
+  <RightHandSeekerPinky.label>right pinky</RightHandSeekerPinky.label>
+  <!--RightHandSeekerMiddleFinger-->
+  <RightHandSeekerMiddleFinger.label>right middle finger</RightHandSeekerMiddleFinger.label>
+  <!--RightHandSeekerIndexFinger-->
+  <RightHandSeekerIndexFinger.label>right index finger</RightHandSeekerIndexFinger.label>
+  <!--RightHandSeekerThumb-->
+  <RightHandSeekerThumb.label>right thumb</RightHandSeekerThumb.label>
+  <!--LeftSeekerEngine-->
+  <LeftSeekerEngine.label>left engine</LeftSeekerEngine.label>
+  <!--LeftSeekerThruster-->
+  <LeftSeekerThruster.label>left thruster</LeftSeekerThruster.label>
+  <!--RightSeekerEngine-->
+  <RightSeekerEngine.label>right engine</RightSeekerEngine.label>
+  <!--RightSeekerThruster-->
+  <RightSeekerThruster.label>right thruster</RightSeekerThruster.label>
+</LanguageData>

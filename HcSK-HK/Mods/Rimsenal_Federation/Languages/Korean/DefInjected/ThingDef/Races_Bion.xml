@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bion_Grunt.label>바이온</Bion_Grunt.label>
+  <Bion_Grunt.description>전두엽 절제와 세뇌시술 후에 유전 개조까지 받은 연방 바이온들은 전쟁용으로 대량생산된 제노휴먼입니다. 이쯤되면 더이상 인간이라 부르기도 어렵습니다.</Bion_Grunt.description>
+  <!--<Bion_Grunt_Leather.label>합성피부</Bion_Grunt_Leather.label>-->
+  <!--<Bion_Grunt_Leather.description>합성피부</Bion_Grunt_Leather.description>-->
+  <!--<Bion_Grunt_Leather.stuffProps.stuffAdjective>합성피부</Bion_Grunt_Leather.stuffProps.stuffAdjective>-->
+  <Bion_Grunt_Meat.label>합성육</Bion_Grunt_Meat.label>
+  <Bion_Grunt_Meat.description>합성육</Bion_Grunt_Meat.description>
+  <Bion_Grunt_Corpse.label>바이온 잔해</Bion_Grunt_Corpse.label>
+  <Bion_Grunt_Corpse.description>바이온의 잔해입니다.</Bion_Grunt_Corpse.description>
+
+  <Bion_Stalker.label>바이온 스토커</Bion_Stalker.label>
+  <Bion_Stalker.description>"스토커" 모델은 침투와 감시 용도로 특수 설계된 바이온입니다. 재빠르고 조용하기 이를데 없어 쉽게 잡기는 어려울 겁니다.</Bion_Stalker.description>
+  <!--<Bion_Stalker_Leather.label>합성피부</Bion_Stalker_Leather.label>-->
+  <!--<Bion_Stalker_Leather.description>합성피부</Bion_Stalker_Leather.description>-->
+  <!--<Bion_Stalker_Leather.stuffProps.stuffAdjective>합성피부</Bion_Stalker_Leather.stuffProps.stuffAdjective>-->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Stalker_Corpse.label>바이온 잔해</Bion_Stalker_Corpse.label>
+  <Bion_Stalker_Corpse.description>바이온의 잔해입니다.</Bion_Stalker_Corpse.description>
+
+  <Bion_Federator.label>페더레이터</Bion_Federator.label>
+  <Bion_Federator.description>"페더레이터"는 암즈 다이내믹스가 제작한 주력 전투 메크슈트입니다. 중장 돌격 메크슈트로 설계된 페더레이터의 내구성은 주력전차에 비할만 합니다.</Bion_Federator.description>
+  <!--<Bion_Federator_Leather.label>생체장갑</Bion_Federator_Leather.label>-->
+  <!--<Bion_Federator_Leather.description>생체장갑</Bion_Federator_Leather.description>-->
+  <!--<Bion_Federator_Leather.stuffProps.stuffAdjective>생체장갑</Bion_Federator_Leather.stuffProps.stuffAdjective>-->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Federator_Corpse.label>페더레이터 잔해</Bion_Federator_Corpse.label>
+  <Bion_Federator_Corpse.description>메크슈트의 잔해입니다.</Bion_Federator_Corpse.description>
+
+  <Bion_Hulk.label>바이온 헐크</Bion_Hulk.label>
+  <Bion_Hulk.description>피스키퍼과 제노휴먼 오남용의 최악의 사례라 생각하십니까? 틀린겁니다. 정말로. 연방 평화 유지 전단 생체공학자들이 특별히 설계한 "빈디케이터" 모델 바이온은 연방 피스몽거 부대의 주축입니다. 끔찍한 연방 병력 중에서도 최악의 존재들 말입니다.</Bion_Hulk.description>
+  <!--<Bion_Hulk_Leather.label>합성피부</Bion_Hulk_Leather.label>-->
+  <!--<Bion_Hulk_Leather.description>합성피부</Bion_Hulk_Leather.description>-->
+  <!--<Bion_Hulk_Leather.stuffProps.stuffAdjective>합성피부</Bion_Hulk_Leather.stuffProps.stuffAdjective>-->
+  <!-- Use Meat From: Bion_Grunt -->
+  <Bion_Hulk_Corpse.label>바이온 잔해</Bion_Hulk_Corpse.label>
+  <Bion_Hulk_Corpse.description>바이온 잔해</Bion_Hulk_Corpse.description>
+
+
+</LanguageData>
