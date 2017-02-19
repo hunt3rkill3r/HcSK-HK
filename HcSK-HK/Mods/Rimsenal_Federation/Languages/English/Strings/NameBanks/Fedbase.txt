@@ -1,7 +1,0 @@
-﻿Outpost
-Forward base
-Expedition post
-Fort
-Camp
-Detached unit
-Operation cell
