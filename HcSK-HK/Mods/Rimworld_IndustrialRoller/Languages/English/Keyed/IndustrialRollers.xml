@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Industrial pusher -->
+	<MovingRail_MustPlaceNextToRail>Industrial pusher must be placed so that: White glow - roller, stockpile or storage building, Aqua glow - roller</MovingRail_MustPlaceNextToRail>
+	<!-- Industrial puller -->
+	<MovingRail_MustPlaceBetweenRailAndStockpile>Industrial puller must be placed so that: White glow - roller or stockpile, Aqua glow - roller or stockpile</MovingRail_MustPlaceBetweenRailAndStockpile>
+	<MovingRail_selected>selected</MovingRail_selected>
+	<MovingRail_No_Zone>No Zone</MovingRail_No_Zone>
+	<MovingRail_Do_Forever>DO FOREVER</MovingRail_Do_Forever>
+	<MovingRail_ON_HOLD>ON HOLD</MovingRail_ON_HOLD>
+	<MovingRail_HOLD>HOLD</MovingRail_HOLD>
+	<MovingRail_Do_until_zone_is_full>Do until zone is full</MovingRail_Do_until_zone_is_full>
+	
+</LanguageData>

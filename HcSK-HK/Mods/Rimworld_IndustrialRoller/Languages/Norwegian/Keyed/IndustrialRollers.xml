@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Industrial pusher -->
+	<MovingRail_MustPlaceNextToRail>Industriell dytter på være plassert slik at: Hvitt lys - transportbånd, lager eller lagerbygning, Blå/grønn lys - transportbånd.</MovingRail_MustPlaceNextToRail>
+	<!-- Industrial puller -->
+	<MovingRail_MustPlaceBetweenRailAndStockpile>Industriell draer må plasseres slik at: hvitt lys - transportbånd eller lager, blå/grønt lys - transportbånd eller lager.</MovingRail_MustPlaceBetweenRailAndStockpile>
+	<MovingRail_selected>Valgt</MovingRail_selected>
+	<MovingRail_No_Zone>Ingen sone</MovingRail_No_Zone>
+	<MovingRail_Do_Forever>GJØR FOR ALLTID</MovingRail_Do_Forever>
+	<MovingRail_ON_HOLD>HOLD</MovingRail_ON_HOLD>
+	<MovingRail_HOLD>HOLD</MovingRail_HOLD>
+	<MovingRail_Do_until_zone_is_full>Gjør til sone er full</MovingRail_Do_until_zone_is_full>
+	
+</LanguageData>

@@ -1289,7 +1289,7 @@
 		<description>The mine extractor digs deep into the ground to extract metal ores and rocks. Must be placed on a Deposits of Minerals. Requires power.</description>
 		<thingClass>SK.Building_Extractor</thingClass>
 		<graphicData>
-			<texPath>Buildings/Extractor/Extractor</texPath>
+			<texPath>Things/Building/mine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -1323,6 +1323,10 @@
 				<RestrictedThing>
 					<li>MineralDeposits</li>
 				</RestrictedThing>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
 			</li>
 			<li Class="CompProperties_LifespanDebris">
 				<lifespanTicks>2500000</lifespanTicks>
@@ -1365,7 +1369,7 @@
 		<description>This mine extractor will no longer produce resources and should be deconstructed.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Buildings/Extractor/ExtractorDebris</texPath>
+			<texPath>Things/Building/mine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  <ThingDef ParentName="BuildingBase">
+    <DefName>MovingRailStraight</DefName>
+    <label>Straight roller</label>
+	<category>Building</category>
+	<designationCategory>Industrial</designationCategory>
+	<graphicData>
+      <texPath>Things/Building/MovingFloor/base64_frame0</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/MovingFloor/base64</uiIconPath>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+	<thingClass>MovingFloor.MovingRailBase</thingClass>
+	<passability>Standable</passability>
+    <Description>A straight piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</Description>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<selectable>true</selectable>
+	<repairEffect>Repair</repairEffect>	
+	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+	<tickerType>Normal</tickerType>
+	<size>(1,1)</size>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>25</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>4</ReinforcedConcrete>
+		<Component>10</Component>
+		<Mechanism>5</Mechanism>
+		<Rubber>5</Rubber>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<statBases>
+		<MaxHitPoints>80</MaxHitPoints>
+		<WorkToBuild>80</WorkToBuild>
+		<Flammability>0.4</Flammability>
+		<Beauty>-1</Beauty>
+	</statBases>
+	<researchPrerequisites>
+		<li>Conveyors</li>
+	</researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>5</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>MovingRailLeft</DefName>
+    <label>Left turn roller</label>
+	<category>Building</category>
+	<designationCategory>Industrial</designationCategory>
+	<graphicData>
+      <texPath>Things/Building/MovingFloor/base64_left_frame0</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/MovingFloor/base64_left</uiIconPath>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+	<thingClass>MovingFloor.MovingRailLeft</thingClass>
+	<passability>Standable</passability>
+    <Description>Left turning piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</Description>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<selectable>true</selectable>
+	<repairEffect>Repair</repairEffect>	
+	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+	<tickerType>Normal</tickerType>
+	<size>(1,1)</size>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>25</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>4</ReinforcedConcrete>
+		<Component>10</Component>
+		<Mechanism>5</Mechanism>
+		<Rubber>5</Rubber>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<statBases>
+		<MaxHitPoints>80</MaxHitPoints>
+		<WorkToBuild>80</WorkToBuild>
+		<Flammability>0.4</Flammability>
+		<Beauty>-1</Beauty>
+	</statBases>
+	<researchPrerequisites>
+		<li>Conveyors</li>
+	</researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>5</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>MovingRailRight</DefName>
+    <label>Right turn roller</label>
+	<category>Building</category>
+	<designationCategory>Industrial</designationCategory>
+	<graphicData>
+      <texPath>Things/Building/MovingFloor/base64_right_frame0</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/MovingFloor/base64_right</uiIconPath>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+	<thingClass>MovingFloor.MovingRailRight</thingClass>
+	<passability>Standable</passability>
+    <Description>Right turning piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</Description>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<selectable>true</selectable>
+	<repairEffect>Repair</repairEffect>	
+	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+	<tickerType>Normal</tickerType>
+	<size>(1,1)</size>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>25</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>4</ReinforcedConcrete>
+		<Component>10</Component>
+		<Mechanism>5</Mechanism>
+		<Rubber>5</Rubber>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<statBases>
+		<MaxHitPoints>80</MaxHitPoints>
+		<WorkToBuild>80</WorkToBuild>
+		<Flammability>0.4</Flammability>
+		<Beauty>-1</Beauty>
+	</statBases>
+	<researchPrerequisites>
+		<li>Conveyors</li>
+	</researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>5</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <DefName>MovingRailWall</DefName>
+    <label>In-wall roller</label>
+	<category>Building</category>
+	<designationCategory>Industrial</designationCategory>
+	<graphicData>
+      <texPath>Things/Building/MovingFloor/base64_wall_frame0</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/MovingFloor/base64_wall</uiIconPath>
+	<thingClass>MovingFloor.MovingRailWall</thingClass>
+    <Description>A piece of industrial roller that is designed to replace a wall block to carry goods between rooms. fragile as a wall, but isolates temperatures. also transmits power to nearby electronics and rollers.</Description>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<selectable>true</selectable>
+	<repairEffect>Repair</repairEffect>	
+	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<holdsRoof>true</holdsRoof>
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+	<tickerType>Normal</tickerType>    
+    <fillPercent>1</fillPercent>
+	<passability>Impassable</passability>
+    <blockWind>true</blockWind>
+	<building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+	<size>(1,1)</size>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>40</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>4</ReinforcedConcrete>
+		<Component>15</Component>
+		<Mechanism>10</Mechanism>
+		<Rubber>10</Rubber>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<statBases>
+		<MaxHitPoints>80</MaxHitPoints>
+		<WorkToBuild>80</WorkToBuild>
+		<Flammability>0</Flammability>
+		<Beauty>-1</Beauty>
+	</statBases>
+	<researchPrerequisites>
+		<li>Conveyors</li>
+	</researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>5</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>MovingRailPusher</defName>
+    <label>Roller pusher</label>
+	<thingClass>MovingFloor.MovingRailPusher</thingClass>
+    <graphicData>
+      <texPath>Things/Building/MovingFloor/base64_pusher_frame0</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/MovingFloor/base64_pusher</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>1</fillPercent>
+	<passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <pathCost>70</pathCost>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+      </defaultStorageSettings>
+    </building>
+	
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <castEdgeShadows>true</castEdgeShadows>
+    <description>Equipped with an advanced sensor, able to push and alter route of configured goods between rails. also transmits power to nearby electronics and rollers.</description>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>49</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>4</ReinforcedConcrete>
+		<Component>15</Component>
+		<Mechanism>10</Mechanism>
+		<Rubber>10</Rubber>
+		<ElectronicComponents>10</ElectronicComponents>
+	</costList>
+    <tickerType>Normal</tickerType>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>false</neverMultiSelect>
+	<designationCategory>Industrial</designationCategory>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+	<placeWorkers>
+      <li>RimWorldIndustrialRollers.PlaceWorker_NextToRail</li>
+    </placeWorkers>
+	<statBases>
+		<MaxHitPoints>120</MaxHitPoints>
+		<WorkToBuild>300</WorkToBuild>
+		<Flammability>0</Flammability>
+		<Beauty>-2</Beauty>
+	</statBases>
+	<researchPrerequisites>
+		<li>Conveyors</li>
+	</researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>60</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>MovingRailPuller</defName>
+    <label>Roller puller</label>
+	<thingClass>MovingFloor.MovingRailPuller</thingClass>
+    <graphicData>
+      <texPath>Things/Building/MovingFloor/base64_puller_frame0</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/MovingFloor/base64_puller</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>1</fillPercent>
+	<passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <pathCost>70</pathCost>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+      </defaultStorageSettings>
+    </building>
+	
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <castEdgeShadows>true</castEdgeShadows>
+    <description>Pulls selected items from a connected stockpile. puller is also equipped with zone scanner able to conditionally pull resources making sure to feed items until selected stockpile is full.</description>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>55</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>10</ReinforcedConcrete>
+		<Component>15</Component>
+		<Mechanism>10</Mechanism>
+		<Rubber>10</Rubber>
+		<ElectronicComponents>10</ElectronicComponents>
+	</costList>
+    <tickerType>Normal</tickerType>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>false</neverMultiSelect>
+	<designationCategory>Industrial</designationCategory>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+	<placeWorkers>
+      <li>RimWorldIndustrialRollers.PlaceWorker_NextToRailAndStockpile</li>
+    </placeWorkers>
+	<statBases>
+		<MaxHitPoints>120</MaxHitPoints>
+		<WorkToBuild>300</WorkToBuild>
+		<Flammability>0</Flammability>
+		<Beauty>-2</Beauty>
+	</statBases>
+	<researchPrerequisites>
+		<li>Conveyors</li>
+	</researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>60</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+</Buildings>

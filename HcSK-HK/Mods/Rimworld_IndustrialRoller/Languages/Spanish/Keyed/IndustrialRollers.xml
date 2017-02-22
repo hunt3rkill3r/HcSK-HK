@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Industrial pusher -->
+	<MovingRail_MustPlaceNextToRail>El empujador industrial debe colocarse tal que: Brillo blanco - cinta transportadora, almacén o edificio de almacenamiento. Brillo celeste - cinta transportadora.</MovingRail_MustPlaceNextToRail>
+	<!-- Industrial puller -->
+	<MovingRail_MustPlaceBetweenRailAndStockpile>El atractor inddustrial debe colocarse tal que: Brillo blanco - cinta transportadora o almacén. Brillo celeste - cinta transportadora o almacén.</MovingRail_MustPlaceBetweenRailAndStockpile>
+	<MovingRail_selected>selecionado</MovingRail_selected>
+	<MovingRail_No_Zone>Sin zona</MovingRail_No_Zone>
+	<MovingRail_Do_Forever>HACER SIEMPRE</MovingRail_Do_Forever>
+	<MovingRail_ON_HOLD>DETIENE</MovingRail_ON_HOLD>
+	<MovingRail_HOLD>DETENER</MovingRail_HOLD>
+	<MovingRail_Do_until_zone_is_full>Hacer hasta llenar zona</MovingRail_Do_until_zone_is_full>
+	
+</LanguageData>

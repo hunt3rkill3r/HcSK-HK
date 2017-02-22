@@ -4,9 +4,14 @@
   <ResearchProjectDef>
     <defName>MountainMining</defName>
     <label>mountain mining</label>
-    <description>Allows colonists to build the Mountain Miner, which allows you to clear mountain roofs</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <description>Allows colonists to build the Mountain Miner, which allows you to clear mountain roofs.</description>
+    <baseCost>2000</baseCost>
+	<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>SK_Quarry</li>
+			<li>SK_MiningI</li>
+		</prerequisites>
   </ResearchProjectDef>
 
 </Defs>

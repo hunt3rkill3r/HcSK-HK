@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<MovingRailStraight.label>Straight roller</MovingRailStraight.label>
+	<MovingRailStraight.description>A straight piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</MovingRailStraight.description>
+
+	<MovingRailLeft.label>Left turn roller</MovingRailLeft.label>
+	<MovingRailLeft.description>Left turning piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</MovingRailLeft.description>
+
+	<MovingRailRight.label>Right turn roller</MovingRailRight.label>
+	<MovingRailRight.description>Right turning piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</MovingRailRight.description>
+
+	<MovingRailWall.label>In-wall roller</MovingRailWall.label>
+	<MovingRailWall.description>A piece of industrial roller that is designed to replace a wall block to carry goods between rooms. fragile as a wall, but isolates temperatures. also transmits power to nearby electronics and rollers.</MovingRailWall.description>
+
+	<MovingRailPusher.label>Roller pusher</MovingRailPusher.label>
+	<MovingRailPusher.description>Equipped with an advanced sensor, able to push and alter route of configured goods between rails. also transmits power to nearby electronics and rollers.</MovingRailPusher.description>
+
+	<MovingRailPuller.label>Roller puller</MovingRailPuller.label>
+	<MovingRailPuller.description>Pulls selected items from a connected stockpile. puller is also equipped with zone scanner able to conditionally pull resources making sure to feed items until selected stockpile is full.</MovingRailPuller.description>
+
+</LanguageData>
