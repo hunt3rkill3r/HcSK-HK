@@ -2344,7 +2344,7 @@
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>A Petrochemical Laboratory where you can make byproducts of crude oil. Requires power.</Description>
 		<graphicData>
-			<texPath>Things/Building/TableLab33</texPath>
+			<texPath>Things/Building/chemlab</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
