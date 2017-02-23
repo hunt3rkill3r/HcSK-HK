@@ -628,7 +628,7 @@
 
 
 
-	<ThingDef ParentName="BuildingBase">
+	<!--<ThingDef ParentName="BuildingBase">
 		<defName>Vent</defName>
 		<label>closable vent</label>
 		<thingClass>Enhanced_Development.Temperature.Building_ClosableVent</thingClass>
@@ -719,6 +719,6 @@
 				<glowColor>(255,255,255,0)</glowColor>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 
 </Defs>

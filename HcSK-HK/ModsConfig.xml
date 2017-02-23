@@ -28,7 +28,8 @@
     <li>Camp</li>
     <li>Miscellaneous_Core</li>
     <li>Miscellaneous_Robots</li>
-    <li>RT_Fuse</li>
+	<li>RT_Fuse</li>
+    <li>RedistHeat</li>
     <li>Infused_CR</li>
     <li>RT_SolarFlareShield</li>
     <li>WorldPawnGC</li>
