@@ -7,8 +7,8 @@
     <li>HugsLib</li>
     <li>RW_ResearchTree</li>
     <li>CombatRealism</li>
-    <li>Core_SK</li>
-    <li>Survival HardcoreSK</li>
+    <li>Core_SK</li>	
+	<li>Survival HardcoreSK</li>
     <li>SeedsPlease_SK</li>
     <li>Dubs_Bad_Hygiene_SK</li>
     <li>EdBPrepareCarefully</li>
@@ -35,11 +35,13 @@
     <li>RT_SolarFlareShield</li>
     <li>WorldPawnGC</li>
     <li>ColonistBar_KF</li>
-    <li>Miniaturisation</li>
     <li>ED-LaserDrill</li>
     <li>Hunting Training</li>
     <li>MountainMiner</li>
     <li>PermaDeathName</li>
     <li>StackXXL</li>
+	<li>MiningCo. ForceField</li>
+	<li>MiningCo. LaserFence</li>
+	<li>Miniaturisation</li>
   </activeMods>
 </ModsConfigData>

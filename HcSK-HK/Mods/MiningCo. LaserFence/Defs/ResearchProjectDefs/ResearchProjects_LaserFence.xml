@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>ResearchLaserFence</defName>
+    <label>Laser Fence</label>
+    <description>Research how to build advanced Laser Fences.</description>
+    <descriptionDiscovered>You can now build laser fences. Don't forget to wear your safety glasses before any maintenance operation!</descriptionDiscovered>
+    <techLevel>Industrial</techLevel>
+    <baseCost>1200</baseCost>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+	  <li>ComponentAssembly</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
+</ResearchProjectDefs>

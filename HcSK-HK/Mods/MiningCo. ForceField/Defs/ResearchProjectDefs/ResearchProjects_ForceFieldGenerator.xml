@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>ResearchForceField</defName>
+    <label>Nano Force Field</label>
+    <description>Based on the Deep Space Mining Corporation MiningCo. deep drilling design, use these high powered force fields to protect your colony.
+    </description>
+    <descriptionDiscovered>You have developped the force field generator.
+
+- You can now build force field generators to protect your security forces from incoming projectiles.
+- Watch out for heavy rockets though!
+    </descriptionDiscovered>
+    <techLevel>Industrial</techLevel>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+	  <li>SK_NanotechnologyI</li>
+	  <li>SK_InfrastructureIV</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+</ResearchProjectDefs>

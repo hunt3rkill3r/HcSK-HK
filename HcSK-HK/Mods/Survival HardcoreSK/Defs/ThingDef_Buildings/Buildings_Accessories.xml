@@ -553,7 +553,7 @@
 	
 	<ThingDef ParentName="BuildingBase" Class="SK.ESdef">
 		<defName>Storage_SkipChunk</defName>
-		<label>debris skip</label>
+		<label>Debris Skip</label>
 		<thingClass>SK.Building_ExtendedStorage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/chunkskip</texPath>

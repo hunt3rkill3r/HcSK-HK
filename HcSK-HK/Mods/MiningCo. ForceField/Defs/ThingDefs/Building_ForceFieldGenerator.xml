@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Class="ForceField.ThingDef_FieldGenerator">
+    <defName>ForceFieldGenerator</defName>
+    <label>force field generator</label>
+    <description>This defensive building will charge up and sustain a forward force field. It is able to absorb or repel incoming projectiles until it is completely discharged. Once discharged, the generator needs some time to reinitialize. When powered down, the generator will send back a part of its energy to the power net.</description>
+    <thingClass>ForceField.Building_ForceFieldGenerator</thingClass>
+    <TickerType>Normal</TickerType>
+    <graphicData>
+      <texPath>Things/Building/Security/ForceFieldGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/MenuIcon_ForceFieldGenerator</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <placeWorkers>
+      <li>ForceField.PlaceWorker_ForceFieldGenerator</li>
+    </placeWorkers>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <UseHitPoints>true</UseHitPoints>
+    <statBases>
+      <WorkToBuild>10000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <size>(1,1)</size>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>200</costStuffCount>
+	<costList>
+		<ReinforcedConcrete>40</ReinforcedConcrete>
+		<Component>6</Component>
+		<Electronics>5</Electronics>
+		<Mechanism>4</Mechanism>
+	</costList>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ResearchForceField</li>
+    </researchPrerequisites>
+
+    <powerOutputDuringInitialization>-125</powerOutputDuringInitialization>
+    <powerOutputDuringCharge>-1000</powerOutputDuringCharge>
+    <powerOutputDuringSustain>-250</powerOutputDuringSustain>
+    <powerOutputDuringDischarge>500</powerOutputDuringDischarge>
+    
+    <initializationDurationInTicks>300</initializationDurationInTicks>
+    <chargeDurationInTicks>3000</chargeDurationInTicks>
+    <dischargeDurationInTicks>1500</dischargeDurationInTicks>
+    
+    <forceFieldMaxCharge>500</forceFieldMaxCharge>
+    <rocketAbsorbtionProportion>0.5</rocketAbsorbtionProportion>
+    <explosiveRepelCharge>40</explosiveRepelCharge>
+  </ThingDef>
+
+</ThingDefs>
