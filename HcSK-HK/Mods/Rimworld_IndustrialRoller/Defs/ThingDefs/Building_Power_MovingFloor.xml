@@ -2,7 +2,7 @@
 <Buildings>
   <ThingDef ParentName="BuildingBase">
     <DefName>MovingRailStraight</DefName>
-    <label>Straight roller</label>
+    <label>Straight Conveyor</label>
 	<category>Building</category>
 	<designationCategory>Industrial</designationCategory>
 	<graphicData>
@@ -13,19 +13,17 @@
       </damageData>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/MovingFloor/base64</uiIconPath>
+    <uiIconPath>Things/Building/MovingFloor/base64_frame0</uiIconPath>
 	<placingDraggableDimensions>1</placingDraggableDimensions>
 	<altitudeLayer>FloorEmplacement</altitudeLayer>
 	<thingClass>MovingFloor.MovingRailBase</thingClass>
 	<passability>Standable</passability>
-    <Description>A straight piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</Description>
+    <Description>A straight industrial conveyor for your inudstrial production grid.</Description>
 	<drawerType>MapMeshAndRealTime</drawerType>
 	<selectable>true</selectable>
 	<repairEffect>Repair</repairEffect>	
 	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-	
-    <!--<constructEffect>ConstructMetal</constructEffect>-->
 	<tickerType>Normal</tickerType>
 	<size>(1,1)</size>
 	<stuffCategories>
@@ -48,23 +46,28 @@
 	<researchPrerequisites>
 		<li>Conveyors</li>
 	</researchPrerequisites>
-	
     <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>5</basePowerConsumption>
-		<transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>false</startElectricalFires>
+			<basePowerConsumption>5</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(0,217,217,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Flickable"/>
     </comps>
+	<building>
+		<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	</building>
+	<castEdgeShadows>true</castEdgeShadows>
   </ThingDef>
-  
-  
   
   <ThingDef ParentName="BuildingBase">
     <DefName>MovingRailLeft</DefName>
-    <label>Left turn roller</label>
+    <label>Left Turning Conveyor</label>
 	<category>Building</category>
 	<designationCategory>Industrial</designationCategory>
 	<graphicData>
@@ -75,18 +78,16 @@
       </damageData>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/MovingFloor/base64_left</uiIconPath>
+    <uiIconPath>Things/Building/MovingFloor/base64_left_frame0</uiIconPath>
 	<altitudeLayer>FloorEmplacement</altitudeLayer>
 	<thingClass>MovingFloor.MovingRailLeft</thingClass>
 	<passability>Standable</passability>
-    <Description>Left turning piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</Description>
+    <Description>A left turning industrial conveyor for your inudstrial production grid.</Description>
 	<drawerType>MapMeshAndRealTime</drawerType>
 	<selectable>true</selectable>
 	<repairEffect>Repair</repairEffect>	
 	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-	
-    <!--<constructEffect>ConstructMetal</constructEffect>-->
 	<tickerType>Normal</tickerType>
 	<size>(1,1)</size>
 	<stuffCategories>
@@ -109,21 +110,28 @@
 	<researchPrerequisites>
 		<li>Conveyors</li>
 	</researchPrerequisites>
-	
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>5</basePowerConsumption>
-		<transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable"/>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>false</startElectricalFires>
+			<basePowerConsumption>5</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(0,217,217,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Flickable"/>
     </comps>
+	<building>
+		<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	</building>
+	<castEdgeShadows>true</castEdgeShadows>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <DefName>MovingRailRight</DefName>
-    <label>Right turn roller</label>
+    <label>Right Turning Conveyor</label>
 	<category>Building</category>
 	<designationCategory>Industrial</designationCategory>
 	<graphicData>
@@ -134,18 +142,16 @@
       </damageData>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/MovingFloor/base64_right</uiIconPath>
+    <uiIconPath>Things/Building/MovingFloor/base64_right_frame0</uiIconPath>
 	<altitudeLayer>FloorEmplacement</altitudeLayer>
 	<thingClass>MovingFloor.MovingRailRight</thingClass>
 	<passability>Standable</passability>
-    <Description>Right turning piece of industrial roller to carry goods on. also transmits power to nearby electronics and rollers.</Description>
+    <Description>A right turning industrial conveyor for your inudstrial production grid.</Description>
 	<drawerType>MapMeshAndRealTime</drawerType>
 	<selectable>true</selectable>
 	<repairEffect>Repair</repairEffect>	
 	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-	
-    <!--<constructEffect>ConstructMetal</constructEffect>-->
 	<tickerType>Normal</tickerType>
 	<size>(1,1)</size>
 	<stuffCategories>
@@ -168,21 +174,28 @@
 	<researchPrerequisites>
 		<li>Conveyors</li>
 	</researchPrerequisites>
-	
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>5</basePowerConsumption>
-		<transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable"/>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>false</startElectricalFires>
+			<basePowerConsumption>5</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(0,217,217,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Flickable"/>
     </comps>
+	<building>
+		<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	</building>
+	<castEdgeShadows>true</castEdgeShadows>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <DefName>MovingRailWall</DefName>
-    <label>In-wall roller</label>
+    <label>In-wall Conveyor</label>
 	<category>Building</category>
 	<designationCategory>Industrial</designationCategory>
 	<graphicData>
@@ -193,9 +206,9 @@
       </damageData>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/MovingFloor/base64_wall</uiIconPath>
+    <uiIconPath>Things/Building/MovingFloor/base64_wall_frame0</uiIconPath>
 	<thingClass>MovingFloor.MovingRailWall</thingClass>
-    <Description>A piece of industrial roller that is designed to replace a wall block to carry goods between rooms. fragile as a wall, but isolates temperatures. also transmits power to nearby electronics and rollers.</Description>
+    <Description>A in-wall industrial conveyor for your inudstrial production grid meant to bridge gaps between rooms.</Description>
 	<drawerType>MapMeshAndRealTime</drawerType>
 	<selectable>true</selectable>
 	<repairEffect>Repair</repairEffect>	
@@ -203,14 +216,10 @@
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	<holdsRoof>true</holdsRoof>
-    <!--<constructEffect>ConstructMetal</constructEffect>-->
 	<tickerType>Normal</tickerType>    
     <fillPercent>1</fillPercent>
 	<passability>Impassable</passability>
     <blockWind>true</blockWind>
-	<building>
-      <canPlaceOverWall>true</canPlaceOverWall>
-    </building>
     <coversFloor>true</coversFloor>
     <blockLight>true</blockLight>
 	<size>(1,1)</size>
@@ -234,33 +243,40 @@
 	<researchPrerequisites>
 		<li>Conveyors</li>
 	</researchPrerequisites>
-	
     <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>5</basePowerConsumption>
-		<transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>false</startElectricalFires>
+			<basePowerConsumption>5</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(0,217,217,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Flickable"/>
     </comps>
+	<building>
+		<canPlaceOverWall>true</canPlaceOverWall>
+		<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	</building>
+	<castEdgeShadows>false</castEdgeShadows>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>MovingRailPusher</defName>
-    <label>Roller pusher</label>
+    <label>Conveyor Pusher</label>
 	<thingClass>MovingFloor.MovingRailPusher</thingClass>
     <graphicData>
       <texPath>Things/Building/MovingFloor/base64_pusher_frame0</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  
       <damageData>
         <rect>(0.05,0.1,0.9,0.9)</rect>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/MovingFloor/base64_pusher</uiIconPath>
+    <uiIconPath>Things/Building/MovingFloor/base64_pusher_frame0</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
 	<fillPercent>1</fillPercent>
 	<passability>Impassable</passability>
@@ -268,18 +284,11 @@
     <coversFloor>true</coversFloor>
     <blockLight>true</blockLight>
     <pathCost>70</pathCost>
-    <building>
-      <canPlaceOverWall>true</canPlaceOverWall>
-      <defaultStorageSettings>
-        <priority>Low</priority>
-      </defaultStorageSettings>
-    </building>
-	
     <inspectorTabs>
       <li>ITab_Storage</li>
     </inspectorTabs>
     <castEdgeShadows>true</castEdgeShadows>
-    <description>Equipped with an advanced sensor, able to push and alter route of configured goods between rails. also transmits power to nearby electronics and rollers.</description>
+    <description>Equipped with an advanced sensor it detects item inputs and pushes them further down the grid.</description>
 	<stuffCategories>
 		<li>Metallic</li>
 	</stuffCategories>
@@ -297,7 +306,6 @@
 	<designationCategory>Industrial</designationCategory>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
-    <!--<constructEffect>ConstructMetal</constructEffect>-->
 	<placeWorkers>
       <li>RimWorldIndustrialRollers.PlaceWorker_NextToRail</li>
     </placeWorkers>
@@ -310,21 +318,31 @@
 	<researchPrerequisites>
 		<li>Conveyors</li>
 	</researchPrerequisites>
-	
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>60</basePowerConsumption>
-		<transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable"/>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>false</startElectricalFires>
+			<basePowerConsumption>60</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(0,217,217,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Flickable"/>
     </comps>
+	<building>
+		<canPlaceOverWall>true</canPlaceOverWall>
+		<defaultStorageSettings>
+			<priority>Low</priority>
+		</defaultStorageSettings>
+		<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	</building>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>MovingRailPuller</defName>
-    <label>Roller puller</label>
+    <label>Conveyor Puller</label>
 	<thingClass>MovingFloor.MovingRailPuller</thingClass>
     <graphicData>
       <texPath>Things/Building/MovingFloor/base64_puller_frame0</texPath>
@@ -335,7 +353,7 @@
         <cornerTR>Damage/Corner</cornerTR>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/MovingFloor/base64_puller</uiIconPath>
+    <uiIconPath>Things/Building/MovingFloor/base64_puller_frame0</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
 	<fillPercent>1</fillPercent>
 	<passability>Impassable</passability>
@@ -343,18 +361,11 @@
     <coversFloor>true</coversFloor>
     <blockLight>true</blockLight>
     <pathCost>70</pathCost>
-    <building>
-      <canPlaceOverWall>true</canPlaceOverWall>
-      <defaultStorageSettings>
-        <priority>Low</priority>
-      </defaultStorageSettings>
-    </building>
-	
     <inspectorTabs>
       <li>ITab_Storage</li>
     </inspectorTabs>
     <castEdgeShadows>true</castEdgeShadows>
-    <description>Pulls selected items from a connected stockpile. puller is also equipped with zone scanner able to conditionally pull resources making sure to feed items until selected stockpile is full.</description>
+    <description>Pulls selected items from a connected stockpile. Also able to change conveyor routes of selected items.</description>
 	<stuffCategories>
 		<li>Metallic</li>
 	</stuffCategories>
@@ -372,7 +383,6 @@
 	<designationCategory>Industrial</designationCategory>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
-    <!--<constructEffect>ConstructMetal</constructEffect>-->
 	<placeWorkers>
       <li>RimWorldIndustrialRollers.PlaceWorker_NextToRailAndStockpile</li>
     </placeWorkers>
@@ -385,15 +395,26 @@
 	<researchPrerequisites>
 		<li>Conveyors</li>
 	</researchPrerequisites>
-	
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
-        <basePowerConsumption>60</basePowerConsumption>
-		<transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable"/>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<startElectricalFires>false</startElectricalFires>
+			<basePowerConsumption>60</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(0,217,217,0)</glowColor>
+		</li>
+		<li Class="CompProperties_Flickable"/>
     </comps>
+	<building>
+		<canPlaceOverWall>true</canPlaceOverWall>
+		<defaultStorageSettings>
+			<priority>Low</priority>
+		</defaultStorageSettings>
+		<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	</building>
   </ThingDef>
+  
 </Buildings>
