@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>SmoothWall</defName>
+		<driverClass>RSSW_Code.JobDriver_SmoothWall</driverClass>
+		<reportString>smoothing wall.</reportString>
+	</JobDef>
+
+</Defs>

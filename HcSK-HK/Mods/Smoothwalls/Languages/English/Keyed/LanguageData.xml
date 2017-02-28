@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RSSW.DesignatorSmoothWall>Smooth wall</RSSW.DesignatorSmoothWall>
+	<RSSW.DesignatorSmoothWallDesc>Designate rough stone walls to be smoothed.</RSSW.DesignatorSmoothWallDesc>
+
+	<RSSW.TerrainBeingSmoothed>The wall is already marked for smoothing.</RSSW.TerrainBeingSmoothed>
+	<RSSW.MessageMustDesignateRough>Must designate a rough stone wall.</RSSW.MessageMustDesignateRough>
+
+</LanguageData>

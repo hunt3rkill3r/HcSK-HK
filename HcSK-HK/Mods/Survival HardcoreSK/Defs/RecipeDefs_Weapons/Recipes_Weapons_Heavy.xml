@@ -690,5 +690,83 @@
     </recipeUsers>
 	</RecipeDef>
 	
-
+	<RecipeDef>
+		<defName>BuildPowerFist</defName>
+		<label>Build Mining Co. PowerFist</label>
+		<description>Builds the Mining Co. PowerFist. An advanced tool used by miners to handle heavy tools. It is often customized for military purposes during crisis.</description>
+		<jobString>Building PowerFist</jobString>
+		<workAmount>15000</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Interact_Repair</soundWorking>
+		<skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>15</minLevel>
+				</li>
+			</skillRequirements>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                </categories>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<MeleeWeapon_PowerFist>1</MeleeWeapon_PowerFist>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+						<li>Heavy_Component</li>
+						<li>Weapon_Parts</li>
+						<li>Component</li>
+						<li>Plastic</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>AdvWeaponCraftingWorkTable</li>
+    </recipeUsers>
+	</RecipeDef>
+	
 </RecipeDefs>

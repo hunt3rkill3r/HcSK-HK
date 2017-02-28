@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<WorkGiverDef>
+		<defName>ConstructSmoothWalls</defName>
+		<label>smooth walls</label>
+		<giverClass>RSSW_Code.WorkGiver_ConstructSmoothWall</giverClass>
+		<workType>Construction</workType>
+		<priorityInType>5</priorityInType>
+		<verb>smooth</verb>
+		<gerund>smoothing</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+</WorkGivers>

@@ -261,6 +261,8 @@
 			<WorkToBuild>550</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>6</Beauty>
+			<Bulk>40</Bulk>
+			<Mass>12</Mass>
 		</statBases>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
@@ -309,6 +311,7 @@
 			<texPath>Things/Building/terlet</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<Color>(105,95,97)</Color>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
@@ -325,6 +328,8 @@
 			<Beauty>6</Beauty>
 			<Comfort>0.1</Comfort>
 			<Cleanliness>-5</Cleanliness>
+			<Bulk>75</Bulk>
+			<Mass>30</Mass>
 		</statBases>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<fillPercent>0.15</fillPercent>
@@ -387,6 +392,8 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>6</Beauty>
 			<Comfort>0.9</Comfort>
+			<Bulk>85</Bulk>
+			<Mass>65</Mass>
 		</statBases>
 		<building>
 		      <bed_humanlike>false</bed_humanlike>
@@ -451,6 +458,8 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>6</Beauty>
 			<Comfort>0.5</Comfort>
+			<Bulk>45</Bulk>
+			<Mass>25</Mass>
 		</statBases>
 		<fillPercent>0.15</fillPercent>
 		<hasInteractionCell>true</hasInteractionCell>

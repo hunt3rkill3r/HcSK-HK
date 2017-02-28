@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+	<name>Smooth Stone Walls</name>
+	<author>Rainbeau Flambe</author>
+	<url></url>
+	<targetVersion>0.16.1393</targetVersion>
+	<description>
+
+"Smooth Stone Walls" doesn't add new walls. Rather, it allows you to smooth natural stone walls, just as you can smooth natural stone floors, thanks to a new option in the "Structure" tab of the architect menu. This allows you to have real walls in the rooms in your mountain hideaway, without needing to mine out rock and then immediately replace it with a wall built from scratch. Smoothing a section of stone wall takes four times as long as smoothing a section of floor, as there's more work involved. (And because it seems about right for balance purposes.)
+
+There honestly isn't much more to say about it.
+
+- Rainbeau Flambe (dburgdorf)
+
+=====
+
+Compatibility:
+
+"Smooth Stone Walls" adds a new capability, but doesn't change any existing things, so it should be compatible with pretty much any other mod, unless that mod also modifies the "Structure" architect tab. You should be able to add it to an existing saved game without trouble. Removing it from a game in progress should be safe, as well, so long as you don't have any "smooth wall" jobs in progress.
+
+=====
+
+License:
+
+If you're a modpack maker and want to include "Smooth Stone Walls" in your pack, or if you're a modder and want to use it as the basis of a derivative mod, please feel free to do so. I ask only that you let me know about it. 
+
+=====
+
+If you have any (helpful) suggestions for improvement, please let me know!
+
+	</description>
+
+</ModMetaData>

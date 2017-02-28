@@ -64,8 +64,8 @@
 		<label>rimstone</label>
 		<description>Rimstone is a dark, blue-grey metal that seems to be unique to this part of space. It has some unique properties that even a low-tech civilization can bring out, such as self-luminescence.</description>
 		<graphicData>
-			<texPath>Things/Item/Rimrinite</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Rimstone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>

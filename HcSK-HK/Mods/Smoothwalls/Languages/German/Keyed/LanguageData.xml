@@ -1,0 +1,12 @@
+﻿<!-- German translation by ~Axel (http://steamcommunity.com/id/Axel631230/) -->
+
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RSSW.DesignatorSmoothWall>Wände glätten</RSSW.DesignatorSmoothWall>
+	<RSSW.DesignatorSmoothWallDesc>Makiert raue Steinwände, die geglättet werden sollen.</RSSW.DesignatorSmoothWallDesc>
+
+	<RSSW.TerrainBeingSmoothed>Diese Wand ist bereits zum glätten markiert.</RSSW.TerrainBeingSmoothed>
+	<RSSW.MessageMustDesignateRough>Muss rauen Steinwänden zugewiesen werden.</RSSW.MessageMustDesignateRough>
+
+</LanguageData>
